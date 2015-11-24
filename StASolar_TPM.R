@@ -32,8 +32,8 @@ for (i in 1:nrow(reference)){
 
 }
 tpm
-tpm[1,]
-sum(tpm[1,])
+#tpm[1,]
+#sum(tpm[1,])
 
 for (i in 1 :nrow(tpm)){
     spm[i]=sum(tpm[i,])
@@ -53,6 +53,7 @@ for (i in 1 : nrow(tpm)){
 cpm
 s=numeric(nrow(reference))
 s[1]=reference$bin[1]  #round((maxBin)*runif(1),0)+1
+
 for (i in 2:nrow(reference)){
     colIndex=runif(1)
     j=1
