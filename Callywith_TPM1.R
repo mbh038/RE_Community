@@ -40,6 +40,7 @@ for (i in 1:nrow(reference)){
 
     }
 tpm[1,]
+print(tpm)
 sum(tpm[1,])
 
 for (i in 1 :nrow(tpm)){
@@ -57,7 +58,7 @@ for (i in 1 : nrow(tpm)){
         cpm[i,j]=sum(tpm[i,1:j])
     }
 }
-#cpm
+print (cpm)
 v=numeric(nrow(reference))
 v[1]=round((maxBin)*runif(1),0)+1
 for (i in 2:nrow(reference)){
@@ -68,6 +69,7 @@ for (i in 2:nrow(reference)){
     }
     v[i]=j
 }
+cpm
 summary(v)
 summary(reference$bin)
 
@@ -84,4 +86,7 @@ print(refFit)
 hist(v,xlim=c(0,20),prob=TRUE)
 d = dweibull(seq(0,20,.2),vFit$estimate[1],vFit$estimate[2])
 points(seq(0,20,.2),d,type='l',col=2)
+
+plot(v[1:1000],type="l")
+points(reference$V,type="l",col="red")
 
