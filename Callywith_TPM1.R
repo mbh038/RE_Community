@@ -23,7 +23,7 @@ cw20<-filter(cw,height=="V20")
 
 ## TPM 20
 
-reference<-cw20
+reference<-cw46
 
 reference$bin<-floor(reference$V)+1
 table(reference$bin)
@@ -87,6 +87,9 @@ hist(v,xlim=c(0,20),prob=TRUE)
 d = dweibull(seq(0,20,.2),vFit$estimate[1],vFit$estimate[2])
 points(seq(0,20,.2),d,type='l',col=2)
 
-plot(v[1:1000],type="l")
-points(reference$V,type="l",col="red")
+
+
+
+
+com<-data.frame(c("Time","V","P","D"))
 
