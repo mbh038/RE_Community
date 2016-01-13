@@ -1,0 +1,1559 @@
+Aldercombe Barton
+
+South West
+
+Kilkhampton, Bude
+
+1
+
+0.8
+
+0.8
+
+Landowner project
+
+20-Nov-2013
+
+Approved
+
+onshore
+
+Bake Sawmills
+
+South West
+
+Bake Lane, Trerulefoot
+
+1
+
+0.5
+
+0.5
+
+Murex Energy
+
+31-Mar-2014
+
+Operational
+
+onshore
+
+Beacon South
+
+South West
+
+South Petherwin, Launceston
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+15-Jul-2014
+
+Approved on appeal
+
+onshore
+
+Bears Down
+
+South West
+
+St. Eval
+
+16
+
+9.6
+
+0.6
+
+RWE Npower Renewables
+
+01-Sep-2001
+
+Operational
+
+onshore
+
+Beckaveans
+
+South West
+
+Jacobstown, Bude
+
+1
+
+0.25
+
+0.25
+
+Landowner project
+
+05-Feb-2014
+
+Approved
+
+onshore
+
+Bennacott Farm
+
+South West
+
+Boyton, Launceston
+
+1
+
+0.5
+
+0.5
+
+Murex Energy
+
+31-May-2013
+
+Operational
+
+onshore
+
+Blable Farm
+
+South West
+
+St Jidgey Downs, Blable Lane, St Issey, Wadenbridge
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+07-Oct-2014
+
+Operational
+
+onshore
+
+Blackaton
+
+South West
+
+Lewannick, Launceston
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+13-May-2014
+
+Operational
+
+onshore
+
+Bocaddon Farm
+
+South West
+
+Bocaddon, Looe
+
+1
+
+0.5
+
+0.5
+
+One Wind Renewables
+
+22-Jul-2014
+
+Approved on appeal
+
+onshore
+
+Bottonett Farm
+
+South West
+
+Trebullett, Launceston
+
+1
+
+0.5
+
+0.5
+
+Belltown Power
+
+12-Dec-2013
+
+Approved
+
+onshore
+
+Carland Cross - Repower
+
+South West
+
+Carland near Newquay,
+
+10
+
+20
+
+2
+
+ScottishPower Renewables
+
+12-Jun-2013
+
+Operational
+
+onshore
+
+Carnwinnick Farm
+
+South West
+
+Treylon, Grampound Road
+
+1
+
+0.225
+
+0.225
+
+Landowner project
+
+27-Mar-2014
+
+Operational
+
+onshore
+
+Cold Northcott
+
+South West
+
+Launceston
+
+21
+
+6.3
+
+0.3
+
+EdF ER
+
+01-Apr-1993
+
+Operational
+
+onshore
+
+Collaton Farm
+
+South West
+
+Kilkhampton Road, Bude
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+13-Jun-2014
+
+Operational
+
+onshore
+
+Crimp
+
+South West
+
+Morwenstow, Cornwall
+
+3
+
+2.4
+
+0.8
+
+West Coast Energy Developments
+
+01-Apr-2011
+
+Operational
+
+onshore
+
+Delabole - Repower
+
+South West
+
+Cornwall
+
+4
+
+9.2
+
+2.3
+
+Good Energy
+
+16-Dec-2010
+
+Operational
+
+onshore
+
+Denzell Downs
+
+South West
+
+Higher Denzell Farm, Nr St Eval
+
+5
+
+10
+
+2
+
+REG WINDPOWER
+
+12-Dec-2013
+
+Approved on JR
+
+onshore
+
+Denzell Downs (Resubmission)
+
+South West
+
+Higher Denzell Farm, Nr St Eval
+
+5
+
+12.5
+
+2.5
+
+REG WINDPOWER
+
+05-Mar-2015
+
+Under construction
+
+onshore
+
+Dilland Farm
+
+South West
+
+Whitstone, Holsworthy
+
+1
+
+0.33
+
+0.33
+
+One Wind Renewables
+
+08-Aug-2014
+
+Operational
+
+onshore
+
+East Balsdon Farm
+
+South West
+
+Whitstone, Holsworthy
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+18-Mar-2013
+
+Approved
+
+onshore
+
+East of Prustacott Road
+
+South West
+
+Launcells
+
+1
+
+0.33
+
+0.33
+
+AGR Renewables
+
+26-Mar-2014
+
+Under construction
+
+onshore
+
+Ennis Barton Farm
+
+South West
+
+Fraddon, St Columb
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+17-Jan-2012
+
+Operational
+
+onshore
+
+Four Burrows
+
+South West
+
+nr Truro
+
+15
+
+4.5
+
+0.3
+
+Ecogen Ltd
+
+01-Mar-1998
+
+Operational
+
+onshore
+
+Fursdon Farm (Pickles Recovered)
+
+South West
+
+Horningtops, Liskeard
+
+1
+
+0.5
+
+0.5
+
+Murex Energy
+
+06-Feb-2015
+
+Under construction
+
+onshore
+
+Furzedown Farm
+
+South West
+
+Lanreath, Looe
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+27-Jul-2015
+
+Approved on JR
+
+onshore
+
+Garlenick Estate
+
+South West
+
+Near Grampound
+
+2
+
+4
+
+2
+
+Airvolution Energy
+
+27-Jan-2015
+
+Operational
+
+onshore
+
+Gaverigan Manor Farm
+
+South West
+
+Gaverigan, Indian Queens, St. Columb
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+30-Sep-2014
+
+Approved
+
+onshore
+
+Goonabarn Farm
+
+South West
+
+Summercourt, Newquay
+
+2
+
+1
+
+0.5
+
+Landowner project
+
+04-Jul-2013
+
+Approved
+
+onshore
+
+Goonamarth Farm
+
+South West
+
+St Austell
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+09-Mar-2015
+
+Approved
+
+onshore
+
+Goonhilly Downs - Repower
+
+South West
+
+Saint Martin
+
+6
+
+12
+
+2
+
+REG WINDPOWER
+
+05-Oct-2010
+
+Operational
+
+onshore
+
+Goonvean Works
+
+South West
+
+Greensplat, St Austell
+
+1
+
+0.33
+
+0.33
+
+Zerum
+
+16-Apr-2013
+
+Approved
+
+onshore
+
+Grange Farm (Cornwall)
+
+South West
+
+Boyton, Launceston
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+09-Oct-2014
+
+Approved on appeal
+
+onshore
+
+Great Tredinnick Dairy Farm
+
+South West
+
+Twowatersfoot Mount, Liskeard
+
+1
+
+0.225
+
+0.225
+
+Landowner project
+
+29-Oct-2013
+
+Operational
+
+onshore
+
+High Down
+
+South West
+
+High Down, Redland
+
+1
+
+1.3
+
+1.3
+
+REG WINDPOWER
+
+01-Jan-2014
+
+Operational
+
+onshore
+
+Higher Basil Farm
+
+South West
+
+Altarnun Road, St Clether, Launceston
+
+2
+
+0.11
+
+0.055
+
+Landowner project
+
+24-Jun-2013
+
+Approved
+
+onshore
+
+Higher Penhale Farm
+
+South West
+
+St Clether, Launceston
+
+2
+
+0.11
+
+0.055
+
+Landowner project
+
+01-May-2013
+
+Approved
+
+onshore
+
+Higher Woodley Farm (Resubmission)
+
+South West
+
+Lanivet, Bodmin
+
+1
+
+0.25
+
+0.25
+
+Landowner project
+
+05-Jun-2014
+
+Approved
+
+onshore
+
+Hollafrench Farm
+
+South West
+
+North Tamerton, Holsworthy
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+06-Nov-2013
+
+Approved
+
+onshore
+
+Holloborough Farm
+
+South West
+
+Eastcott Cross, Morwenstow, Bude
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+14-Apr-2014
+
+Approved on appeal
+
+onshore
+
+Ivyleaf Farm
+
+South West
+
+Ivyleaf Hill, Bude
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+26-Jul-2013
+
+Approved
+
+onshore
+
+Kernick Farm
+
+South West
+
+Kernick Farm, Otterham, Camelford, PL32 9SZ
+
+1
+
+0.5
+
+0.5
+
+Otter Power
+
+17-Aug-2011
+
+Operational
+
+onshore
+
+Lestoon Farm
+
+South West
+
+Luxulyan, Bodmin
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+26-Jun-2014
+
+Operational
+
+onshore
+
+Lundy View Farm
+
+South West
+
+Hallworthy, Camelford
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+06-Oct-2014
+
+Operational
+
+onshore
+
+Melbur - Aggregate Industries
+
+South West
+
+Summercourt, Newquay
+
+1
+
+0.5
+
+0.5
+
+AGR Renewables
+
+25-Nov-2012
+
+Operational
+
+onshore
+
+Mengearne Farm
+
+South West
+
+Laity, Wendron, Helston
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+01-May-2006
+
+Operational
+
+onshore
+
+Menwenicke Barton
+
+South West
+
+Launceston
+
+1
+
+0.5
+
+0.5
+
+Otter Power
+
+31-May-2013
+
+Operational
+
+onshore
+
+Merrose Farm
+
+South West
+
+Illogan Downs, Illogan, Redruth
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+22-Sep-2015
+
+Approved
+
+onshore
+
+Newtons Margate Farm
+
+South West
+
+Bodmin
+
+1
+
+1
+
+1
+
+Landowner project
+
+05-Mar-2012
+
+Approved
+
+onshore
+
+Norton Barton
+
+South West
+
+Launcells, Bude
+
+1
+
+0.33
+
+0.33
+
+Landowner project
+
+08-May-2013
+
+Operational
+
+onshore
+
+Otterham B
+
+South West
+
+nr Camelford
+
+4
+
+3.2
+
+0.8
+
+Otter Power
+
+05-Apr-2013
+
+Under construction
+
+onshore
+
+Papillion
+
+South West
+
+South Petherwin, Launceston
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+21-Feb-2014
+
+Operational
+
+onshore
+
+Penans Farm
+
+South West
+
+Grampound
+
+1
+
+0.5
+
+0.5
+
+Ecotricity
+
+04-Feb-2013
+
+Approved
+
+onshore
+
+Pengelly Farm
+
+South West
+
+Burlawn, Wadebridge
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+06-Jun-2014
+
+Operational
+
+onshore
+
+Perranwell Station
+
+South West
+
+School Hill, Perranwell, Truro
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+22-Jul-2013
+
+Operational
+
+onshore
+
+Pitts Down Farm
+
+South West
+
+Tregony, Truro
+
+1
+
+0.5
+
+0.5
+
+Cirrus Energy
+
+30-Sep-2014
+
+Approved
+
+onshore
+
+Polkanuggo Farm
+
+South West
+
+Stithians, Truro
+
+1
+
+0.225
+
+0.225
+
+Landowner project
+
+04-Feb-2015
+
+Operational
+
+onshore
+
+Roscarnick Farm
+
+South West
+
+Threeburrows, Blackwater. Truro
+
+1
+
+0.28
+
+0.28
+
+ICE Renewables
+
+01-Apr-2012
+
+Operational
+
+onshore
+
+Rose Park Farm
+
+South West
+
+Otterham Station, Camelford
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+26-Sep-2014
+
+Approved
+
+onshore
+
+Scarne Farm
+
+South West
+
+Hurdon Road, Launceston
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+25-Oct-2013
+
+Operational
+
+onshore
+
+Smeathers Farm
+
+South West
+
+Chapel Amble, Wadebridge
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+18-Dec-2013
+
+Approved on appeal
+
+onshore
+
+St Breock - Repower (Resubmission)
+
+South West
+
+St Breock Downs
+
+5
+
+12.5
+
+2.5
+
+REG WINDPOWER
+
+09-Apr-2015
+
+Operational
+
+onshore
+
+Swallows Court Farm
+
+South West
+
+Ladock, Truro
+
+1
+
+0.225
+
+0.225
+
+Landowner project
+
+10-Dec-2014
+
+Operational
+
+onshore
+
+Taylors Cross Farm
+
+South West
+
+Kilkhampton Road, Bude
+
+1
+
+0.25
+
+0.25
+
+Landowner project
+
+27-Feb-2015
+
+Operational
+
+onshore
+
+Trebilcock Farm
+
+South West
+
+Roche, St Austell
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+14-Jan-2014
+
+Operational
+
+onshore
+
+Tregray Villa
+
+South West
+
+Hallworthy, Camelford
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+27-Feb-2014
+
+Approved
+
+onshore
+
+Treguddick Farm
+
+South West
+
+South Petherwin, Launceston
+
+1
+
+0.5
+
+0.5
+
+Otter Power
+
+27-Nov-2014
+
+Operational
+
+onshore
+
+Trela Farm
+
+South West
+
+Trekeek Road, Camelford
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+09-Sep-2013
+
+Approved
+
+onshore
+
+Treleigh Farm
+
+South West
+
+St Ervan, Wadebridge
+
+1
+
+0.33
+
+0.33
+
+AGR Renewables
+
+26-Mar-2014
+
+Under construction
+
+onshore
+
+Trelow Farm
+
+South West
+
+Crealy, St Issey, Wadebridge
+
+1
+
+0.5
+
+0.5
+
+Cleanearth Energy
+
+22-Mar-2014
+
+Operational
+
+onshore
+
+Trengune Farm (Resubmission)
+
+South West
+
+Warbstow, Launceston
+
+1
+
+0.25
+
+0.25
+
+Landowner project
+
+17-Dec-2014
+
+Operational
+
+onshore
+
+Trenhayle Lane (Resubmission)
+
+South West
+
+St Erth, Hayle
+
+1
+
+0.1
+
+0.1
+
+Landowner project
+
+19-Dec-2013
+
+Approved
+
+onshore
+
+Trethawle
+
+South West
+
+Oak House, Horningtops, Liskeard
+
+1
+
+0.33
+
+0.33
+
+Cleanearth Energy
+
+29-Nov-2012
+
+Operational
+
+onshore
+
+Trethorne Leisure Farm
+
+South West
+
+Kennards House, Launceston
+
+1
+
+0.5
+
+0.5
+
+Landowner project
+
+01-Aug-2014
+
+Operational
+
+onshore
+
+Ventonteague
+
+South West
+
+St Allen, Truro
+
+1
+
+1.5
+
+1.5
+
+Landowner project
+
+26-Feb-2015
+
+Approved
+
+onshore
+
+West Nethercott Farm (Resubmission)
+
+South West
+
+Whitstone, Holsworthy
+
+2
+
+0.1
+
+0.05
+
+Landowner project
+
+27-Nov-2013
+
+Approved
+
+onshore
+
+Wilton Farm
+
+South West
+
+Trerulefoot, Saltash
+
+1
+
+0.5
+
+0.5
+
+Murex Energy
+
+30-Jan-2014
+
+Approved on appeal
+
+onshore
+
+Woodlands Barton
+
+South West
+
+Wireless Road, Tremorddrett, Roche
+
+2
+
+5
+
+2.5
+
+Hendra Manor Ltd
+
+01-Sep-2014
+
+Operational
+
+onshore
+
+WWF Roskrow Barton
+
+South West
+
+Penryn
+
+2
+
+1.7
+
+0.85
+
+REG WINDPOWER
+
+01-Feb-2008
+
+Operational
+
+onshore
