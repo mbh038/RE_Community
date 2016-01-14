@@ -41,17 +41,19 @@ fh.close()
 fh = open("turbines.txt","r")
 
 for i in range (nProjects):
-    print i
+
     project =fh.readline().strip()
 
     print ''
-    cur.execute("SELECT project FROM Projects WHERE project= ?", (buffer(project), ))
-
+    cur.execute("SELECT * FROM Projects WHERE project= ?", (project,))
     try:
         data = cur.fetchone()[0]
-        print "Found in database ",project
+        print "Found in database ",data
+        for i in range(9):
+            fh.readline()
         continue
     except:
+        print "Hello"
         pass
     
     region =fh.readline().strip()

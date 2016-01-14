@@ -33,6 +33,29 @@
 			fillOpacity: 0.5
 		}).addTo(map).bindPopup("I am a circle.");
 
+i = 0;
+        var markers = [];
+        for ( pos in myData ) {
+            i = i + 1;
+            var row = myData[pos];
+            L.circle([row[0], row[1]], 500, {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5
+		}).addTo(map).bindPopup("I am a circle.");
+        
+<!--		    window.console && console.log(row);
+            // if ( i < 3 ) { alert(row); }
+            var newLatlng = new google.maps.LatLng(row[0], row[1]);
+            var marker = new google.maps.Marker({
+                position: newLatlng,
+                map: map,
+                title: row[2]
+            });
+            markers.push(marker); -->
+        }
+        
+        
  <!--       
 		L.polygon([
 			[51.509, -0.08],
