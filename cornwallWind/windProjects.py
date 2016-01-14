@@ -12,8 +12,9 @@ scontext = None
 
 conn = sqlite3.connect('windProjects.sqlite')
 cur = conn.cursor()
+#DROP TABLE IF EXISTS Projects;
+cur.executescript('''
 
-cur.execute('''
 CREATE TABLE IF NOT EXISTS Projects (
     project TEXT,
     region TEXT,
@@ -24,7 +25,8 @@ CREATE TABLE IF NOT EXISTS Projects (
     developer TEXT,
     current_status_date TEXT,
     status TEXT,
-    onoff TEXT  
+    onoff TEXT,
+    geodata TEXT
     )''')
 
 fh = open("turbines.txt","r")
@@ -41,13 +43,23 @@ fh = open("turbines.txt","r")
 for i in range (nProjects):
     print i
     project =fh.readline().strip()
-    print project
+
+    print ''
+    cur.execute("SELECT project FROM Projects WHERE project= ?", (buffer(project), ))
+
+    try:
+        data = cur.fetchone()[0]
+        print "Found in database ",project
+        continue
+    except:
+        pass
+    
     region =fh.readline().strip()
-    print region
-    location =fh.readline().strip()
-    print location
+    #print region
+    location =fh.readline().strip()+(", Cornwall, UK")
+    #print location
     turbines =int(fh.readline().strip())
-    print turbines
+    #print turbines
     project_capacity =float(fh.readline().strip())
     turbine_capacity =float(fh.readline().strip())
     developer =fh.readline().strip()
@@ -55,7 +67,27 @@ for i in range (nProjects):
     status =fh.readline().strip()
     onoff =fh.readline().strip()
         
-    cur.execute('''INSERT INTO Projects (project,region,location,turbines,project_capacity,turbine_capacity,developer,current_status_date,status,onoff)
-              VALUES ( ?,?,?,?,?,?,?,?,?,? ) ''',(project,region,location,turbines,project_capacity,turbine_capacity,developer,current_status_date,status,onoff))
-    conn.commit() 
+    print 'Resolving', project
+    url = serviceurl + urllib.urlencode({"sensor":"false", "address": location})
+    print 'Retrieving', url
+    uh = urllib.urlopen(url, context=scontext)
+    data = uh.read()
+    print 'Retrieved',len(data),'characters',data[:20].replace('\n',' ')
+    count = count + 1
+    try: 
+        js = json.loads(str(data))
+        # print js  # We print in case unicode causes an error
+    except: 
+        continue
+
+    if 'status' not in js or (js['status'] != 'OK' and js['status'] != 'ZERO_RESULTS') : 
+        print '==== Failure To Retrieve ===='
+        print data
+        break
+
+    cur.execute('''INSERT INTO Projects (project,region,location,turbines,project_capacity,turbine_capacity,developer,current_status_date,status,onoff,geodata)
+              VALUES ( ?,?,?,?,?,?,?,?,?,?,? ) ''',(project,region,location,turbines,project_capacity,turbine_capacity,developer,current_status_date,status,onoff,buffer(data)))
+    conn.commit()
+ 
+    time.sleep(1)
 fh.close()
