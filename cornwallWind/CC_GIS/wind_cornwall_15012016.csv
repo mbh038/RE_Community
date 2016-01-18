@@ -1,0 +1,608 @@
+wkt_geom,LOCATION,APP_NO,STATUS,NO_OF_TURB,HUB_HT,TIP_HT,STATUS__OP,INSTALLED_,CAPACITY,Decision,lon,lat
+Point (-4.64749016366033452 50.61818485717549976),"Crowdy WTWorks, Lowermoor, Camelford",NR/09/00487/WIND,Application approved & operational,1,30m max,40.5 max,Operational,1,0.1,1/31/2011,-4.6475,50.6182
+Point (-5.14080398640127445 50.17545774389834179),Roskrow Barton Farm,W2/PA02/01417/F,Approved on appeal and operational,2,44m,75m,Operating appeal,2,1.7,2/25/2004,-5.1408,50.1755
+Point (-5.04632149887863779 50.34819916580742927),"Carland Cross Windfarm, St Newlyn East",C1/EA28/2038/08/B,Approved on appeal and operational,10,60m,100,Operating appeal,10,20,1/19/2010,-5.0463,50.3482
+Point (-4.95729065924150447 50.47008678838254525),"Bears Down, St Eval, Wadebridge",C2/00/00611,Application approved & operational,7,35,57m,Operational,7,4.2,11/8/2000,-4.9573,50.4701
+Point (-4.96268665521488206 50.47333314825931438),"Bears Down, St Eval, Wadebridge",E1/98/1286,Application approved & operational,9,35,57m,Operational,9,5.4,3/3/2000,-4.9627,50.4733
+Point (-5.20177803528974447 50.04527622701919398),Goonhilly,W2/PA07/02103/FM,Application approved & operational,6,67m,107m,Operational,6,12,8/4/2008,-5.2018,50.0453
+Point (-4.48874126881313806 50.85230838384237018),"Norton Barton Farm, Launcells, Bude",PA11/01128,Application approved & operational,1,36m,53.7m,Operational,1,0.33,4/21/2011,-4.4887,50.8523
+Point (-4.97146521256953378 50.3935071400741208),"Ennis Barton Farm, Fraddon, St Columb",PA11/00579,Application approved & operational,1,50m,76.25m,Operational,1,0.5,8/12/2011,-4.9715,50.3935
+Point (-5.2162243510238957 50.13407305267893577),"Carnebone Farm, Laity, Wendron, Helston",W2/PA09/00799/F,Application approved & operational,1,24.8m,34.4m,Operational,1,0.035,9/21/2009,-5.2162,50.1341
+Point (-4.75711018345132963 50.39936505459814953),"Tortoiseshell Barn, Bodiggo Park, Luxulyan",PA11/01515,Application approved & operational,1,29.6m,39.6m,Operational,1,0.05,1/10/2012,-4.7571,50.3994
+Point (-5.19500167624401055 50.13523785370207264),"Treculliacks Farm, Constantine",W2/PA96/00427/F,Application approved & operational,1,---,17.5m,Operational,1,0,6/13/1997,-5.195,50.1352
+Point (-4.38816000450151034 50.4972020529109713),"Redland High Down, off Charaton Road, Pensilva",E2/08/00329/FUL,Approved on appeal and operational,1,---,80m,Operating appeal,1,0.5,9/15/2009,-4.3882,50.4972
+Point (-5.15313822081405437 50.28753195170220636),"Trevissome Park, Blackwater, Truro",C1/PA21/0600/10/G,Application approved & operational,1,25m,34m,Operational,1,0.05,1/5/2011,-5.1531,50.2875
+Point (-4.62477585105210576 50.66520625149303214),"Greenfields, Davidstow, Camelford",NR/07/00108/SCHOP,Application in for scoping opinion,0,---,---,scoping,0,0,1899-12-30,-4.6248,50.6652
+Point (-4.49750740097024959 50.88589546855029511),"Hollamoor Farm, Kilkhampton, Bude",PA11/04278,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,7/15/2011,-4.4975,50.8859
+Point (-4.80091224912044634 50.4412471375551803),"Rosewarrick, Lanivet, Bodmin",PA11/03538,Application approved & operational,1,20m,26m,Operational,1,0.015,6/17/2011,-4.8009,50.4412
+Point (-4.45192302673426443 50.89962925085807655),"Uppacott Farm, Kilkhampton, Bude",PA10/08517,Application approved & operational,1,24.8m,34.2m,Operational,1,0.05,3/11/2011,-4.4519,50.8996
+Point (-4.45060866266968613 50.85047944732884417),"Moreton Pound, Launcells, Bude",PA10/08428,Application approved & operational,1,24.6m,34.1m,Operational,1,0.05,3/7/2011,-4.4506,50.8505
+Point (-5.16347400607565543 50.16997447648962805),"Polkanuggo Farm, Stithians, Truro",PA11/01263,Approved on appeal and operational,1,40m,54.7m,Operating appeal,1,0.225,3/1/2012,-5.1635,50.17
+Point (-5.13966649515619967 50.05181171857617528),"An-hay, St Martin, Helston",PA11/02269,Application approved & operational,1,15m,19.25m,Operational,1,0.015,6/2/2011,-5.1397,50.0518
+Point (-5.15083966644965408 50.05479719846785258),"Tregeague Farm, Tregidden, St Martin",PA11/02455,Application approved & operational,1,15m,19.25m,Operational,1,0.015,6/1/2011,-5.1508,50.0548
+Point (-4.95612980168597517 50.30726581268120867),"Treworgans Farm, Ladock",PA11/00726,Application approved & operational,1,---,34.5m,Operational,1,0.05,6/2/2011,-4.9561,50.3073
+Point (-4.92681085050254453 50.33373871555865975),"Cregan Gate, Grampound Road, Truro.",PA11/03928,Application approved & operational,1,---,34.5m,Operational,1,0.05,9/28/2011,-4.9268,50.3337
+Point (-4.9317285381041529 50.33330809403828709),"Cregan Gate, Grampound Road, Truro",C1/PA15/0598/10/G,Application approved & operational,1,24.8m,34.4m,Operational,1,0.05,7/29/2010,-4.9317,50.3333
+Point (-4.99959743614636487 50.31432946749689705),"Fields adj to Tregear Farm, Ladock",PA11/05038,Application approved & operational,1,25m,34.2m,Operational,1,0.05,8/22/2011,-4.9996,50.3143
+Point (-4.93303548168201456 50.32100894295341931),"Woodland Valley Farm, Grampound Road",C1/PA15/0186/10/B,Application approved & operational,1,15m,20.2m,Operational,1,0.02,4/1/2010,-4.933,50.321
+Point (-5.17023229860533551 50.29689112198281009),"Wrinklers Farm, Mithian Downs, St Agnes",PA11/03593,Application approved & operational,1,15m,17.75m,Operational,1,0.005,11/1/2011,-5.1702,50.2969
+Point (-4.54895019129165146 50.6832031878887932),"Churchtown Farm, Warbstow, Launceston",PA11/04617,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,8/4/2011,-4.549,50.6832
+Point (-5.19617197448894075 50.16586789556546933),"Land Adjacent 7 Roseline Estate, Carnkie",PA11/06053,Application approved & operational,1,18m,24.5m,Operational,1,0.011,1/20/2012,-5.1962,50.1659
+Point (-5.44862705887411014 50.15119183588382867),"Tregethas Farm, 4 Long Lanes, St Erth",PA11/03830,Application approved & operational,2,20.5m,27m,Operational,2,0.04,8/5/2011,-5.4486,50.1512
+Point (-5.15765831690067689 50.28310995138483008),"Roscarnick Farm, Threeburrows",PA11/01867,Application approved & operational,1,32m,48.4m,Operational,1,0.275,10/21/2011,-5.1577,50.2831
+Point (-4.68287006583338705 50.63636279246706096),"Tregath Business Park, Station Road, Camelford",PA11/03905,Application approved & operational,1,20m,26m,Operational,1,0.02,8/15/2011,-4.6829,50.6364
+Point (-4.9348524048084581 50.3216420568525109),"Woodland Valley Farmhouse, Ladock, Truro",PA11/06617,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,10/17/2011,-4.9349,50.3216
+Point (-5.17459634332038032 50.28272835619039682),"Teagle Machinery Ltd, Blackwater, Truro",PA10/07633,Application approved & operational,3,25m,34.4m,Operational,2,0.1,9/1/2011,-5.1746,50.2827
+Point (-4.89195974737989658 50.50305907745322287),"Hawksland Mill, St Issey, Wadebridge",PA11/06038,Application approved & operational,1,15m,18.4m,Operational,1,0.006,11/2/2011,-4.892,50.5031
+Point (-4.97808332287510957 50.48679981597678079),"Trembleathe Barton, St Ervan",PA11/04753,Application approved & operational,1,18m,24.8m,Operational,1,0.011,8/12/2011,-4.9781,50.4868
+Point (-4.92134447829408295 50.34272464969233596),"Penhale Farm, Trelyon, Truro",PA11/04747,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,8/22/2011,-4.9213,50.3427
+Point (-4.60190504856804328 50.7191812986992403),"Pencuke Farm, Pencuke Lane",PA11/04304,Application approved & operational,1,18m,24.5m,Operational,1,0.011,8/25/2011,-4.6019,50.7192
+Point (-4.60742413769307291 50.69882571813831618),"Carwitham Barton, Marshgate, Camelford",PA11/06439,Application approved & operational,1,25m,34.2m,Operational,1,0.055,11/2/2011,-4.6074,50.6988
+Point (-5.65063360614406918 50.12446571243209092),"Cryor Farm, Newbridge, Penzance",PA11/06728,Application approved & operational,1,10m,13.05m,Operational,1,0.006,10/12/2011,-5.6506,50.1245
+Point (-4.49680517583322104 50.90791309217065219),"Land at Crimp, Morwenstow",E1/2004/02831,Approved on appeal and operational,3,50m,81m,Operating appeal,3,3.9,3/25/2008,-4.4968,50.9079
+Point (-5.35661475155332845 50.17423726638013193),"Land at Lemin Farm, 36 Reawla Lane",PA11/04518,Application approved & operational,1,24.6m,34.4m,Operational,1,0.05,9/12/2011,-5.3566,50.1742
+Point (-4.53617494274006638 50.72314580622673219),"Witheven Stables, Jacobstow",PA11/06639,Application approved & operational,2,20m,26.4m,Operational,2,0.04,11/23/2011,-4.5362,50.7231
+Point (-4.55767369863397764 50.6231307213674242),"Treboy Farm, St Clether, Launceston",PA11/01020,Application approved & operational,2,26.4m,36.2m,Operational,2,0.1,3/30/2011,-4.5577,50.6231
+Point (-4.64370720021553574 50.69883727819975405),"Cargurra Farm, St Juliot, Boscastle",PA10/07516,Application approved & operational,2,18.3m,24.8m,Operational,2,0.022,12/30/2010,-4.6437,50.6988
+Point (-5.12710414766546663 50.05206730549105743),"Land at Trelease Farm, Lanarth, St Keverne",W2/PA06/01633/F,Application approved & operational,1,12m,16m,Operational,1,0.01,11/17/2006,-5.1271,50.0521
+Point (-4.60981668548514811 50.68592076548031855),Otterham Down (B),E1/2008/01702,Application approved & operational,1,46m,71m,Operational,1,0.8,12/1/2010,-4.6098,50.6859
+Point (-5.54384532673734753 50.12605407868806395),"Penwith College, St Clare Street, Penzance",W1/08-0033,Application approved & operational,1,---,40m,Operational,1,0,4/16/2008,-5.5438,50.1261
+Point (-4.574761812887016 50.74931881190280336),"Higher Trewint, Poundstock, Bude",PA11/07348,Application approved & operational,1,20m,27m,Operational,1,0.02,12/21/2011,-4.5748,50.7493
+Point (-4.82698082592094035 50.44439382407951911),"Land E of Hendra Farm, Prince Park Road, Withiel",PA11/07278,Application approved & operational,1,36.4m,46m,Operational,1,0.1,2/9/2012,-4.827,50.4444
+Point (-4.88855140477475203 50.33597721882235021),"Bodinnick Farm, Coombe, St Austell",PA11/01122,Application approved & operational,1,25m,34.4m,Operational,1,0.05,4/7/2011,-4.8886,50.336
+Point (-5.22524941300277757 50.17190432997402638),"Little White Alice, Calvadnack",PA11/07442,Application approved & operational,1,---,15m,Operational,1,0.005,8/23/2012,-5.2252,50.1719
+Point (-5.22637635611020634 50.17112622424811974),"Little White Alice, Calvadnack",W2/PA08/01890/F,Application approved & operational,1,15.18m,17.98m,Operational,1,0,1/23/2009,-5.2264,50.1711
+Point (-4.8317192465336074 50.47517864211154404),"Higher Tregawne Farm,  Withiel,  Bodmin",PA11/07746,Approved on appeal and operational,1,36m,45m,Operating appeal,1,0.05,11/22/2012,-4.8317,50.4752
+Point (-4.55423780047937576 50.41489418583420701),"Botelet Farm, Herodsfoot, Liskeard",PA11/02044,Application approved & operational,2,18m,25m,Operational,2,0.022,7/4/2011,-4.5542,50.4149
+Point (-4.96232779626101195 50.5074850064436589),"N of Treleigh Farm, St Ervan, Wadebridge",PA11/08378,Application approved & operational,1,37m,54m,Operational,1,0.33,5/29/2012,-4.9623,50.5075
+Point (-4.88358176273625322 50.50059058417607361),"Pawton Farm, St Breock, Wadebridge",PA11/04284,Application approved & operational,1,50m,77m,Operational,1,0.5,7/12/2012,-4.8836,50.5006
+Point (-4.54069376105513989 50.90662594556432197),"S of Trevona, Morwenstow, Bude",PA11/07620,Application approved & operational,1,15m,17.8m,Operational,1,0.006,11/23/2011,-4.5407,50.9066
+Point (-4.49364431251125573 50.83746311955884067),"Oxenpark Farm, Stratton, Bude",PA11/08749,Application approved & operational,1,18.4m,24.8m,Operational,1,0.011,12/14/2011,-4.4936,50.8375
+Point (-4.8403093215770836 50.32416930993627346),"Ninnis Farm, Sticker, St Austell",PA11/08547,Application approved & operational,1,25m,34.4m,Operational,1,0.055,6/21/2012,-4.8403,50.3242
+Point (-4.85482463759840144 50.34827328477616248),"Henavisten Farm, St Austell",PA11/08550,Application approved & operational,1,25m,34.4m,Operational,1,0.05,1/5/2012,-4.8548,50.3483
+Point (-5.01011703724218371 50.46792455350500006),Merlin Golf and Country Club,PA11/03429,Application approved & operational,1,25m,34.6m,Operational,1,0.05,10/17/2011,-5.0101,50.4679
+Point (-4.67714937421570554 50.64551475329119512),"Worthyvale Manor, Slaughterhouse",PA11/08574,Application approved & operational,1,24m,34.2m,Operational,1,0.05,12/12/2011,-4.6771,50.6455
+Point (-4.95753322440858923 50.54631847477017459),"Trethillick Farm, Crugmeer, Padstow",PA11/05187,Application approved & operational,1,15m,20m,Operational,1,0.011,10/21/2011,-4.9575,50.5463
+Point (-4.93794335443497623 50.45963169759633615),"Rosedinnick Farm, Talskiddy, St Columb",PA11/07592,Application approved & operational,1,25m,34m,Operational,1,0.055,1/13/2012,-4.9379,50.4596
+Point (-5.18961591784957577 50.26926197628146298),"Wheal Britain Farm, Blackwater",PA11/08558,Application approved & operational,1,18.3m,24.8m,Operational,1,0.011,2/22/2012,-5.1896,50.2693
+Point (-4.94320046976992611 50.47985596340926406),"Higher Trevibban Farm, St Ervan",PA11/08884,Application approved & operational,2,36m,45m,Operational,1,0.05,7/6/2012,-4.9432,50.4799
+Point (-4.77323103643392166 50.52415228167666328),"Burlerrow, Wadebridge Road, St Mabyn, Bodmin",PA11/02921,Application approved & operational,1,25m,34.6m,Operational,1,0.05,5/25/2011,-4.7732,50.5242
+Point (-4.73218822915425275 50.61390076471501942),"Helland Barton, Delabole",E1/2009/00754,Application approved & operational,1,18m,24.8m,Operational,1,0.011,7/14/2009,-4.7322,50.6139
+Point (-4.5471587617634075 50.69174683259548431),"Tredown Farm, Warbstow, Launceston",E1/2008/01358,Application approved & operational,2,15m,20.2m,Operational,2,0.04,8/29/2008,-4.5472,50.6917
+Point (-4.73902105632819293 50.640766467446376),"Fentafriddle Farm, Trewarmett, Tintagel",E1/2009/01115,Application approved & operational,1,18m,23.2m,Operational,1,0.02,9/25/2009,-4.739,50.6408
+Point (-4.55223659065267849 50.63248832262746646),"Basil Farm, Bosil Road, St Clether",PA11/09010,Application approved & operational,1,18m,24.5m,Operational,1,0.011,12/19/2011,-4.5522,50.6325
+Point (-4.31961712583793211 50.38248022307833196),"Higher Tredis, Sheviock, Torpoint",PA10/04698,Application approved & operational,1,18.4m,21.65m,Operational,1,0.011,11/8/2010,-4.3196,50.3825
+Point (-5.36080347083428244 50.19141767051000613),"Lanyon Farm, Gwinear Lane, Gwinear",PA11/09274,Application approved & operational,1,18.3m,24.8m,Operational,1,0.011,2/9/2012,-5.3608,50.1914
+Point (-5.12681902952448976 50.3213077244231286),"Fair View, Callestick, Truro",PA11/08977,Application approved & operational,1,24.7m,34.4m,Operational,1,0.055,12/23/2011,-5.1268,50.3213
+Point (-5.18662338087772223 50.12944509729295106),"Trewardreva Farm, Trewardreva",PA11/09359,Application approved & operational,1,12m,14.28m,Operational,1,0.005,3/9/2012,-5.1866,50.1294
+Point (-5.1530245428022674 50.12408338255569618),"Trevaney Farmhouse, Trevaney",PA11/09575,Application approved & operational,1,15m,---,Operational,1,0.005,3/2/2012,-5.153,50.1241
+Point (-5.65423990484544881 50.07961352889699214),"Little Bosanketh Farm, St Buryan",PA11/09069,Application approved & operational,1,24.6m,34.4m,Operational,1,0.05,3/9/2012,-5.6542,50.0796
+Point (-4.67331054295839632 50.4694763141975713),"Tawnamoor, Cardinham, Bodmin",PA11/06111,Application approved & operational,1,15m,17.75,Operational,1,0.006,2/2/2012,-4.6733,50.4695
+Point (-4.65811799867760001 50.66826831202196502),"Halwill Barton, Camelford",PA11/09034,Application approved & operational,1,25m,34.2m,Operational,1,0.05,1/12/2012,-4.6581,50.6683
+Point (-4.69504989199379441 50.65122689212557816),"Land at Condolden Farm, Tintagel",PA11/09279,Application approved & operational,1,24.6m,35m,Operational,1,0.05,4/26/2012,-4.695,50.6512
+Point (-4.5430006068754949 50.80605566287251662),"Whalesborough Farm, Marhamchurch",PA11/09416,Application approved & operational,1,22m,29.9m,Operational,1,0.05,2/8/2012,-4.543,50.8061
+Point (-5.06839003536833754 50.29115601781616363),"Tremeneth, Idless, Truro",PA11/08956,Application approved & operational,1,18m,22.4m,Operational,1,0.01,2/29/2012,-5.0684,50.2912
+Point (-4.98418237937766406 50.30627691663554657),"Treverbyn Farm, Probus, Truro",PA11/09308,Application approved & operational,1,18m,24.8m,Operational,1,0.011,3/28/2012,-4.9842,50.3063
+Point (-4.59888194321185573 50.75954643781042108),"East Dizzard, St Gennys, Bude",E1/2010/00228,Application approved & operational,1,15m,20.2m,Operational,1,0.02,9/3/2010,-4.5989,50.7595
+Point (-4.97684549528305009 50.31434368838578308),"Treverbyn Farm, Probus",PA11/09818,Approved on appeal and operational,1,24.6m,34.2m,Operating appeal,1,0.05,11/20/2012,-4.9768,50.3143
+Point (-5.36524310699038143 50.2192082500591539),"Higher Nanterrow Farm, Nanterrow Lane",PA11/09602,Application approved & operational,1,18.3m,24.8m,Operational,1,0.011,2/28/2012,-5.3652,50.2192
+Point (-4.47314046278304911 50.82662007213133393),"Land East of Prustacott Farm, Launcells, Bude",PA11/10280,Approved on appeal and operational,1,44.28m,54m,Operating appeal,1,0.33,5/13/2013,-4.4731,50.8266
+Point (-5.0794857715253956 50.2812109198454138),"Bussavean Farm, Kenwyn, Truro",PA11/00093,Application approved & operational,1,20m,26m,Operational,1,0.02,5/20/2011,-5.0795,50.2812
+Point (-4.53253763784821118 50.87951871601234188),"Land Adj Endslee Farm, Coombe Valley",PA11/10107,Application approved & operational,1,29.6m,40m,Operational,1,0.05,3/9/2012,-4.5325,50.8795
+Point (-4.68631436338328644 50.64339310049788168),"Tregora, Slaughterbridge, Camelford",PA11/10271,Application approved & operational,1,29.6m,40m,Operational,1,0.05,11/21/2012,-4.6863,50.6434
+Point (-4.89288399883779856 50.30032720214133946),"Field At OS Grid Ref 194087 48498, Grampound Hill",PA11/10010,Application approved & operational,1,24.8m,34.4m,Operational,1,0.05,1/23/2012,-4.8929,50.3003
+Point (-5.63458146308760544 50.15679482836826253),"Carn Farm, Morvah, Pendeen",PA11/10697,Application approved & operational,1,15m,21.8m,Operational,1,0.011,3/2/2012,-5.6346,50.1568
+Point (-4.43395959101526493 50.58348997522185186),"1 Trenhorne House, Congdons Shop",PA11/10897,Application approved & operational,1,18m,20.8m,Operational,1,0.005,5/25/2012,-4.434,50.5835
+Point (-5.63941525502556029 50.15968898577025215),"Tregaminion Manor Farm, Morvah, Pendeen",PA11/10653,Application approved & operational,1,15m,21.8m,Operational,1,0.011,2/24/2012,-5.6394,50.1597
+Point (-5.65002477478828435 50.11963135565512317),"Leswidden Concrete Products, St Just",PA11/10836,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,2/15/2012,-5.65,50.1196
+Point (-4.46991118212918259 50.64299798591329704),"West Down End, Pipers Pool, Launceston",PA11/10903,Application approved on appeal,1,35m,45.45m,Appeal allowed,0,0.05,8/9/2013,-4.4699,50.643
+Point (-4.95297796905502352 50.48886347890077531),"Bogee Farm, Rumford, Wadebridge",PA11/10906,Application approved & operational,1,29m,40m,Operational,1,0.05,3/9/2012,-4.953,50.4889
+Point (-4.80621697387670999 50.30904496978480012),"Levalsa Meor Farm, Levalsa Meor",PA11/09524,Application approved & operational,1,18m,22.8m,Operational,1,0.015,5/1/2012,-4.8062,50.309
+Point (-4.64639979515272827 50.35859485004338865),"South Torfrey Farm, Golant, Fowey",PA11/10500,Approved on appeal and operational,2,15m,21.48m,Operating appeal,2,0.04,12/10/2014,-4.6464,50.3586
+Point (-5.38740387054274983 50.19888601941256212),"16 Carwin Rise, Loggans, Hayle",PA12/00322,Application approved & operational,1,36.5m,46m,Operational,1,0.055,3/12/2012,-5.3874,50.1989
+Point (-4.36164193244880583 50.60877787094288749),"Trevozah Cross, Launceston",PA12/00649,Application approved & operational,1,50m,77m,Operational,1,0.5,8/2/2012,-4.3616,50.6088
+Point (-4.73520870865356525 50.59916212216370468),"Trevilley Farm Bungalow, Delabole",PA12/00378,Application approved & operational,1,37m,47.5m,Operational,1,0.1,6/22/2012,-4.7352,50.5992
+Point (-4.50049951700376027 50.76778369363154297),"Week Orchard Farm, Marhamchurch",PA12/00444,Approved on appeal and operational,1,37m,47.5m,Operating appeal,1,0.1,11/14/2012,-4.5005,50.7678
+Point (-4.97230432300092673 50.31539006216003429),"Trobus Farm, Ladock",PA11/10971,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,10/11/2012,-4.9723,50.3154
+Point (-4.95688023676943246 50.31199338145452771),"SW of The Old Coach House, Swallows Court",PA12/00463,Application approved not constructed,1,32.4m,46.9m,Approved,0,0.225,2/4/2013,-4.9569,50.312
+Point (-4.88964215790280043 50.38952322879782741),"Domellick Barn, St Dennis",C2/08/00181,Application approved & operational,1,6.5m,8.25m,Operational,1,0,4/4/2008,-4.8896,50.3895
+Point (-4.6509231835948146 50.52767401780365475),"Wallhouse, Blisland, Bodmin",PA12/01117,Application approved & operational,1,18m,20.75m,Operational,1,0.005,9/27/2012,-4.6509,50.5277
+Point (-5.14591516818403694 50.32852519476017505),"Lambrigan Deer Farm, Penwartha",PA12/01069,Application approved & operational,1,25m,34.6m,Operational,1,0.05,3/30/2012,-5.1459,50.3285
+Point (-5.0379214313039391 50.40167466152458786),"Trethiggey Farm, Trethiggey",PA12/00790,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,6/12/2012,-5.0379,50.4017
+Point (-4.96311504985332519 50.30201818099925504),"Cuskayne Farm, Probus",PA11/08881,Application approved & operational,1,20m,27.1m,Operational,1,0.015,4/3/2012,-4.9631,50.302
+Point (-4.76330256034299548 50.61577363531760199),"Tregragon Farm, Delabole",PA10/05120,Application approved & operational,1,15m,20m,Operational,1,0.015,12/23/2010,-4.7633,50.6158
+Point (-5.16480154560293592 50.27368456543559461),"Kea Farm, Threeburrows, Blackwater",C1/PA04/0044/06/G,Application approved & operational,1,15m,17.79m,Operational,1,0.006,3/27/2006,-5.1648,50.2737
+Point (-5.38560089563055922 50.17860415212791025),"Howldrevel, Drannack Lane",PA12/01044,Application approved & operational,1,18m,24.5m,Operational,1,0.011,4/18/2012,-5.3856,50.1786
+Point (-4.82452930650615297 50.44544097740450184),Oak Tree Lodge Trevidgeowe Farm,PA12/01786,Approved on appeal and operational,1,37m,47m,Operating appeal,1,0.1,1/7/2013,-4.8245,50.4454
+Point (-4.4905193079375838 50.76494624663637723),"Kitleigh Bungalow, Stewarts Road",PREAPP12/00783,Pre application - closed/issued,2,---,---,Closed pub avail,0,0,4/20/2012,-4.4905,50.7649
+Point (-5.08887427048802987 50.07756311204159516),"Lestowder Farm, Manaccan, Helston",PA10/06229,Application approved & operational,1,15m,19.8m,Operational,1,0.01,1/7/2011,-5.0889,50.0776
+Point (-5.18923271758490667 50.15867896342941634),"Lower Rame Farm, Underlane, Wendron",W2/PA05/00703/F,Application approved & operational,1,9.7m,12.4m,Operational,1,0.006,7/19/2005,-5.1892,50.1587
+Point (-4.45250434403422624 50.62947178198480458),"Menwenicke Barton, Launceston",PA12/02928,Application approved & operational,1,50m,77m,Operational,1,0.5,12/24/2012,-4.4525,50.6295
+Point (-4.54530516223826009 50.38081209194612597),"Tremaine Farm, Pelynt, Looe",PREAPP12/00913,Pre application - closed/issued,1,50m,78m,Closed pub avail,0,0.5,8/6/2012,-4.5453,50.3808
+Point (-4.86749888004272435 50.48240056364231521),"St Breock Wind Farm, St Breock, Wadebridge",PA12/02907,Application approved & operational,5,60m,100,Operational,5,12.5,10/3/2012,-4.8675,50.4824
+Point (-4.54915269259898114 50.38305834390157401),"Tresawson Farm, Lanreath, Looe",PREAPP12/00825,Pre application - closed/issued,1,50m,78m,Closed pub avail,0,0.5,8/6/2012,-4.5492,50.3831
+Point (-4.90810961956677261 50.30383780733416188),"Penbetha Farm, Grampound Road, Truro",PREAPP12/00809,Pre application - closed/issued,1,32m,45.5m,Closed pub avail,0,0.225,8/31/2012,-4.9081,50.3038
+Point (-4.55795604012162681 50.68744550089481038),"Fentrigan, Warbstow, Launceston",PA12/02339,Application approved & operational,1,25m,34.37m,Operational,1,0.05,6/6/2012,-4.558,50.6874
+Point (-4.5141341359016609 50.77182425835318469),"Kitsham, Poundstock, Bude",PA12/02931,Application approved & operational,2,20m,26m,Operational,2,0.03,10/16/2012,-4.5141,50.7718
+Point (-4.58174284664756559 50.68448641354611794),"Tregida Smokehouse, Warbstow",PA12/02378,Application approved & operational,1,35m,46m,Operational,1,0.05,7/19/2012,-4.5817,50.6845
+Point (-5.50564682172343822 50.15921524630326189),"Boskennal Farm, Blowing House Hill, Ludgvan",PREAPP12/00454,Pre application - closed/issued,1,31.5m,45m,Closed pub avail,0,0.225,4/3/2012,-5.5056,50.1592
+Point (-4.87659557277102618 50.30110718122422497),"Penans Farm, Grampound, Truro",PREAPP12/01037,Pre application - closed/issued,1,---,70m,Closed pub avail,0,0,6/12/2012,-4.8766,50.3011
+Point (-4.70689397197027226 50.63288308194436382),"Deli Farm, Delabole",E1/2008/00638,Application approved & operational,4,69m,99.5m,Operational,4,9.2,11/13/2009,-4.7069,50.6329
+Point (-4.53523720536090114 50.64437380600808325),"Cold Northcott Farm, St Clether",E1/90/2595,Application approved & operational,22,25m,42m,Operational,22,6.8,2/12/1992,-4.5352,50.6444
+Point (-4.35336574404608179 50.46512792836817596),"Sopers Farm , Quethiock, Liskeard",E2/99/00033/FUL,Application approved & operational,1,---,---,Operational,1,0,3/15/1999,-4.3534,50.4651
+Point (-4.50046179391892043 50.92364736747694565),"North Hackmarsh, Wooley, Morwenstow, Bude",PA10/08299,Application approved & operational,1,11.4m,14.1m,Operational,1,0.005,4/18/2011,-4.5005,50.9236
+Point (-5.1062822428298098 50.25285392644697424),"Honeysuckle Farm, Besore, Threemilestone, Truro",C1/PA14/1362/01/G,Application approved & operational,1,---,15m,Operational,1,0,12/17/2001,-5.1063,50.2529
+Point (-5.291087523262056 50.18304921989835066),"Higher Bodrivial Farm, Carwynnen, Troon",W2/PA02/00559/F,Application approved & operational,1,6.5m,8.25m,Operational,1,0.003,7/25/2002,-5.2911,50.183
+Point (-5.1817531483949546 50.1414945746607259),"Higher Carvedras, Trewardreva, Constantine",W2/PA02/01410/F,Application approved & operational,1,11m,12.75m,Operational,1,0.003,2/18/2003,-5.1818,50.1415
+Point (-4.48690194608931137 50.70953576659436379),"Wheatley Farm, South Wheatley",E1/2004/02080,Application approved & operational,1,---,---,Operational,1,0.015,1/10/2005,-4.4869,50.7095
+Point (-5.21555114317673318 50.0478732932724526),"NE of Bonython Manor, Bonython Estate",PA12/03064,Application approved not constructed,1,25m,34.6m,Approved,0,0.055,9/18/2013,-5.2156,50.0479
+Point (-4.75168056694954988 50.58645729854938367),"Higher Suffenton, St Teath, Bodmin",PA12/03021,Application approved & operational,2,18.4m,24.8m,Operational,1,0.011,8/6/2012,-4.7517,50.5865
+Point (-4.99918040752844028 50.33547805544945675),"Lower Landrine Farm, Mitchell, Newquay",PA12/03477,Application approved & operational,1,18.4m,24.9m,Operational,1,0.011,5/31/2012,-4.9992,50.3355
+Point (-4.97310218734426268 50.36185892446415124),"Goenrounsen Farm, Carnego Lane, Summercourt",PA12/02965,Application approved & operational,1,24.6m,34.2m,Operational,1,0.055,6/8/2012,-4.9731,50.3619
+Point (-4.84475387303887128 50.46875691194910729),"Higher Tregolls,Tregolls Hill, St Wenn, Bodmin",PA12/02635,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,10/26/2012,-4.8448,50.4688
+Point (-4.45169520275249919 50.62446030416463572),"Trenault Farm, Pipers Pool, Launceston",PREAPP12/01155,Pre application - closed/issued,2,32m,---,Closed pub avail,0,0,8/29/2012,-4.4517,50.6245
+Point (-4.61818967203257458 50.66168057542252967),"Churchtown Farm, Vicarage Hill, Davidstow",PREAPP12/01156,Pre application - closed/issued,2,32m,---,Closed pub avail,0,0,8/29/2012,-4.6182,50.6617
+Point (-4.48003420554672704 50.88617197806703984),"Heardacott Farm, Dipper Lane, Kilkhampton",PREAPP12/01160,Pre application - closed/issued,1,32m,---,Closed pub avail,0,0,8/29/2012,-4.48,50.8862
+Point (-4.50984430494562449 50.85408909051852078),"Ivyleaf Farm, Ivyleaf Hill, Kilkhampton",PREAPP12/01161,Pre application - closed/issued,1,32m,---,Closed pub avail,0,0,8/29/2012,-4.5098,50.8541
+Point (-5.21649088583852194 50.13490808583345171),"Carnebone, Laity",W2/PA05/00550/F,Application approved & operational,1,15m,20m,Operational,1,0.015,6/17/2005,-5.2165,50.1349
+Point (-4.7798303108284399 50.45226234700162138),"Lower Cadwin, Lanivet",E1/2005/00717,Application approved & operational,1,9m,---,Operational,1,0.005,5/11/2005,-4.7798,50.4523
+Point (-5.20611601070868169 50.15319274749808187),"Vicarage Farm, Under Lane, Wendron, Helston",W2/PA05/00700/F,Application approved & operational,1,---,9.7m,Operational,1,0.006,7/19/2005,-5.2061,50.1532
+Point (-5.16325764914322871 50.05894593775514778),"Trewince, Tretharrup, St Martin",W2/PA05/00704/F,Application approved & operational,1,9m,9.7m,Operational,1,0.006,7/22/2005,-5.1633,50.0589
+Point (-5.17607978205752062 50.04774340850803327),"Goonhilly Satellite Earth Station, Goonhilly Downs",W2/PA05/00767/F,Application approved & operational,1,9m,11.75m,Operational,1,0.006,8/2/2005,-5.1761,50.0477
+Point (-4.49880352617882195 50.43329373341505573),"Golden Meadow, Liggars Farm Road, St Keyne.",E2/05/01170/FUL,Application approved & operational,1,9m,---,Operational,1,0.006,11/29/2005,-4.4988,50.4333
+Point (-4.93254210265661364 50.36975348761000504),"Aggregate Industries Melbur Office, Summercourt",PA12/03846,Application approved & operational,1,59m,87m,Operational,1,0.5,8/10/2012,-4.9325,50.3698
+Point (-4.50610278380903928 50.62299274617172529),"Land at Higher Tregunnon, Altarnun, Launceston",PA12/03264,Application approved & operational,1,24.6m,34.6m,Operational,1,0.055,7/20/2012,-4.5061,50.623
+Point (-4.45399625547415834 50.77016979575830646),"Land at Thorne Farm, Whitstone, Holsworthy",PA12/03448,Application approved & operational,1,36.4m,46m,Operational,1,0.055,12/6/2012,-4.454,50.7702
+Point (-5.56377457063560765 50.0734607091139523),"Castallack Farm, Castallack, Paul",PA12/03836,Application approved & operational,1,10m,12.6m,Operational,1,0.005,8/1/2012,-5.5638,50.0735
+Point (-5.66086507533223227 50.10910294471298698),"Lower Numphra Farm, Numphra, St Just",PA12/02839,Application approved & operational,1,11.6m,14.4m,Operational,1,0.005,8/14/2012,-5.6609,50.1091
+Point (-4.43571554231194387 50.4176062919976502),"Land at Fursdon Farm, Horningtops, Liskeard",PA12/03543,Approved on appeal and operational,1,40m,67m,Operating appeal,1,0.5,4/16/2014,-4.4357,50.4176
+Point (-4.69472492840769728 50.35647471153912846),"Newhouse Farm, Priory Lane, Tywardreath, Par",PA12/03478,Application approved & operational,2,3.2m+7.5m,3.7m+8.4m,Operational,2,0.002,8/10/2012,-4.6947,50.3565
+Point (-4.37499923669242818 50.62722349696925761),"Storm, Pennygillam Industrial Estate, Launceston",PA12/01671,Application approved & operational,1,50m,76m,Operational,1,0.5,1/25/2013,-4.375,50.6272
+Point (-4.9506329626687382 50.49687397199027572),"Land W of Pentruse Farm, St Ervan, Wadebridge",PA12/01333/PREAPP,Pre application - closed/issued,1,24.6m,34.2m,Closed pub avail,0,0.05,7/5/2012,-4.9506,50.4969
+Point (-5.1655627236510977 50.26084086683171392),"Hillside Farm, Wheal Busy Lane, Salem, Chacewater",PA12/01346/PREAPP,Pre application - closed/issued,1,25m,34.6m,Closed pub avail,0,0.05,6/1/2012,-5.1656,50.2608
+Point (-4.45524413532763219 50.76960412552539736),"Land W of Thorne, Whitstone, Holsworthy",PA12/03393,Application approved & operational,1,24.6m,34.2m,Operational,1,0.055,12/6/2012,-4.4552,50.7696
+Point (-5.20382619111372247 50.16021652664408492),"Land at Little Viscar, Carnkie, Wendron",PA12/04380,Application approved & operational,1,24.6m,34.2m,Operational,1,0.055,7/31/2012,-5.2038,50.1602
+Point (-4.58356204894375363 50.6620180105463831),"Lundy View Farm, Hallworthy, Camelford",PA12/04121,Application approved & operational,1,20m,27.13m,Operational,1,0.02,6/20/2012,-4.5836,50.662
+Point (-4.57466076571933478 50.62485253969005328),"Higher Basil Farm, Altarnun Road, St Clether",PA12/04254,Application approved & operational,1,20m,25.55m,Operational,1,0.016,7/10/2012,-4.5747,50.6249
+Point (-5.09795033745635706 50.33718418845592879),"Oak Ridge Farm, Goonhavern, Truro",PA12/04548,Application approved & operational,1,25m,34.4m,Operational,1,0.05,9/19/2012,-5.098,50.3372
+Point (-4.79446811072443779 50.5433385920374576),"Pippens Cottage, Hendra Lane, St Kew, Bodmin",PA12/01406/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0,11/22/2012,-4.7945,50.5433
+Point (-4.24821857691254134 50.51297972817248194),"Stonecrop, Harrowbarrow",PA12/01407/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0.02,7/9/2012,-4.2482,50.513
+Point (-4.51042567891559099 50.7553350884494705),"Trefrouse, Week St Mary, Holsworthy",PA12/03950,Approved on appeal and operational,1,36.4m,46m,Operating appeal,1,0.05,1/4/2013,-4.5104,50.7553
+Point (-4.48273375809293118 50.35280422907116815),"Land nr Parkers Cross, Looe",PA12/04769,Application approved & operational,1,35m,45m,Operational,1,0.05,7/20/2012,-4.4827,50.3528
+Point (-5.14800180327957424 50.27945355594316368),"Higher Deer Park, Threeburrows, Blackwater",PA12/04381,Application approved & operational,1,18.4m,24.9m,Operational,1,0.011,8/7/2012,-5.148,50.2795
+Point (-4.66177494842454898 50.34019216726359502),"Penhale Caravan And Camping Park, Fowey",PA12/03171,Application approved not constructed,1,15m,19m,Approved,0,0.01,5/22/2013,-4.6618,50.3402
+Point (-5.450785300359823 50.15231129682804578),"Rosevidney Barton, Truthwall Road, Crowlas",PA12/01493/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,8/15/2012,-5.4508,50.1523
+Point (-5.64016585664501857 50.10001718170988028),"Tredinney Farm, St Buryan, Penzance",PREAPP12/01068,Pre application - closed/issued,1,31.5m,45m,Closed pub avail,0,0.225,5/24/2012,-5.6402,50.1
+Point (-5.62307607054149639 50.14688667673443945),"Land N of Bosullow Veor, Great Bosullow, Newbridge",PA12/01504/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0,7/6/2012,-5.6231,50.1469
+Point (-4.71489938739861181 50.60559456881528462),"Bodulgate Farm, Trewalder, Delabole",PA12/01337/PREAPP,Pre application - closed/issued,1,---,77m,Closed pub avail,0,0,6/28/2012,-4.7149,50.6056
+Point (-4.50684574174060959 50.81098207863702498),"Penleaze, Hobbacott Lane. Marhamchurch, Bude",PA12/01365/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0.05,8/15/2012,-4.5068,50.811
+Point (-5.17888080088889335 50.26279876282882242),"Boscawen Farm, Blackwater, Truro",PA12/01361/PREAPP,Pre application - closed/issued,1,25m,34.6m,Closed pub avail,0,0.05,6/1/2012,-5.1789,50.2628
+Point (-5.09565416847664032 50.27870950250353133),"Land S of Great Roseveth Farm, Roseworthy",PA12/01459/PREAPP,Pre application - closed/issued,1,29m,38.6m,Closed pub avail,0,0.05,7/17/2012,-5.0957,50.2787
+Point (-5.09515844249238015 50.37074675969783044),"Trelaske Farm, Cubert, Newquay",PA12/01367/PREAPP,Pre application - closed/issued,1,25m,34.6m,Closed pub avail,0,0.05,6/19/2012,-5.0952,50.3707
+Point (-5.62333567741055607 50.11148163428876501),"Joans, Lower Grumbla Road, Grumbla, Sancreed",PA12/01628/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0,9/5/2012,-5.6233,50.1115
+Point (-5.13855251772115462 50.30171709773727429),"NE of Truro Sawmills, Penhallow, Truro",PA12/01589,Application approved & operational,2,24.6m,34.2m,Operational,2,0.11,1/25/2013,-5.1386,50.3017
+Point (-5.6742244518417273 50.06911569498984704),"Brew Farm, School Hill, St Levan, Penzance",PA12/04575,Application approved & operational,1,24.6mm,34.2m,Operational,1,0.05,10/11/2012,-5.6742,50.0691
+Point (-4.95459077457152297 50.49126663112792102),"Trenouth Farm, St. Ervan, Wadebridge",PA12/04659,Application approved & operational,1,29.6m,40m,Operational,1,0.05,11/28/2012,-4.9546,50.4913
+Point (-5.0730909257444381 50.3571312523756589),"Treludderow Farm, St Newlyn East",PA12/04568,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,12/18/2012,-5.0731,50.3571
+Point (-4.899127106676608 50.46092035831591005),"Borlasevath Manor Farm, St Wenn, Bodmin",C2/08/01484,Application approved & operational,1,12m,---,Operational,1,0.01,2/3/2009,-4.8991,50.4609
+Point (-4.86689086709660312 50.44025917268403703),"Kerpit Farm, St Wenn, Bodmin",PA11/00508,Application approved & operational,1,15m,17.75m,Operational,1,0.005,5/9/2011,-4.8669,50.4403
+Point (-5.11058858585509856 50.24746067492138479),"Goodern Manor Farm, Kea, Truro",PA12/01362/PREAPP,Pre application - closed/issued,1,25m,34.6mm,Closed pub avail,0,0.05,6/12/2012,-5.1106,50.2475
+Point (-5.11742216429966401 50.27519962607341597),"Land at Tregavethan, Bosvisack Farm, Tregavethan",PA12/05171,Application approved & operational,2,24m,34.41m,Operational,2,0.1,9/7/2012,-5.1174,50.2752
+Point (-4.36698369677294629 50.40040921399454277),"Bake Farm, Bake Lane, Trerulefoot",PA12/05275,Approved on appeal and operational,1,40m,67m,Operating appeal,1,0.5,1/30/2014,-4.367,50.4004
+Point (-5.66007418052489886 50.1570229783038215),"Calartha Farm, Calartha, Pendeen",PA12/05142,Application approved & operational,1,10m,12.75,Operational,1,0.005,9/5/2012,-5.6601,50.157
+Point (-4.53336580575298864 50.35545264517283925),"Polean Farm, Pelynt, Looe",PA12/04688,Application approved & operational,1,25m,34.2m,Operational,1,0.05,9/27/2012,-4.5334,50.3555
+Point (-4.56742251788733444 50.73894869207423142),"Rose Cottage, Lower Trencreek, St Gennys, Bude",PA12/05027,Application approved & operational,1,18m,21.6m,Operational,1,0.01,8/30/2012,-4.5674,50.7389
+Point (-4.67614141641204384 50.60604677955705455),"Trethin Farm, Advent, Camelford",PA12/05299,Application approved & operational,1,15.4m,20.9m,Operational,1,0.015,6/11/2013,-4.6761,50.606
+Point (-4.69098691561652714 50.61176589913608836),"Bowood Park Hotel and Golf Club, Camelford",PA12/05128,Application approved & operational,1,24.76m,34.6m,Operational,1,0.055,10/5/2012,-4.691,50.6118
+Point (-4.50659866051285629 50.85380835064543703),"Ivyleaf Farm, Ivyleaf Hill, Kilkhampton, Bude",PA12/05289,Application approved & operational,1,33.2m,56.7m,Operational,1,0.5,7/26/2013,-4.5066,50.8538
+Point (-4.55816047747056352 50.72437699278209067),"Cottage Farm, Tobarn, Jacobstow, Bude",PA12/04808,Application approved & operational,1,24.7m,35m,Operational,1,0.055,10/18/2012,-4.5582,50.7244
+Point (-5.64934539401500047 50.16255424132779694),"Chypraze Farm, Morvah, Pendeen, Penzance",PA12/04071,Application approved & operational,1,10m,12.75m,Operational,1,0.005,9/21/2012,-5.6493,50.1626
+Point (-4.98331481203739823 50.37761297893965207),"Land at Trewinnion Farm, Summercourt",PA12/05250,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,8/28/2012,-4.9833,50.3776
+Point (-5.58176525916082245 50.12874624590666173),"Sunny Corner, Trengwainton, Penzance",PA12/06117,Application approved & operational,1,9.5m,---,Operational,1,0,10/29/2012,-5.5818,50.1287
+Point (-5.6531198467203394 50.15197466466310061),"Stone Farm, Bojewyan Stennack, Pendeen",PA12/05855,Application approved & operational,1,10m,14.25m,Operational,1,0.01,8/16/2012,-5.6531,50.152
+Point (-4.82149805148034005 50.41429924245616689),"Trebilcock Farm, Roche, St Austell",PA12/01862/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,8/21/2012,-4.8215,50.4143
+Point (-4.41349520664137085 50.6184225461256716),"Land S of Papillion, South Petherwin, Launceston",PA12/01865/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,9/5/2012,-4.4135,50.6184
+Point (-4.9239956247850829 50.48369830537037473),"Land at Trelow Downs, St Issey, Wadebridge",PA12/01839/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,10/23/2012,-4.924,50.4837
+Point (-5.10987808400226129 50.35211266554280485),"Land S of Hendra Farm, Rose, Truro",PA12/01901/PREAPP,Pre application - closed/issued,1,25m,34.5,Closed pub avail,0,0.05,8/23/2012,-5.1099,50.3521
+Point (-5.09421777830607514 50.15771530357267238),"Falmouth School, Trescobeas Road, Falmouth",C1/PA02/1415/08/G,Application approved & operational,1,15m,16.5m,Operational,1,0.005,11/24/2008,-5.0942,50.1577
+Point (-5.16151210142639982 50.25291868796092132),"Keneva, Creegbrawse, Chacewater, Truro",C1/PA04/0368/09/R,Application approved & operational,1,12m,14.5m,Operational,1,0,5/13/2009,-5.1615,50.2529
+Point (-4.90425718921736475 50.27025299778055967),"Roseland School, Tregony",C1/PA06/2070/06/G,Application approved & operational,1,12m,14.7m,Operational,1,0,12/22/2006,-4.9043,50.2703
+Point (-5.13539563083942596 50.28969794228493129),"Four Burrows, Kenwyn",C1/PA14/0518/91,Approved on appeal and operational,15,30m,45.5m,Operating appeal,15,4.5,8/6/1993,-5.1354,50.2897
+Point (-5.1391876942049004 50.32546153567740532),"Lamborne, Penhallow, Truro",C1/PA21/0288/09/R,Application approved & operational,1,15m,17.7m,Operational,1,0.005,5/20/2009,-5.1392,50.3255
+Point (-5.11016109887487424 50.34405582092033171),"Goonhavern Primary School, Newquay Road",C1/PA21/0320/09/G,Application approved & operational,1,12m,14.7m,Operational,1,0.005,6/19/2009,-5.1102,50.3441
+Point (-5.22089999189357812 50.27668126260093828),"Come To Good, Mount Hawke, Truro",C1/PA25/0342/07/G,Application approved & operational,1,15m,18.25m,Operational,1,0.006,4/5/2007,-5.2209,50.2767
+Point (-5.24455060622766656 50.28184658689350073),"West Towan House, Jollys Lane, Porthtowan",C1/PA25/1194/07/R,Application approved & operational,1,9m,12.46m,Operational,1,0.006,8/10/2007,-5.2446,50.2818
+Point (-5.18360984421869819 50.30806505989891519),"Ropewalk Farmhouse, Goonbell, St Agnes",C1/PA25/1414/09/R,Application approved & operational,1,18m,21.375m,Operational,1,0.005,3/1/2010,-5.1836,50.3081
+Point (-5.08102517327770098 50.33373012535860624),"Land At Polstain Farm, Henver Lane, Zelah",PA12/04804,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,1/30/2014,-5.081,50.3337
+Point (-5.20904057475825155 50.20124529954062353),"Trelusback Farm, Penhalvean, Redruth",PA12/06184,Application approved & operational,1,15m,17.75m,Operational,1,0.005,8/24/2012,-5.209,50.2012
+Point (-4.69580614804164309 50.47058702701359323),"Newtons Margate Farm, Bodmin",PA12/04276,Application approved & operational,1,36.5m,46m,Operational,1,0.05,5/24/2013,-4.6958,50.4706
+Point (-4.44793139115701663 50.4356667866059496),"Land to N of Oak House, Trethawle, Liskeard",PA12/04542,Application approved & operational,1,50m,66.7m,Operational,1,0.33,10/9/2012,-4.4479,50.4357
+Point (-4.4129493775195634 50.57193888585101149),"Langstone Farm, Langston Hill",PA12/05972,Application approved & operational,1,15m,19m,Operational,1,0.01,7/9/2012,-4.4129,50.5719
+Point (-5.09839189713692864 50.32344990551573005),"Little Callestock, Zelah, Truro",PA12/05487,Application approved & operational,1,25m,34.4m,Operational,1,0.05,10/5/2012,-5.0984,50.3234
+Point (-4.32954399321294847 50.49847512040570052),"Land on the NW side of Frogwell Road, Haye",PA12/01996/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,9/5/2012,-4.3295,50.4985
+Point (-4.64481900106457068 50.67075064490622083),"Treslay, Camelford",PA12/01726/PREAPP,Pre application - closed/issued,1,24m,39m,Closed pub avail,0,0.25,7/12/2012,-4.6448,50.6708
+Point (-4.48236019804715546 50.75076599316692239),"Swannacott, Week St Mary, Holsworthy",E1/2008/01353,Application approved & operational,2,15m,20.2m,Operational,2,0.03,8/28/2008,-4.4824,50.7508
+Point (-4.50840481150404671 50.78532619338623988),"Trelay Farm, Marhamchurch, Bude",E1/2010/00270,Application approved & operational,2,18m,24.5m,Operational,2,0.022,6/8/2010,-4.5084,50.7853
+Point (-5.0108570653419644 50.48493080945576139),"St Eval Recycling Company, St Eval, Wadebridge",PA12/02157/PREAPP,Pre application - closed/issued,1,35m,61m,Closed pub avail,0,0.5,9/6/2012,-5.0109,50.4849
+Point (-5.34351947182070131 50.20057607689449242),"Roseworthy Barton, Old Mill Lane",PA12/05157,Refused Planning Application,1,24m,34.4m,Refused,0,0.055,2/3/2015,-5.3435,50.2006
+Point (-4.46192178084327029 50.4069134611075782),"Land S of Mount Looe, Trewidland, Liskeard",PA12/06464,Approved on appeal and operational,1,36m,46m,Operating appeal,1,0.05,1/15/2014,-4.4619,50.4069
+Point (-4.51062364534259341 50.86250346996149574),"Killock Farm, Kilkhampton, Bude",PA12/05351,Application approved & operational,1,24.8m,35m,Operational,1,0.05,8/31/2012,-4.5106,50.8625
+Point (-5.49282895278311578 50.16602938892588526),"Trembethow Farm, Lelant Downs, Hayle",PA11/00502,Application approved & operational,1,24.8m,34.2m,Operational,1,0.05,3/16/2011,-5.4928,50.166
+Point (-5.36031563172450198 50.1896260306629074),"46 Gwinear Lane, Gwinear, Hayle",W1/10-0255,Application approved & operational,1,25m,34.5m,Operational,1,0.005,6/21/2010,-5.3603,50.1896
+Point (-5.65196127256213643 50.08313068925087919),"Rissick, Crows-An-Wra, St Buryan, Penzance",W1/10-0375,Application approved & operational,1,15m,17.75m,Operational,1,0.006,9/8/2010,-5.652,50.0831
+Point (-5.01953956963263881 50.37475194611130291),"Degembris Major Farm, St Newlyn East",PA12/02207/PREAPP,Pre application - closed/issued,2,50m,76.25m,Closed pub avail,0,1,9/3/2012,-5.0195,50.3748
+Point (-5.37582457645103684 50.21526869334437748),"19 Prosper Hill, Gwithian",W1/10-0425,Application approved & operational,1,15.4m,18.15m,Operational,1,0.005,6/16/2010,-5.3758,50.2153
+Point (-5.43851025396520349 50.1224562674390981),"St Pirans Village Hall, South Road, Goldsithney",W1/10-0293,Application approved & operational,1,9.7m,12.45m,Operational,1,0.006,4/30/2010,-5.4385,50.1225
+Point (-4.93556008397949242 50.35647824199945433),"Land at Menna Farm, Grampound Road.",PA12/06866,Application approved & operational,1,24.6m,34.2m,Operational,1,0.055,12/13/2012,-4.9356,50.3565
+Point (-4.83197380834770573 50.26188858725787156),"Tregerrick Farm, Gorran Highlanes, St Austell",PA10/04518,Application approved & operational,2,24m,34.6m,Operational,2,0.1,12/10/2010,-4.832,50.2619
+Point (-4.87659557277102618 50.30110718122422497),"Penans Farm, Grampound, Truro",PA12/06977,Application approved not constructed,1,44m,70m,Approved,0,0.5,2/4/2013,-4.8766,50.3011
+Point (-5.10690406339208636 50.390851655516677),"Little Carines, Cubert, Newquay",PA12/02182/PREAPP,Pre application - closed/issued,1,18m,20.75m,Closed pub avail,0,0.005,10/3/2012,-5.1069,50.3909
+Point (-4.91351955818250463 50.23163667133404431),"Calendra Farm, Calendra, Veryan, Truro",C1/PA36/0839/09/B,Application approved & operational,1,15m,17.7m,Operational,1,0.005,10/13/2009,-4.9135,50.2316
+Point (-4.74850976437176442 50.36559840858120651),"Eden Project, Bodelva",C2/06/01233,Application approved & operational,1,---,---,Operational,1,0.005,11/28/2006,-4.7485,50.3656
+Point (-4.72056400657634878 50.39756112223573581),"Coombe Lea, Lanlivery, Bodmin",C2/06/01657,Application approved & operational,1,9m,12.3m,Operational,1,0.006,1/19/2007,-4.7206,50.3976
+Point (-4.67585671699653105 50.35638665546086656),"West Lampetho, Tywardreath",C2/07/00976,Application approved & operational,1,15m,17.5m,Operational,1,0.006,8/9/2007,-4.6759,50.3564
+Point (-5.05573499985087604 50.40546812913212449),"Souvenir, Lane Road, Trencreek, Newquay",C2/07/01001,Application approved & operational,1,---,25-34m,Operational,1,0,9/14/2007,-5.0557,50.4055
+Point (-4.99196026943944293 50.40937473475826636),"Bosoughan Farmhouse, Bosoughan, Newquay",C2/07/01576,Application approved & operational,1,---,---,Operational,1,0,11/16/2007,-4.992,50.4094
+Point (-4.98414730636330372 50.3772580191788748),"Trewinnion Farm, Summercourt",C2/08/00392,Application approved & operational,1,---,---,Operational,1,0.015,4/28/2008,-4.9841,50.3773
+Point (-4.67019610510669914 50.42843697689671245),"Princetown, Nr Polmaugan, Lostwithiel",C2/08/00397,Application approved & operational,1,---,---,Operational,1,0.006,5/2/2008,-4.6702,50.4284
+Point (-5.04674600753371738 50.4189696964113665),"St Columb Minor School, Newquay",C2/08/00484,Application approved & operational,1,15m,16.5m,Operational,1,0.006,6/3/2008,-5.0467,50.419
+Point (-4.65537834314639731 50.39731942986653479),"Tredethick, Lostwithiel",C2/08/01203,Application approved & operational,1,---,---,Operational,1,0.02,10/2/2008,-4.6554,50.3973
+Point (-4.70791254948426996 50.42584146981899096),"The Stables, Tredinnick Pits, Bodmin",C2/08/01358,Application approved & operational,1,18m,19.8m,Operational,1,0.01,12/4/2008,-4.7079,50.4258
+Point (-4.48585363626820754 50.70903399796301869),"Hillcrest, Maxworthy, Launceston",E1/2005/01816,Application approved & operational,1,12m,---,Operational,1,0.005,9/30/2005,-4.4859,50.709
+Point (-4.54852846471611105 50.89688600689896703),"Stanbury Manor, Morwenstow, Bude",E1/2006/01156,Application approved & operational,1,9m,---,Operational,1,0.006,8/16/2006,-4.5485,50.8969
+Point (-4.59579366778829357 50.62715745907184584),"Higher Penhale, St Clether, Launceston",E1/2006/02413,Application approved & operational,1,---,---,Operational,1,0.001,1/25/2007,-4.5958,50.6272
+Point (-4.48568672015948788 50.89432903308944134),"Elmsworthy House, Kilkhampton, Bude",E1/2007/00750,Application approved & operational,1,9m,11.8m,Operational,1,0.006,6/20/2007,-4.4857,50.8943
+Point (-4.38188113033505111 50.62721949622025619),"Unit 19/26 Launceston Depot, Pennygillam Ind. Est.",E1/2007/01640,Application approved & operational,1,15m,19.8m,Operational,1,0.015,10/8/2007,-4.3819,50.6272
+Point (-4.54605878177682321 50.81666800851831312),"Land Adjacent Treeways, Upton, Bude",E1/2008/00146,Application approved & operational,1,---,---,Operational,1,0,4/30/2008,-4.5461,50.8167
+Point (-4.44750303588198292 50.83440120227044901),"Burmsdon Farm, Pancrasweek, Holsworthy",E1/2008/01352,Application approved & operational,2,15m,20.2m,Operational,2,0.03,8/28/2008,-4.4475,50.8344
+Point (-4.50638843642181541 50.72957956948648217),"Creddacott Farm, Week St Mary, Holsworthy",E1/2008/01354,Application approved & operational,2,15m,20.2m,Operational,2,0.04,8/28/2008,-4.5064,50.7296
+Point (-4.57328611487341607 50.70262338301099447),"Great Trevillian, Warbstow, Launceston",E1/2008/01357,Application approved & operational,2,15m,20.2m,Operational,2,0.04,8/29/2008,-4.5733,50.7026
+Point (-4.66638279157713853 50.4861385774091147),"Deviock Farm, Cardinham, Bodmin",E1/2008/01574,Application approved & operational,1,18m,21.1m,Operational,1,0.01,9/29/2008,-4.6664,50.4861
+Point (-4.79794909801669789 50.55893358734223142),"St Kew C P School, St Kew, Bodmin",E1/2008/01754,Application approved & operational,1,---,9m,Operational,1,0.001,10/23/2008,-4.7979,50.5589
+Point (-4.56060321676988778 50.72359451515753648),"Cottage Farm Barn, Jacobstow, Bude",E1/2008/01780,Application approved & operational,2,6m,7.5m,Operational,1,0.001,11/4/2008,-4.5606,50.7236
+Point (-4.43333944450946404 50.68082272788350195),"St Paternus Church, Church Hill, North Petherwin",E1/2008/01896,Application approved & operational,1,3m,3.9m,Operational,1,0.001,3/17/2009,-4.4333,50.6808
+Point (-5.01817831495369315 50.50115954346400571),"St Eval Parish Hall, Porthcothan, Padstow",E1/2008/02207,Application approved & operational,2,4m,---,Operational,2,0.002,3/3/2009,-5.0182,50.5012
+Point (-4.59481444483155421 50.75302548521722201),"Glencove, Dizzard, Coast Road, Bude",E1/2009/00715,Application approved & operational,1,12m,14.75m,Operational,1,0.006,7/8/2009,-4.5948,50.753
+Point (-4.43765114044953979 50.69845949754839154),"Winsdon Farm,North Petherwin",E1/2009/01564,Application approved & operational,2,18m,24.5m,Operational,2,0.022,2/5/2010,-4.4377,50.6985
+Point (-4.53978864522788772 50.76628061606589881),"Bangors House, Poundstock, Bude",E1/2009/01572,Approved on appeal and operational,1,18.3m,24.8m,Operating appeal,1,0.011,7/4/2011,-4.5398,50.7663
+Point (-4.48365190798192881 50.89214334760225711),"Elmsworthy Farm, Kilkhampton",E1/2009/01808,Application approved & operational,1,15m,17.7m,Operational,1,0.005,2/16/2010,-4.4837,50.8921
+Point (-4.67410355402445976 50.5454409773224711),"South Penquite Farm, Blisland, Bodmin",E1/2010/00401,Application approved & operational,1,12m,14.75m,Operational,1,0.005,6/30/2010,-4.6741,50.5454
+Point (-4.42909304594074005 50.52369890834640387),"Upton Cross C.P School, Upton Cross, Liskeard",E2/05/01575/FUL,Application approved & operational,1,15m,---,Operational,1,0,9/1/2006,-4.4291,50.5237
+Point (-4.54064127806936479 50.36966804346873516),"Lancare Park, Pelynt, Looe",E2/06/01649/FUL,Application approved & operational,1,---,---,Operational,1,0,2/23/2007,-4.5406,50.3697
+Point (-4.47528797157219316 50.38608189089798373),"Lant Pt OS 1791, Treworgey Farm, Duloe",E2/07/00629/FUL,Application approved & operational,1,15m,---,Operational,1,0.015,7/17/2007,-4.4753,50.3861
+Point (-4.54130106092038588 50.53752502083780485),"Harrowbridge Hill Farm, Common Moor",E2/08/01786/FUL,Application approved & operational,2,15m,---,Operational,2,0.03,12/24/2008,-4.5413,50.5375
+Point (-4.22331111157507166 50.51438326341041574),"Drakewells Mine, Cemetery Road, Drakewalls",E2/08/01824/CCC,Application approved & operational,1,12.25m,---,Operational,1,0.006,3/5/2009,-4.2233,50.5144
+Point (-4.45455320168556401 50.52661212479566188),"Cheesewring Farm, Minions, Liskeard",E2/09/00744/FUL,Application approved & operational,1,15m,---,Operational,1,0.006,11/2/2009,-4.4546,50.5266
+Point (-5.25905179145039892 50.15683951284555775),"Higher Boquio Farm, Farms Common, Wendron",PA10/03197,Application approved & operational,1,15m,17.75m,Operational,1,0.006,8/4/2010,-5.2591,50.1568
+Point (-4.51706002049151323 50.90757938164338725),"St Marks C Of E School, Shop, Morwenstow, Bude",PA10/04430,Application approved & operational,1,18m,20.7m,Operational,1,0.005,3/17/2011,-4.5171,50.9076
+Point (-4.59753136169693555 50.64523780427886379),"Trefern Bungalow, Tremail, Camelford",PA10/04541,Application approved & operational,1,18.3m,24.8m,Operational,1,0.011,9/9/2010,-4.5975,50.6452
+Point (-5.24499076484004423 50.15007963764352894),"Carthvean Farm, Porkellis, Helston",PA10/04600,Application approved & operational,1,15m,17.75m,Operational,1,0.006,10/4/2010,-5.245,50.1501
+Point (-4.95439867631192321 50.51092910130532232),"Roscullion Farmhouse, Ruscullion Lane, St Issey",PA10/05312,Application approved & operational,1,20m,25m,Operational,1,0.015,5/16/2011,-4.9544,50.5109
+Point (-5.16038093361466199 50.18484266706393271),"Roseath, Stithians, Truro",PA10/05479,Application approved & operational,1,15m,17.8m,Operational,1,0.006,11/8/2010,-5.1604,50.1848
+Point (-4.46189449926263748 50.8820185375952434),"Land At Aldercombe Barton, Kilkhampton, Bude",PA10/06936,Application approved & operational,1,24m,28.5m,Operational,1,0.05,1/21/2011,-4.4619,50.882
+Point (-5.66863349285955564 50.07585313079611211),"Trevear Farm, Sennen, Penzance",PA10/07033,Application approved & operational,1,25m,34.6m,Operational,1,0.05,2/2/2011,-5.6686,50.0759
+Point (-4.45155329388891019 50.50827382147790701),"Higher Gonamena, Minions, Liskeard",PA10/07512,Application approved & operational,1,12.24m,14.99m,Operational,1,0,6/13/2011,-4.4516,50.5083
+Point (-4.97482280436787416 50.51665496218237195),"Rosken Farm, St Merryn, Padstow",PA12/06817,Application approved & operational,1,25m,34.6m,Operational,1,0.05,10/3/2012,-4.9748,50.5167
+Point (-4.97583204869892448 50.32141785511888088),"Penhale Farmhouse, Boswiddle, Ladock, Truro",PA12/07039,Application approved & operational,1,18.7m,21.25m,Operational,1,0.005,10/29/2012,-4.9758,50.3214
+Point (-5.11680441724312285 50.30508762349152363),"Colraine Equestrian Centre, Callestick, Truro",PA12/06932,Application approved & operational,1,24.6m,34.2m,Operational,1,0.1,11/14/2012,-5.1168,50.3051
+Point (-4.91469438058219232 50.29902307987477883),"Barteliver Farm, Grampound, Truro.",PA12/07184,Application approved & operational,1,22.6m,34.4m,Operational,1,0.05,10/31/2013,-4.9147,50.299
+Point (-4.6479285787010145 50.65468742087304577),"Hendraburnick Farm, Camelford",PA12/07537,Application approved & operational,1,30m,45m,Operational,1,0.25,3/1/2013,-4.6479,50.6547
+Point (-4.37836009386916292 50.61368783092336088),"The Beacon, South Petherwin, Launceston",PA12/07455,Approved on appeal and operational,1,50m,77m,Operating appeal,1,0.5,7/15/2014,-4.3784,50.6137
+Point (-4.5916447491453658 50.50384598699658056),"Castle Dewey Cottages, Warleggan, Bodmin",PA12/05804,Application approved & operational,1,15m,17.2m,Operational,1,0.005,11/7/2012,-4.5916,50.5038
+Point (-5.09565416847664032 50.27870950250353133),"Great Roseveth, Shortlanesend, Truro",PA12/07275,Application approved & operational,1,29m,38.6m,Operational,1,0.05,10/18/2012,-5.0957,50.2787
+Point (-4.50092651874487526 50.6672794358819516),"Higher Churchtown Farm, Tresmeer, Launceston",PA12/01690/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,8/15/2012,-4.5009,50.6673
+Point (-4.46606276896648424 50.88774524312982095),"Taylors Cross Farm, Kilkhampton, Bude",PA12/07245,Application approved & operational,1,30m,45m,Operational,1,0.25,6/12/2013,-4.4661,50.8877
+Point (-4.57473955623591255 50.69452410127343001),"Cardew Bungalow, Warbstow, Launceston",PA12/06587,Application approved & operational,1,15m,18.8m,Operational,1,0.01,10/25/2012,-4.5747,50.6945
+Point (-5.45723136686756671 50.1352311697038715),"Land NW of Tregurtha Farm, Plain An Gwarry",PA12/02385/PREAPP,Pre application - closed/issued,1,25m,---,Closed pub avail,0,0,10/23/2012,-5.4572,50.1352
+Point (-5.66163348244161213 50.06718155073001242),"Trengothal Farm, St Levan, Penzance",PA12/07841,Application approved on appeal,1,24.6m,34.2m,Appeal allowed,0,0.05,5/23/2013,-5.6616,50.0672
+Point (-4.49099625770800337 50.76489381053864491),"Kitleigh Bungalow, Stewarts Road",PA12/07391,Application approved not constructed,1,20.58m,27.13m,Approved,0,0.02,4/3/2013,-4.491,50.7649
+Point (-5.03956260141641543 50.43681616768078158),"W P L Cowling & Sons, Trebelsue Farm , Newquay",PA12/07846,Application approved & operational,1,25m,35m,Operational,1,0.05,10/25/2012,-5.0396,50.4368
+Point (-5.16578269363799247 50.16122036314959587),"Kessel Downs Quarry, Halvasso, Penryn",PA12/02495/PREAPP,Pre application - closed/issued,1,---,56.5m,Closed pub avail,0,0,5/24/2013,-5.1658,50.1612
+Point (-4.56430568707743767 50.62612473791728718),"Higher Basil Farm, Altarnun Road, St Clether",PA12/02447/PREAPP,Pre application - closed/issued,2,---,36m,Closed pub avail,0,0.2,10/10/2012,-4.5643,50.6261
+Point (-4.57954430796246736 50.69670375513738492),"Land W of Trevillian Cottage, Warbstow, Launceston",PA12/02493/PREAPP,Pre application - closed/issued,1,50m,77m,Declined pre app,0,0.5,12/18/2012,-4.5795,50.6967
+Point (-4.66113215126186464 50.47107888354738492),"Kingswood Farmhouse, Cardinham, Bodmin",PA12/02186/PREAPP,Pre application - closed/issued,1,50m,74m,Closed pub avail,0,0.5,8/31/2012,-4.6611,50.4711
+Point (-4.9449959543563784 50.33199750830901564),"Land at Fentonladock Farm, Newmills, Ladock, Truro",PA12/02329/PREAPP,Pre application - closed/issued,1,---,76m,Closed pub avail,0,0.8,8/31/2012,-4.945,50.332
+Point (-4.49689974009792603 50.8436670594338338),"Colebrook House, Bush, Bude",PA11/02657,Application approved & operational,1,15m,17.5m,Operational,1,0.015,5/17/2012,-4.4969,50.8437
+Point (-4.92552426762429008 50.27298156338542157),"Grogarth Farm, Tregony, Truro",PA10/07881,Application approved & operational,1,29.6m,39.6m,Operational,1,0.05,4/19/2012,-4.9255,50.273
+Point (-4.43996269029620461 50.86965240856817161),"East Langford Farm, Thurdon, Bude",PA11/00894,Application approved & operational,1,15.4m,19.4m,Operational,1,0.01,3/23/2011,-4.44,50.8697
+Point (-5.24735048895262413 50.12501369304851551),"South Boderwennack Farm, Boderwennack",PA11/01346,Application approved & operational,1,15m,17.8m,Operational,1,0.006,4/26/2011,-5.2474,50.125
+Point (-5.21292966712151351 50.23842870291004203),"Cornerside, Channel View Farm, Sandy Lane, Redruth",PA11/02285,Application approved & operational,1,15m,17.8m,Operational,1,0.006,5/20/2011,-5.2129,50.2384
+Point (-5.27335908069361903 50.22319996487152594),"Rear Of Number 3 Dudnance Lane, Pool, Redruth",PA11/02297,Application approved & operational,1,15m,20m,Operational,1,0.006,5/16/2011,-5.2734,50.2232
+Point (-5.01023904424585709 50.49020164402696054),"Engollan Farm, Engollan, Wadebridge",PA11/03744,Application approved & operational,1,18m,22.25m,Operational,1,0,7/6/2011,-5.0102,50.4902
+Point (-5.22045045275479058 50.12459110452803657),"Mengearne Farm, Laity, Wendron, Helston",W2/PA05/01616/F,Application approved & operational,1,9m,11.75m,Operational,1,0.006,2/10/2006,-5.2205,50.1246
+Point (-5.28356489700093412 50.25231706855277025),"Trengove Farm, Cot Road, Illogan",PA12/08046,Application approved & operational,1,25m,34.4m,Operational,1,0.055,4/4/2013,-5.2836,50.2523
+Point (-5.19451342850736442 50.18857960241019356),"Carn Farm, Carn, Stithians, Truro",PA12/02566/PREAPP,Pre application - closed/issued,3,---,32.5m,Closed pub avail,0,0,10/9/2013,-5.1945,50.1886
+Point (-4.49520587351090928 50.6404437299120076),"Lidcott Farm, Egloskerry,Launceston",PA12/07881,Application approved & operational,1,25m,34.4m,Operational,1,0.055,10/30/2012,-4.4952,50.6404
+Point (-4.36363614766327856 50.53449052166735811),"Higher Manaton Bungalow, Golberdon, Callington",PA12/02634/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0.5,10/16/2012,-4.3636,50.5345
+Point (-5.1136969447896421 50.15406146271029542),"Higher Kergilliack Farm, Hillhead Road, Falmouth",PA12/02211/PREAPP,Pre application - closed/issued,4,---,40m,Closed pub avail,0,0.59,9/13/2012,-5.1137,50.1541
+Point (-4.94663779015678085 50.36607193604790922),"Land at Chytane Farm, Summercourt, Newquay",PA12/02350/PREAPP,Pre application - closed/issued,2,74m,101m,Closed pub avail,0,1,9/20/2012,-4.9466,50.3661
+Point (-4.4531503424791401 50.59269019423943092),"Trewanta Park, Lewannick, Launceston",PA12/02017/PREAPP,Pre application - closed/issued,1,30m,40m,Closed pub avail,0,0,9/24/2012,-4.4532,50.5927
+Point (-5.095871581829444 50.30676000415486016),"Nanteague Farm, Marazanvose, Truro",PA12/02729/PREAPP,Pre application - closed/issued,1,50m,76m,Closed pub avail,0,0.5,12/21/2012,-5.0959,50.3068
+Point (-5.0087571557115842 50.36765781816929888),"Tredinnick Farm, Summercourt, Newquay",PA12/02730/PREAPP,Pre application - closed/issued,1,50m,76m,Closed pub avail,0,0.5,1/7/2013,-5.0088,50.3677
+Point (-5.18409633724109753 50.15226963956864381),"Land at Little Trevease Farm, Constantine",PA12/02692/PREAPP,Pre application - closed/issued,3,---,---,Closed pub avail,0,0,11/6/2012,-5.1841,50.1523
+Point (-4.61040906350152024 50.64089556497332723),"Higher Tremail Farm, Tremail, Camelford",PA12/08818,Application approved & operational,1,25m,34.4m,Operational,1,0.05,11/9/2012,-4.6104,50.6409
+Point (-4.55754803092699579 50.39791024186911272),"Bocaddon Farm, Bocaddon, Looe",PA12/09363,Application approved on appeal,1,55m,79m,Appeal allowed,0,0.5,6/30/2014,-4.5575,50.3979
+Point (-4.91518657634899103 50.22951124104134379),"Calendra, Veryan, Truro",PA12/02825/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0.5,1/7/2013,-4.9152,50.2295
+Point (-4.83112168750873661 50.34582854865310253),"Land at Carne Hill, Trewoon, St Austell",PA12/02853/PREAPP,Pre application - closed/issued,1,44m,71m,Closed pub avail,0,0.5,11/13/2012,-4.8311,50.3458
+Point (-4.69518871521413494 50.67763089898815565),"Trerosewill Farmhouse, Gibb Lane, Boscastle",PA12/02042/PREAPP,Pre application - closed/issued,1,25m,33m,Closed pub avail,0,0.05,10/5/2012,-4.6952,50.6776
+Point (-4.67652415074917638 50.38220285953385513),"Trevenning Farm, Lostwithiel",PA12/08987,Application approved not constructed,1,24.6m,34.2m,Approved,0,0.05,2/12/2013,-4.6765,50.3822
+Point (-4.90013809081122176 50.27656402096484101),"Carveth, Tregony",PA12/09063,Application approved not constructed,1,24.9m,34.5m,Approved,0,0.05,6/5/2013,-4.9001,50.2766
+Point (-4.9082848171769049 50.39076342508455042),"Gaverigan Manor Farm, Indian Queens, St Columb",PA12/02951/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,11/16/2012,-4.9083,50.3908
+Point (-4.34811504230528811 50.62169643903802552),"Land SW of Newton Farm, Launceston",PA12/02213/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,10/15/2012,-4.3481,50.6217
+Point (-4.80406009019567115 50.41937167974911915),"Tremodrett House, Tremodrett Lane, Roche",PA12/02971/PREAPP,Pre application - closed/issued,1,---,61-99m,Closed pub avail,0,0.5,12/5/2012,-4.8041,50.4194
+Point (-5.66997340043503506 50.13164522885185193),"East Tregeseal Farm, 6 Tregeseal Hill, St Just",PA12/03033/PREAPP,Pre application - closed/issued,1,24m,33.6m,Closed pub avail,0,0.05,1/18/2013,-5.67,50.1316
+Point (-4.41349520664137085 50.6184225461256716),"Land S of Papillion, South Petherwin, Launceston",PA12/09666,Application approved & operational,1,50m,77m,Operational,1,0.5,4/30/2013,-4.4135,50.6184
+Point (-4.2389407903951728 50.51990653761405525),"Salters Farmhouse, Whiterocks Park, St Anns Chapel",PA12/02414/PREAPP,Pre application - closed/issued,1,24.8m,34.4m,Closed pub avail,0,0.05,11/2/2012,-4.2389,50.5199
+Point (-5.13316203454731124 50.20364077958615923),"Land adj Holly House, School Hill, Perranwell Stn",PA12/09646,Application approved & operational,1,23m,34.2m,Operational,1,0.1,3/13/2013,-5.1332,50.2036
+Point (-5.24011463293978608 50.22870047493910306),"11 West Trevingey, Redruth",W2/PA06/02150/F,Application approved & operational,1,---,---,Operational,1,0.001,2/19/2007,-5.2401,50.2287
+Point (-5.24363617716369923 50.18075001967306292),"North Calvadnack Farm, Polgear, Redruth",W2/PA06/02125/F,Application approved & operational,1,15m,17.8m,Operational,1,0.006,1/29/2007,-5.2436,50.1808
+Point (-5.34337390524982947 50.12409423105115991),"Sparnon Farm, Tregonning Lane, Carleen, Breage",W2/PA06/02180/F,Application approved & operational,1,9m,11.8m,Operational,1,0.006,2/13/2007,-5.3434,50.1241
+Point (-5.51553669674350999 50.1539884993402012),"Castle Gate Cottage, Castle Gate, Ludgvan",W1/09-1303,Application approved & operational,1,---,---,Operational,1,0,2/1/2010,-5.5155,50.154
+Point (-5.62872181074409905 50.07613709490869525),"Trevorgans Farm, Trevorgans, St Buryan, Penzance",W1/09-0882,Application approved & operational,1,---,---,Operational,1,0,9/24/2009,-5.6287,50.0761
+Point (-5.3604207989603001 50.1977460719030617),"Little Trenawin, Trenawin Lane, Connor Downs",W1/09-0593,Application approved & operational,1,15.4m,18.1m,Operational,1,0,7/28/2009,-5.3604,50.1977
+Point (-5.38205245467220816 50.17818435164216595),"Howldrevel, Drannack Lane, Wheal Alfred Rd, Hayle",W1/09-0320,Application approved & operational,1,---,---,Operational,1,0.006,5/14/2009,-5.3821,50.1782
+Point (-5.19013744624561291 50.12748795095041743),"Chegwidden Farm, Constantine, Falmouth",W2/PA09/01537/F,Application approved & operational,1,12.6m,15.3m,Operational,1,0.006,3/29/2010,-5.1901,50.1275
+Point (-5.26507724906402608 50.2385154812222865),"The Bungalow, Spar Lane, Illogan, Redruth",W2/PA09/01231/F,Application approved & operational,1,3m,3.7m,Operational,1,0.001,11/18/2009,-5.2651,50.2385
+Point (-5.35916638542903456 50.12815362051680523),"Wheal Breage, Great Work, Ashton, Helston",W2/PA09/00508/F,Application approved & operational,1,12m,14.7m,Operational,1,0,8/3/2009,-5.3592,50.1282
+Point (-5.36920066700380794 50.12013249097205403),"Lower Balwest Farm, Lr Balwest, Germoe, Helston",W2/PA09/00452/F,Application approved & operational,1,12m,14.5m,Operational,1,0.005,6/11/2009,-5.3692,50.1201
+Point (-5.25597914028178614 50.15280669408019065),"Tregwynsac, Crelly, Trenear, Helston",W2/PA09/00115/F,Application approved & operational,1,10m,12.7m,Operational,1,0.006,4/15/2009,-5.256,50.1528
+Point (-5.15831659459527181 50.14113528297049527),"Chyan Farm, Jobs Water, Penryn",W2/PA09/00016/F,Application approved & operational,2,15m,17.8m,Operational,2,0.012,4/15/2009,-5.1583,50.1411
+Point (-5.18770527360968359 50.18049446054729401),"Carn Vean, Tretheague Mill, Stithians, Truro",W2/PA08/00445/F,Application approved & operational,1,15m,17.8m,Operational,1,0.006,6/2/2008,-5.1877,50.1805
+Point (-5.35459293613768406 50.13278102238624712),"Greenvale, Godolphin Cross, Helston",W2/PA08/00924/F,Application approved & operational,2,15.2m,16.8m,Operational,2,0.004,9/1/2008,-5.3546,50.1328
+Point (-5.1604159155459719 50.15272182673645318),"Springfield Cottage, Boundis Farm, Halvasso",W2/PA08/01693/F,Application approved & operational,1,10m,11.8m,Operational,1,0,11/27/2008,-5.1604,50.1527
+Point (-5.24633513777384231 50.23554950439893929),"Tolgus Depot, Tolgus, Redruth",W2/PA08/01636/F,Application approved & operational,1,15m,17.4m,Operational,1,0,12/4/2008,-5.2463,50.2355
+Point (-5.13747814144103554 50.18577872367750103),"Gadles Farm, Laity Moor, Ponsanooth, Truro",W2/PA08/01737/F,Application approved & operational,1,15m,17.5m,Operational,1,0.005,12/23/2008,-5.1375,50.1858
+Point (-5.63988614528035281 50.1168003411224916),"The Barn, Leswidden, St Just",W1/08-0194,Application approved & operational,1,---,---,Operational,1,0,4/21/2008,-5.6399,50.1168
+Point (-5.61037924759702822 50.07550454348932334),"Santry Farm, Newlyn Road, St Buryan, Penzance",W1/08-0860,Application approved & operational,1,12m,---,Operational,1,0.005,8/11/2008,-5.6104,50.0755
+Point (-5.23089668323589851 50.13045946293508592),"Trelowareth, Manhay, Helston",W2/PA07/00553/F,Application approved & operational,1,15m,17.8m,Operational,1,0.006,5/25/2007,-5.2309,50.1305
+Point (-4.59214959505830755 50.63419058246379478),"Higher Penhale, St Clether",PA12/09462,Application approved not constructed,2,36m,45.6m,Approved,0,0.11,5/1/2013,-4.5921,50.6342
+Point (-4.52131244669805632 50.71438446505264608),"Exemoor, Week St. Mary, Holsworthy",PA12/10065,Application approved & operational,1,24m,35m,Operational,1,0.055,8/13/2013,-4.5213,50.7144
+Point (-4.88382013619770206 50.30431582884901331),"Garlenick Estate, Grampound",PA12/09852,Application approved & operational,2,65m,110m,Operational,2,4,1/31/2013,-4.8838,50.3043
+Point (-4.4905883933574513 50.84175668883528942),"New Leigh, Launcells, Bude",PA12/09678,Application approved & operational,1,24.8m,34.5m,Operational,1,0.055,4/17/2013,-4.4906,50.8418
+Point (-4.81507324788216717 50.42521636904954363),"S of A30, Woodlands Barton, Wireless Road",PA12/10296,Application approved & operational,2,57-60m,100,Operational,2,5,2/11/2013,-4.8151,50.4252
+Point (-4.98718853223881453 50.39576023829090445),"Coswarth Farm, Coswarth, Newquay",PA12/02949/PREAPP,Pre application - closed/issued,1,40m,67m,Closed pub avail,0,0.5,11/16/2012,-4.9872,50.3958
+Point (-4.58713015031607796 50.46730261247460447),"Great Tredinnick Farm, Twowatersfoot, Mount",PA12/05146,Application approved not constructed,1,32.4m,46.9m,Approved,0,0.225,3/7/2013,-4.5871,50.4673
+Point (-4.50786413192144853 50.81164891560245422),"Penleaze, Hobbacott Lane, Marhamchurch, Bude.",PA12/09058,Application approved & operational,1,36m,45.6m,Operational,1,0.05,11/23/2012,-4.5079,50.8116
+Point (-4.37896464548773601 50.40324363078889292),"Wilton Farm, Trerulefoot, Saltash",PA12/05276,Approved on appeal and operational,1,40m,67m,Operating appeal,1,0.5,1/30/2014,-4.379,50.4032
+Point (-5.44869330540599162 50.1516087769904928),"Land at Tregethas Farm, 6 Long Lanes, St Hilary",PA12/10374,Application approved & operational,3,25m,35m,Operational,3,0.15,12/20/2013,-5.4487,50.1516
+Point (-5.07568243755701598 50.30683920205359527),"Pennare Farm, St Allen, Truro",PA12/03401/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,12/7/2012,-5.0757,50.3068
+Point (-4.65254865459143208 50.65928329134594321),"Hendraburnick Farm, Davidstow, Camelford",PA12/11175,Application approved & operational,1,25m,35m,Operational,1,0.05,6/24/2013,-4.6525,50.6593
+Point (-4.50288881596873214 50.90422842762517774),"Field SE of Marsborough, Shop, Bude",PA12/10481,Refused on appeal Planning Application,1,24m,34.2m,Appeal refused,0,0.05,3/24/2015,-4.5029,50.9042
+Point (-4.59440745071377421 50.71203194882600229),"Collamoor Head, Cansford Dip, Otterham, Camelford",PA12/11199,Application approved & operational,1,25m,35m,Operational,1,0.05,4/19/2013,-4.5944,50.712
+Point (-4.94963221768097217 50.50347351121218509),"Tregingey Farm , St. Issey, Wadebridge",PA12/11017,Application approved & operational,1,20.6m,27.1m,Operational,1,0.02,3/26/2013,-4.9496,50.5035
+Point (-4.60283129070807018 50.48195972974739476),"South Bofindle, Mount, Bodmin",PA12/10968,Application approved not constructed,1,36m,46.3m,Approved,0,0.055,1/29/2013,-4.6028,50.482
+Point (-4.4176750315507789 50.70412018549475164),"Land at Bennacott Farm, Boyton, Launceston",PA12/11125,Application approved & operational,1,50m,77m,Operational,1,0.5,4/11/2013,-4.4177,50.7041
+Point (-4.47439481783508075 50.65520607407447784),"Land at Rowlands Corner, Egloskerry, Launceston",PA12/11104,Application approved not constructed,1,24m,34.4m,Approved,0,0.055,11/5/2013,-4.4744,50.6552
+Point (-4.92288005918867544 50.45015314637005588),"Land near Trevornick Farm, St Columb",PA12/11304,Application approved & operational,1,25m,35m,Operational,1,0.05,2/26/2013,-4.9229,50.4502
+Point (-4.50497073264698145 50.90600884775091117),"Land at Marsborough Farm, Shop, Bude",PA12/11254,Refused on appeal Planning Application,1,36m,45.5m,Appeal refused,0,0.05,3/24/2015,-4.505,50.906
+Point (-4.47687846762718067 50.81624433747110459),"Land NE of Thurlibeer House, Launcells, Bude",PA12/11218,Application approved & operational,1,36m,46m,Operational,1,0.05,2/12/2013,-4.4769,50.8162
+Point (-4.86559289489564684 50.284137594306479),"Pencoise Farm, Tregony, Truro",PA12/11334,Application approved & operational,1,18.4m,24.9m,Operational,1,0.011,2/7/2013,-4.8656,50.2841
+Point (-5.02386238500214688 50.35946493110771627),"Trevilson Farm, Trevilson",PA12/11729,Application approved & operational,1,24.6m,34.2m,Operational,1,0.055,4/16/2013,-5.0239,50.3595
+Point (-4.89739320419367186 50.48536972094588293),"St Jidgey Downs, Blable Farm, Blable Lane",PA12/12039,Application approved & operational,1,40m,67m,Operational,1,0.5,11/1/2013,-4.8974,50.4854
+Point (-5.05965621806925991 50.2308349058891892),"Halvarras Farm, Halvarras Rd, Playing Place",PA12/03474/PREAPP,Pre application - closed/issued,1,36.4m,45.5m,Closed pub avail,0,0.05,1/28/2013,-5.0597,50.2308
+Point (-4.70532604483609784 50.57795477027623576),"W of Helsbury Park Woods, Michaelstow, Bodmin",PA13/00089,Application approved not constructed,1,28.4m,45.4m,Approved,0,0.4,6/26/2013,-4.7053,50.578
+Point (-5.45700400653590023 50.13526671184025219),"Land N of Tregurtha Farm, Gwallon Lane, Marazion",PA12/11932,Application approved & operational,1,24m,34.5m,Operational,1,0.05,2/18/2013,-5.457,50.1353
+Point (-4.45248349986050762 50.59282111076863941),"Trewanta Park, Lewannick, Launceston",PA12/12043,Application approved & operational,1,25m,35m,Operational,1,0.05,3/5/2013,-4.4525,50.5928
+Point (-4.505772084677929 50.67236908639669934),"Ashgrove Farm, Tremaine, Launceston",PA12/12060,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,3/13/2013,-4.5058,50.6724
+Point (-4.34960284272206721 50.62225234921849193),"Land E of Hurdon Road, Hurdon Road, Launceston",PA12/12067,Application approved & operational,1,50m,77m,Operational,1,0.5,4/12/2013,-4.3496,50.6223
+Point (-4.47382497761186748 50.91727412844219458),"Little Holloborough Farm, Nr Eastcott, Morwenstow",PA12/12081,Approved on appeal and operational,1,40m,67m,Operating appeal,1,0.5,4/14/2014,-4.4738,50.9173
+Point (-4.81300759245209608 50.35839434057963615),"Goonvean Works, Greensplat, St Austell",PA12/12138,Application approved not constructed,1,37m,53.7m,Approved,0,0.33,4/16/2013,-4.813,50.3584
+Point (-5.00610326949866113 50.3836837004081417),"Dairyland, Summercourt, Newqua",PA13/00488,Application approved & operational,1,25m,35m,Operational,1,0.05,3/18/2013,-5.0061,50.3837
+Point (-4.93201961242225018 50.48419496318567212),"Crealy Cornwall, St Issey, Wadebridge",PA13/00737,Application approved & operational,1,50m,77m,Operational,1,0.5,7/24/2013,-4.932,50.4842
+Point (-4.38570486161817286 50.77129389433043372),"East Venton, North Tamerton, Holsworthy",PA12/03158/PREAPP,Pre application - closed/issued,1,25m,37m,Closed pub avail,0,0.1,1/30/2013,-4.3857,50.7713
+Point (-5.61447914566184192 50.12294459289608994),"Landvue, Trannack, Newbridge, Penzance",PA13/00688,Application approved not constructed,1,10m,14.27m,Approved,0,0.005,3/14/2013,-5.6145,50.1229
+Point (-4.56161617167874667 50.35445938391924159),"Woodford Farm, Lansallos, Looe",PA12/12011,Refused on appeal Planning Application,1,50m,77m,Appeal refused,0,0.5,3/24/2015,-4.5616,50.3545
+Point (-4.7632014882351088 50.59178512008561057),"Land NE of Trekee Bungalow, St. Teath, Bodmin",PA13/00969,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,3/27/2013,-4.7632,50.5918
+Point (-4.66050059268553341 50.4690970948468447),"Land east of Kingswood Farm, Cardinham, Bodmin",PA13/00625,Application approved & operational,1,34.5m,44.9m,Operational,1,0.05,6/18/2013,-4.6605,50.4691
+Point (-5.45504855570551861 50.15736624247120545),"Rosevidney Farm, Crowlas, Penzance",PA10/08266,Application approved & operational,1,24m,34.4m,Operational,1,0.05,2/17/2011,-5.455,50.1574
+Point (-5.60654164065038785 50.06441178266332059),"Downs Barn Farm, St Buryan, Penzance",W1/08-0373,Application approved & operational,1,9m,---,Operational,1,0.006,7/15/2008,-5.6065,50.0644
+Point (-5.56991318529680957 50.08741040199334549),"Rosevale Farm, Kerris, Paul, Penzance",W1/06/P/1402,Application approved & operational,1,12m,---,Operational,1,0.005,2/2/2007,-5.5699,50.0874
+Point (-5.63523196834816176 50.11029235184401642),"The High Barn, Grumbla, Sancreed",W1/08-1596,Application approved & operational,1,---,---,Operational,1,0,2/3/2009,-5.6352,50.1103
+Point (-4.73290605336791614 50.586166437896253),"Carkeen Farm, St Teath, Bodmin",PA11/04993,Application approved not constructed,2,23.8m,34.2m,Approved,0,0.1,5/31/2013,-4.7329,50.5862
+Point (-4.82344420187707446 50.41435301924838797),"Trebilcock Farm, Roche, St Austell",PA13/00890,Application approved & operational,1,50m,77m,Operational,1,0.5,5/24/2013,-4.8234,50.4144
+Point (-4.96519665702661772 50.34579844770057377),"Goonabarn Farm, Summercourt, Newquay",PA13/00848,Application approved & operational,2,50m,76m,Operational,1,0.5,7/4/2013,-4.9652,50.3458
+Point (-4.67375853551485321 50.59150635298581022),"Newhall Farm, Advent, Camelford",PA12/02943/PREAPP,Pre application - closed/issued,1,18m,20.75m,Closed pub avail,0,0.005,2/11/2013,-4.6738,50.5915
+Point (-4.59944857964143861 50.71509405136212223),"Sextons Field, Tresparrett, Camelford",PA13/00449/PREAPP,Pre application - closed/issued,1,50m,65m,Closed pub avail,0,0.25,4/16/2013,-4.5994,50.7151
+Point (-4.47019324216977054 50.80504404120106443),"Buttsbear Cross, Bridgerule, Holsworthy",PA13/00596/PREAPP,Pre application - closed/issued,1,50m,79m,Closed pub avail,0,0,3/11/2013,-4.4702,50.805
+Point (-5.12481890603021739 50.06814312017677082),"Treworgie Farm, Manaccan, Helston",PA13/01526,Application approved & operational,1,15.4m,20.9m,Operational,1,0.015,4/10/2013,-5.1248,50.0681
+Point (-4.65580460512114325 50.65056836079720881),"Starapark Farm, Camelford.",PA13/01764,Application approved & operational,2,22.5m,34.2m,Operational,2,0.11,6/5/2013,-4.6558,50.6506
+Point (-4.49155387892865132 50.85982026115252808),"Collaton Farm, Kilkhampton Road, Bude",PA13/01766,Application approved & operational,1,40m,66m,Operational,1,0.5,8/6/2013,-4.4916,50.8598
+Point (-4.69694352319303388 50.65040258737767687),"Condolden Farm, Tintagel.",PA13/02044,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,4/25/2013,-4.6969,50.6504
+Point (-4.42970910977583276 50.76471390834609565),"East Balsdon Farm, Whitstone, Holsworthy",PA12/11717,Application approved & operational,1,50m,77m,Operational,1,0.5,3/18/2013,-4.4297,50.7647
+Point (-4.69869830459043403 50.47471091154896783),"Steppes Farm,Callywith,Bodmin",E1/2007/01580,Application approved & operational,1,30m,34.45m,Operational,1,0.025,10/2/2007,-4.6987,50.4747
+Point (-4.92214695131336022 50.48441388225516135),"Trelow Farm, St. Issey, Wadebridge",PA13/02328,Application approved & operational,1,50m,77m,Operational,1,0.5,10/18/2013,-4.9221,50.4844
+Point (-4.5579777002898334 50.68324360302812437),"Land at Tredarrup Farm, Trelash, Warbstow",PA13/02391,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,5/16/2013,-4.558,50.6832
+Point (-4.9393070569311659 50.36728281584294109),"Burthy Row Farm, Summercourt, Newquay",PREAPP12/00870,Pre application - closed/issued,2,32m,45.5m,Closed pub avail,0,0.225,4/25/2012,-4.9393,50.3673
+Point (-4.87124792858097511 50.28442153459280206),"Pittsdown Farm, Tregony, Truro",PA13/00937/PREAPP,Pre application - closed/issued,1,50m,79m,Closed pub avail,0,0.5,7/9/2013,-4.8712,50.2844
+Point (-4.54243423299059934 50.33746766162217057),"Great Tregue, Lansallos, Looe",PA13/02351,Application approved & operational,1,36m,46m,Operational,1,0.05,8/13/2013,-4.5424,50.3375
+Point (-4.57363416523222099 50.66693218836989132),"Land NE of Lundy View Farm, Lundy View, Hallworthy",PA13/03004,Application approved not constructed,1,36.4m,46m,Approved,0,0.05,6/5/2013,-4.5736,50.6669
+Point (-4.56436271122273407 50.62600071151969416),"Higher Basil Farm, Altarnun Road, St Clether",PA13/03402,Application approved & operational,2,29.3m,39.7m,Operational,2,0.15,6/24/2013,-4.5644,50.626
+Point (-4.87057929052377858 50.55079831065980756),"Great Keiro Farm, St Minver, Wadebridge",PA13/03046,Application approved & operational,1,20m,23.5m,Operational,1,0.01,6/4/2013,-4.8706,50.5508
+Point (-4.72039182012292891 50.56387782441155565),"Land at Tregarrick Farm, St Tudy, Bodmin",PA13/01245/PREAPP,Pre application - closed/issued,1,50m,78m,Closed pub avail,0,0.5,5/31/2013,-4.7204,50.5639
+Point (-4.43944378947502738 50.62359935037251546),"Trethorne Leisure Farm, Kennards House",PA13/03342,Application approved & operational,1,50m,77m,Operational,1,0.5,12/23/2013,-4.4394,50.6236
+Point (-5.01224396511442816 50.37868510452457116),"Nancolleth Farm, Summercourt, Newquay",PA13/01222/PREAPP,Pre application - closed/issued,1,50m,77m,Closed pub avail,0,0.5,5/14/2013,-5.0122,50.3787
+Point (-4.43499021864833853 50.61977194475430508),"Land at Treguddick Farm, Polyphant, Launceston",PA13/03604,Application approved & operational,1,50m,77m,Operational,1,0.5,12/4/2013,-4.435,50.6198
+Point (-4.99715731013980236 50.50683573053795783),"Trevio Farm, Penrose, Wadebridge",PA13/03507,Application approved & operational,1,29.3m,39.7m,Operational,1,0.05,9/30/2013,-4.9972,50.5068
+Point (-5.02384706683187954 50.3594498394151131),"Trevilson Farm, Trevilson",PA13/03938,Application approved & operational,1,24.9m,34.5m,Operational,1,0.05,7/9/2013,-5.0238,50.3594
+Point (-4.69400210596183776 50.4795782454714157),"Callywith Farm, Cardinham, Bodmin",EN11/03080,Approved on appeal and operational,1,50m,75.75m,Operating appeal,1,0.5,1/23/2013,-4.694,50.4796
+Point (-4.58427509209104933 50.49750385056029245),"Gazeland Farm, Warleggan, Liskeard",PA13/04323,Application approved & operational,2,15m,17.75m,Operational,2,0.01,10/11/2013,-4.5843,50.4975
+Point (-4.57333798842220407 50.69825844702285167),"Trevillian Down Cottage, Warbstow, Launceston",PA13/04181,Application approved & operational,1,14.97m,17.77m,Operational,1,0.005,7/8/2013,-4.5733,50.6983
+Point (-4.96105103724607499 50.46522104561715594),"Higher Denzell Farm, St Mawgan, Newquay",PA13/04805,Application approved & operational,5,64m,100m,Operational,5,10,6/10/2014,-4.9611,50.4652
+Point (-4.46993394534207855 50.60928396745851643),"Bowden Farm, Polyphant, Launceston",PA13/03093,Application approved & operational,1,20.58m,27.13m,Operational,1,0.02,7/23/2013,-4.4699,50.6093
+Point (-4.58675359129191218 50.46718678729367014),"Great Tredinnick Farm, Mount, Liskeard",PA13/03560,Application approved & operational,1,30.5m,47m,Operational,1,0.225,8/8/2013,-4.5868,50.4672
+Point (-4.92024186469523794 50.3273966963847954),"Carnwinnick Farm, Grampound Road, Truro",PA13/04838,Application approved & operational,1,30.51m,47m,Operational,1,0.225,12/20/2013,-4.9202,50.3274
+Point (-5.13444713463291524 50.31311678167158874),"Cornish Scrumpy Co, Callestick Cider Farm",PA13/05445,Application approved & operational,1,24m,33.6m,Operational,1,0.055,12/10/2013,-5.1344,50.3131
+Point (-4.57611888193360006 50.69870194738943781),"Land w of Trevillian Cottage, Warbstow, Launceston",PA13/05919,Application approved & operational,1,36m,45.6m,Operational,1,0.055,8/23/2013,-4.5761,50.6987
+Point (-4.65606298326938628 50.649182499296586),"Land E of Trela Farm, Trekeek Road, Camelford",PA13/05680,Application approved & operational,1,22.5m,34.2m,Operational,1,0.1,9/9/2013,-4.6561,50.6492
+Point (-4.57274935581809494 50.71634824183425394),"Land NW of Trengune Farm,Warbstow, Launceston",PA13/06126,Application approved & operational,1,30m,45m,Operational,1,0.25,10/2/2013,-4.5727,50.7163
+Point (-4.57363416523222099 50.66693218836989132),"Lundy View Farm, Lundy View, Hallworthy",PA13/06283,Application approved & operational,1,36.8m,47.1m,Operational,1,0.1,9/5/2013,-4.5736,50.6669
+Point (-4.97549387223517492 50.30718911910742719),"Treverbyn Farm, Probus, Truro",PA12/03113/PREAPP,Pre application - closed/issued,1,---,---,Closed pub avail,0,0.5,7/23/2013,-4.9755,50.3072
+Point (-4.3283964391364087 50.39253757691469104),"Treboul Farmhouse, St Germans, Saltash",PA13/05184,Application approved & operational,1,15m,17.75m,Operational,1,0.005,9/23/2013,-4.3284,50.3925
+Point (-4.26728191319123429 50.41992337632154175),"Land Pt Os 0223 and 0326, Trematon",PA13/02149/PREAPP,Pre application - closed/issued,1,---,9.2m,Closed pub avail,0,0,9/4/2013,-4.2673,50.4199
+Point (-4.36634596300100597 50.68048824644807127),"Polbridge, Werrington, Launceston",PA13/06952,Application approved & operational,2,18.3m,25m,Operational,2,0.022,9/27/2013,-4.3663,50.6805
+Point (-4.46064415698371697 50.88423661910952234),"Land North of Aldercombe Barton, Kilkhampton, Bude",PA13/06812,Application approved & operational,1,60m,86.5m,Operational,1,0.8,11/20/2013,-4.4606,50.8842
+Point (-5.20043598067488411 50.15742509623630241),"Under Lane, Wendron.",PA13/07330,Application approved & operational,1,12.3m,15m,Operational,1,0.005,10/14/2013,-5.2004,50.1574
+Point (-4.66949144566897889 50.34513350962766509),"Land North of Penhale Farm , Fowey",PA13/06802,Refused Planning Application,1,24.8m,34.4m,Refused,0,0.05,2/6/2015,-4.6695,50.3451
+Point (-4.42810290267096018 50.71239173548148926),"Land w of Curry Lane Cottage, Boyton, Launceston",PA13/07593,Approved on appeal and operational,1,50m,77m,Operating appeal,1,0.5,10/9/2014,-4.4281,50.7124
+Point (-5.11940248402567555 50.15860008658073355),"Tregonhaye Farm, Hillhead Road, Kergilliack",PA13/07716,Refused on appeal Planning Application,1,50m,77m,Appeal refused,0,0.5,7/13/2015,-5.1194,50.1586
+Point (-4.73848751980157878 50.60907921599994808),"Land N of Vicarage Farm, Trewalder Road, Delabole.",PA13/07728,Application approved & operational,1,25m,34.6m,Operational,1,0.05,10/18/2013,-4.7385,50.6091
+Point (-4.76486461473111245 50.39060539896074431),"Lestoon Farm, Luxulyan, Bodmin",PA13/08209,Application approved & operational,1,50m,77m,Operational,1,0.5,12/19/2013,-4.7649,50.3906
+Point (-4.37834566392788016 50.58765214229327967),"Land NW of Bottonett Farm, Trebullett, Launceston",PA13/07962,Application approved & operational,1,50m,77m,Operational,1,0.5,12/12/2013,-4.3783,50.5877
+Point (-4.83215379482973706 50.5015473637474841),"Land NW of Pengelly Farm, Burlawn, Wadebridge",PA13/08439,Application approved & operational,1,50m,77m,Operational,1,0.5,11/22/2013,-4.8322,50.5015
+Point (-4.46061429107458096 50.90284041219004507),"Land NNW of Uplands Farm, Youlstone, Bude",PA13/08375,Refused on appeal Planning Application,1,40m,67m,Appeal refused,0,0.5,10/14/2015,-4.4606,50.9028
+Point (-5.21555114317673318 50.0478732932724526),"NE of Bonython Manor, Bonython Estate",PA13/08719,Application approved & operational,1,22.5m,34.2m,Operational,1,0.055,12/23/2013,-5.2156,50.0479
+Point (-4.55481242154643962 50.68776836725177048),"Fentrigan, Warbstow, Launceston",PA13/08668,Application approved & operational,1,24.8m,34.5m,Operational,1,0.05,11/18/2013,-4.5548,50.6878
+Point (-4.44811364740956172 50.74413692589259028),"Dilland Farm, Whitstone, Holsworthy",PA13/08865,Application approved & operational,1,35m,61m,Operational,1,0.5,11/25/2013,-4.4481,50.7441
+Point (-5.10852783854061521 50.35018711190557639),"Hendra Farm, Treamble, Rose, Truro",PA13/09188,Application approved not constructed,1,24m,33.6m,Approved,0,0.05,12/3/2013,-5.1085,50.3502
+Point (-4.59519085666034055 50.6648725591870317),"Land SW of Tregray Villa, Hallworthy, Camelford",PA13/09145,Application approved not constructed,1,36.7m,47.1m,Approved,0,0.1,2/27/2014,-4.5952,50.6649
+Point (-4.65568056926749829 50.39626219284683373),"Tredethick Farm, Tredethick Lane, Lostwithiel",PA13/09487,Application approved & operational,1,18.4m,24.9m,Operational,1,0.011,12/9/2013,-4.6557,50.3963
+Point (-4.68145751218887796 50.48086518867386019),"E of Callybarrett Farm, Callybarrett Rd, Cardinham",PA13/06959,Application approved on appeal,1,30m,47m,Appeal allowed,0,0.225,12/4/2014,-4.6815,50.4809
+Point (-4.61788534181151178 50.49907122820922467),"Land NW of Cabilla Manor, Cardinham, Bodmin",PA13/03102/PREAPP,Pre application - closed/issued,0,---,---,Closed pub avail,0,0.5,11/20/2013,-4.6179,50.4991
+Point (-5.60027295437651063 50.1085254929053292),"Treganhoe Farm, Sancreed, Penzance",PA13/03191/PREAPP,Pre application - closed/issued,1,24m,34.2m,Closed pub avail,0,0.05,12/9/2013,-5.6003,50.1085
+Point (-5.41848368779934741 50.17209501212764167),"1 Trenhayle Lane, St. Erth, Hayle",PA13/09554,Application approved & operational,1,---,32.2m,Operational,1,0.1,12/19/2013,-5.4185,50.1721
+Point (-4.60087642165228239 50.665437684746081),"Lower Tregeen, Davidstow, Camelford",PA13/09438,Application approved not constructed,1,20m,27.1m,Approved,0,0.02,4/3/2014,-4.6009,50.6654
+Point (-4.51713095381526752 50.36652224155414359),"Trelay Farm, Pelynt, Looe",PA13/03173/PREAPP,Pre application - closed/issued,1,30m,42m,Closed pub avail,0,0.1,12/4/2013,-4.5171,50.3665
+Point (-4.2409458034084766 50.34954775519323533),"Land East of Withnoe Lane, St John",PA13/02467/PREAPP,Pre application - closed/issued,1,---,67m,Closed pub avail,0,0.5,10/28/2013,-4.2409,50.3495
+Point (-4.72784714365580072 50.56676164869813306),"Polshea, St Tudy, Bodmin",PA13/09867,Refused on appeal Planning Application,1,40m,67m,Appeal refused,0,0.5,12/10/2015,-4.7278,50.5668
+Point (-4.56689623249195531 50.73319034014325268),"Beckaveans, Jacobstow, Bude",PA13/08833,Application approved not constructed,1,30m,45m,Approved,0,0.25,2/5/2014,-4.5669,50.7332
+Point (-4.94347244470508951 50.48086250228863747),"Higher Trevibban Farm, St Ervan",PA13/09744,Application approved not constructed,1,37m,49.65m,Approved,0,0.1,12/18/2013,-4.9435,50.4809
+Point (-4.86635810322015594 50.27427359516416772),"Tregonan Farm, Tregony, Truro",PA13/10074,Refused on appeal Planning Application,1,55m,79m,Appeal refused,0,0.5,7/8/2015,-4.8664,50.2743
+Point (-5.20015895546176754 50.0436414022525895),"Bonython Manor, Bonython Estate, Cury Cross Lanes",PA13/03464/PREAPP,Pre application - closed/issued,2,67m,107m,Closed pub avail,0,4,2/14/2014,-5.2002,50.0436
+Point (-4.45680508489209348 50.74160317501549144),"Land SW of Nethercott, Whitstone, Holsworthy",PA13/06873,Application approved & operational,2,36.4m,46m,Operational,2,0.1,11/27/2013,-4.4568,50.7416
+Point (-5.37846905151212606 50.10974542899316475),"Connings Farm, Helston Road, Germoe, Penzance",PA13/10706,Application approved & operational,1,15m,17.75m,Operational,1,0.005,2/19/2014,-5.3785,50.1097
+Point (-4.88766349888678597 50.44647888009968995),"Pengelly Farm, St Wenn, Bodmin",PA13/10652,Application approved & operational,1,15m,17.75m,Operational,1,0.005,1/17/2014,-4.8877,50.4465
+Point (-4.68264873538439819 50.63637030003950912),"Land W of Tregarth Business Park, Station Road",PA13/10532,Application approved & operational,1,33.5m,51m,Operational,1,0.25,3/14/2014,-4.6826,50.6364
+Point (-4.66183228463929922 50.66225493130752966),"Land SW Of Halwill Barton, Camelford",PA13/03492/PREAPP,Pre application - closed/issued,1,36.7m,47.1m,Closed pub avail,0,0.1,1/22/2014,-4.6618,50.6623
+Point (-5.06905179648032878 50.35736141011936695),"Treludderow Farm, St Newlyn East, Newquay",PA13/03533/PREAPP,Pre application - closed/issued,0,---,---,Closed pub avail,0,0,1/14/2014,-5.0691,50.3574
+Point (-4.60669047574916934 50.682621802829253),"Rose Park Farm, Otterham Station, Camelford",PA13/11430,Application approved & operational,1,40m,67m,Operational,1,0.5,9/26/2014,-4.6067,50.6826
+Point (-4.87244167245619053 50.28443970785019701),"Pitts Down Farm, Tregony, Truro",PA13/11428,Application approved not constructed,1,51m,79m,Approved,0,0.5,9/30/2014,-4.8724,50.2844
+Point (-4.5800081610035237 50.37082653783388508),"Land at Carwen Farm, Lanreath, Looe",PA13/11501,Refused on appeal Planning Application,1,50m,77m,Appeal refused,0,0.5,7/13/2015,-4.58,50.3708
+Point (-5.01255134819980608 50.28199988598377956),"Tregoninny Farm, Tresillian, Truro",PA13/03562/PREAPP,Pre application - closed/issued,1,55m,83m,Closed pub avail,0,1,1/6/2014,-5.0126,50.282
+Point (-4.5438173534291133 50.41705413722122131),"Land at New Hartswell Farm, Herodsfoot, Liskeard",PA13/11706,Application approved on appeal,1,24.6m,34.2m,Appeal allowed,0,0.05,11/27/2014,-4.5438,50.4171
+Point (-4.47102014798445868 50.59951261729091954),"Blackaton Farm, Lewannick, Launceston",PA12/09171,Application approved & operational,1,50m,77m,Operational,1,0.5,3/19/2013,-4.471,50.5995
+Point (-4.70890431545669141 50.48264006451949371),"Callywith Quarry, Roselands Lane, Bodmin",PA14/00558,Application approved & operational,1,36.6m,48.4m,Operational,1,0.85,4/7/2014,-4.7089,50.4826
+Point (-4.61493680905218273 50.588258029912474),"Fernacre, St Breward, Bodmin",PA14/00973,Application approved & operational,1,19.45m,22.95m,Operational,1,0.01,3/24/2014,-4.6149,50.5883
+Point (-5.6722968516634138 50.10903070379445978),"Land at Trebartine, Kelynack, St Just, Penzance",PA14/00196/PREAPP,Pre application - closed/issued,1,10.25m,14m,Closed pub avail,0,0.01,2/21/2014,-5.6723,50.109
+Point (-5.69459230920203296 50.12753661279526796),"Boswedden House, Boswedden, St Just, Penzance",PA14/00822/PREAPP,Pre application - closed/issued,1,10m,14m,Closed pub avail,0,0.01,4/17/2014,-5.6946,50.1275
+Point (-4.50544636631198792 50.72107375785756034),"Big Field Wind Frm, Creddacott Frm, Week St Mary",PA14/02107,Refused Appeal Lodged,11,80m,125m,Refused app lodg,0,22,10/28/2014,-4.5054,50.7211
+Point (-4.46198306260222388 50.73934054242181446),"Sea View Farm, Whitstone, Holsworthy",PA14/00274,Application approved not constructed,1,36.4m,46.1m,Approved,0,0.05,9/3/2014,-4.462,50.7393
+Point (-4.86253429636139689 50.33889928832915928),"Land S of High Street Ind Estate, High Street",PA14/02549,Refused Appeal Lodged,1,24.8m,34.5m,Refused app lodg,0,0.05,8/5/2014,-4.8625,50.3389
+Point (-4.96037487622767159 50.37482041975879099),"Glebe Farm, Narrow Lane, Penhale, Summercourt",PA14/02966,Refused Planning Application,1,23m,36m,Refused,0,0.1,4/24/2015,-4.9604,50.3748
+Point (-4.7853961182835647 50.44549242771665121),"Land at Higher Woodley Farm, Lanivet, Bodmin",PA14/03078,Application approved & operational,1,30m,45m,Operational,1,0.25,6/5/2014,-4.7854,50.4455
+Point (-4.5173756183685283 50.78405357821846167),"Langford Hele, Marhamchurch, Bude",PA14/03353,Application approved & operational,1,20.58m,27.13m,Operational,1,0.02,6/17/2014,-4.5174,50.7841
+Point (-4.3354824135876493 50.61969562978879367),"Sheers Barton, Lawhitton",PA14/03557,Application approved & operational,1,40m,67m,Operational,1,0.5,9/30/2014,-4.3355,50.6197
+Point (-5.64651669171800474 50.11562446524819592),"Cocks Roost, St Just, Penzance",PA14/01377,Refused Appeal Lodged,1,15m,18.5m,Refused app lodg,0,0.01,10/29/2014,-5.6465,50.1156
+Point (-4.78889777528629601 50.3555331327786817),"Mount Stamper Farm, Scredda, St. Austell.",PA14/03980,Application approved & operational,1,15m,21.6m,Operational,1,0.01,6/12/2014,-4.7889,50.3555
+Point (-4.90805503454724068 50.39091595456548589),"Gaverigan Farm, Indian Queens, St Columb",PA14/05025,Application approved & operational,1,50m,77m,Operational,1,0.5,9/30/2014,-4.9081,50.3909
+Point (-4.35700140761659682 50.45454480977713274),"Land NW of Trewoodgate Farm, Quethiock, Liskeard",PA14/01786/PREAPP,Pre application - closed/issued,1,---,51m,Closed pub avail,0,0.05,8/13/2014,-4.357,50.4545
+Point (-4.3290624626233738 50.37949553991999352),"Higher Tredis Farm, Sheviock, Torpoint",PA14/04822,Refused Planning Application,1,24.8m,34.5m,Appeal withdrawn,0,0.05,4/24/2015,-4.3291,50.3795
+Point (-4.54075603276347195 50.7803434185389122),Land Between Coppathorne And Quinceborough Farm,PA14/04851,Refused on appeal Planning Application,1,30.52m,45.07m,Appeal refused,0,0,10/14/2015,-4.5408,50.7803
+Point (-5.25846051111560886 50.17323126144007261),"Roses Farm, Black Rock, Camborne",PA15/03798,Refused Planning Application,1,21.1m,34.2m,Refused,0,0.06,7/7/2015,-5.2585,50.1732
+Point (-4.43870180511848833 50.52778890163263981),"Knowle Farm, Upton Cross, Liskeard.",PA14/04952,Refused on appeal Planning Application,1,25m,35m,Appeal refused,0,0.05,9/2/2015,-4.4387,50.5278
+Point (-4.26919035235560607 50.4888159091971005),"Lanoyce Nurseries, St. Dominick, Saltash",PA15/00484,Refused Planning Application,1,24.6m,34.2m,Refused,0,0.05,7/21/2015,-4.2692,50.4888
+Point (-5.68048333589289722 50.13853010059015247),"10 Cresswell Terrace, Botallack, Penzance",PA14/04535,Application under consideration,1,3.1m,3.565m,Pending,0,0.001,1899-12-30,-5.6805,50.1385
+Point (-4.95994192198885564 50.35616099375025101),"Trenithon Farm, Trenithon Lane, Summercourt",PA14/06049,Refused Planning Application,1,50m,77m,Refused app inv,0,0.9,8/17/2015,-4.9599,50.3562
+Point (-4.82842099855219065 50.43739243074421807),"Great Brynn Barton, Roche, St Austell",PA14/06616,Application in for screening opinion N,1,50m,77m,screening N,0,0.5,2/9/2015,-4.8284,50.4374
+Point (-4.66203644080483492 50.66233801128476699),"Land SW Of Halwill Barton, Camelford",PA14/06312,Application approved not constructed,1,22.6m,32.9m,Approved,0,0.1,9/23/2014,-4.662,50.6623
+Point (-4.55076310502270598 50.42257785995655439),"Wilton Farm, East Taphouse, Liskeard",PA14/06447,Refused Appeal Lodged,1,50m,77m,Refused app lodg,0,0.5,10/15/2014,-4.5508,50.4226
+Point (-4.94660463626443558 50.49134366744641511),"New Trevibban Farm, St. Issey, Wadebridge",PA14/06045,Application approved & operational,1,36.8m,48.5m,Operational,1,0.1,12/31/2014,-4.9466,50.4913
+Point (-4.54187528078695291 50.65723822567464651),"Tregenna Farm, Treneglos, Launceston",PA14/06215,Application approved not constructed,1,20.58m,27.13m,Approved,0,0.02,8/29/2014,-4.5419,50.6572
+Point (-4.92362543848639334 50.45060403242566593),"Trevornick Farm, St Columb.",PA14/06277,Application approved & operational,1,24.6m,34.2m,Operational,1,0.05,12/11/2014,-4.9236,50.4506
+Point (-4.82842099855219065 50.43739243074421807),"Great Brynn Barton, Roche, St Austell",PA14/06287,Refused Planning Application,1,50m,77m,Refused,0,0.5,5/28/2015,-4.8284,50.4374
+Point (-4.48968000544038048 50.63831759141054079),"Land at Lidcott, Laneast, Launceston",PA14/06531,Application approved & operational,1,35.7m,49m,Operational,1,0.1,9/24/2014,-4.4897,50.6383
+Point (-4.35700140761659682 50.45454480977713274),"Dannett Farm, Quethiock, Liskeard",PA14/06610,Application in for screening opinion N,1,---,51m,screening N,0,0.25,8/5/2014,-4.357,50.4545
+Point (-4.81194219463363204 50.35710810459366371),"Goonvean Works, Greensplat Road, Greensplat",PA14/07230,Application approved & operational,1,35m,61m,Operational,1,0.5,9/26/2014,-4.8119,50.3571
+Point (-4.38329478717615739 50.74095091854716344),"Tamerton Town Farm, North Tamerton, Holsworthy",PA14/07103,Application approved not constructed,1,30m,45m,Approved,0,0.25,12/22/2014,-4.3833,50.741
+Point (-4.3290624626233738 50.37949553991999352),"Higher Tredis Farm, Sheviock, Torpoint",PA14/05733,Application in for screening opinion N,1,24.8m,34.5m,screening N,0,0.05,8/4/2014,-4.3291,50.3795
+Point (-5.14268941708861682 50.27666537926999979),"Truro Airfield, Tregavethan, Truro",PA14/07274,Application approved not constructed,1,26.1m,36.5m,Approved,0,0.1,1/22/2015,-5.1427,50.2767
+Point (-4.58441468541830055 50.37048279866548484),"Furzedown, Lanreath, Looe",PA14/07782,Application approved & operational,1,50m,77m,Operational,1,0.5,12/11/2014,-4.5844,50.3705
+Point (-4.81447340785708278 50.42729917427298147),"Unit 10, Cornish Gateway Services, Victoria, Roche",PA14/07518,Application approved & operational,1,4.33m,5m,Operational,1,0.001,2/17/2015,-4.8145,50.4273
+Point (-4.60686782517314342 50.69076192019797134),Otterham Down (B),E1/2006/01274,Application approved & operational,4,46m,71m,Operational,4,3.2,6/21/2012,-4.6069,50.6908
+Point (-4.90164943072451287 50.47418657704109535),"Land At Scotland Corner, Rosenannon",PA14/08635,Refused Planning Application,5,65m,110m,Refused,0,15,4/10/2015,-4.9016,50.4742
+Point (-4.23978207695550324 50.51994261496948013),"Salters Farmhouse, Whiterocks Park, St Anns Chapel",PA14/08649,Refused Planning Application,1,24.7m,35m,Refused,0,0.05,10/7/2015,-4.2398,50.5199
+Point (-5.09210627154912299 50.34892591374313042),"Monkey Tree Holiday Park, Rejerrah, Newquay",PA14/08915,Refused Appeal Lodged,1,50m,77m,Refused app lodg,0,0.5,4/30/2015,-5.0921,50.3489
+Point (-4.37046270832336869 50.45713283010383066),"Trecorme Barton, Quethiock, Liskeard",PA14/09612,Refused Planning Application,2,18.3m,24.8m,Refused app inv,0,0.022,9/14/2015,-4.3705,50.4571
+Point (-4.88723825083539065 50.302322096682758),Grampound,PA14/01810/PREAPP,Pre application - closed/issued,1,60m,100m,Closed pub avail,0,2,10/7/2014,-4.8872,50.3023
+Point (-4.83016906649490707 50.27343816304110646),"Lanuah Farm, Kestle, St Ewe",PA14/01812/PREAPP,Pre application - closed/issued,1,45m,67m,Closed pub avail,0,0.9,10/8/2014,-4.8302,50.2734
+Point (-4.8257121335714066 50.30382611199827636),St Austell,PA14/01811/PREAPP,Pre application - closed/issued,1,54m,78m,Closed pub avail,0,0.8,10/10/2014,-4.8257,50.3038
+Point (-4.87706278226964418 50.27571376967914318),Tregony,PA14/01813/PREAPP,Pre application - closed/issued,1,60m,100m,Closed pub avail,0,2,10/6/2014,-4.8771,50.2757
+Point (-4.85236617668790604 50.25804072350365459),"Trevascus Farm, Gorran, St Austell",PA14/01808/PREAPP,Pre application - closed/issued,2,45m,68.5m,Closed pub avail,0,1.8,10/8/2014,-4.8524,50.258
+Point (-5.0495859047017948 50.33872824393917966),Trispen,PA14/01809/PREAPP,Pre application - closed/issued,2,60m,100m,Closed pub avail,0,4,10/8/2014,-5.0496,50.3387
+Point (-4.8617709341755404 50.47779744792298118),"Kathellen, St Wenn, Bodmin",PA14/09534,Refused Planning Application,1,18.3,24.8m,Refused,0,0.011,3/5/2015,-4.8618,50.4778
+Point (-5.11347685450498091 50.15289672563255863),"Field NW of Nangitha Farm, Budock Water",PA14/09850,Application in for screening opinion N,2,30.52m,45.07m,screening N,0,0.45,5/27/2015,-5.1135,50.1529
+Point (-4.61898261509332819 50.49921645721219932),"Cabilla Manor, Cardinham, Bodmin",E1/2009/01280,Application approved & operational,1,15m,20m,Operational,1,0.02,11/2/2009,-4.619,50.4992
+Point (-4.451307517936824 50.7424129937822741),"Land S of Dilland Farm, Whitstone, Holsworthy",PA14/10091,Refused Planning Application,1,36.4m,46m,Refused,0,0.05,2/16/2015,-4.4513,50.7424
+Point (-4.51207984440482068 50.85968455506385055),"Killock Farm, Kilkhampton, Bude",PA14/10174,Application approved & operational,1,24.8m,34.5m,Operational,1,0.055,12/23/2014,-4.5121,50.8597
+Point (-4.40917798486724699 50.68310504694137819),"Stenhill Farm, Stenhill Hill, North Petherwin",PA14/10399,Application in for screening opinion N,1,36.6m,48.4m,screening N,0,0.1,1/16/2015,-4.4092,50.6831
+Point (-4.9287935596430934 50.37351280589613367),"Land at Pines Tip, Summercourt, Newquay",PA14/00920/PREAPP,Pre application - closed/issued,3,---,70m,Closed pub avail,0,2.55,10/31/2014,-4.9288,50.3735
+Point (-4.85836903485510874 50.56814369079672389),"Land At Treswarrow Park Farm, Trelights.",PA14/10342,Refused Planning Application,1,35m,61m,Refused,0,0.5,2/20/2015,-4.8584,50.5681
+Point (-4.3290624626233738 50.37949553991999352),"Higher Tredis Farm, Sheviock, Torpoint",PA14/10104,Application approved not constructed,1,24.8m,34.5m,Approved,0,0.05,3/31/2015,-4.3291,50.3795
+Point (-4.85836903485510874 50.56814369079672389),"Land At Treswarrow Park Farm, Trelights",PA14/10991,Application in for screening opinion N,1,35m,61m,screening N,0,0.5,2/9/2015,-4.8584,50.5681
+Point (-4.42484801515839088 50.75874095056538948),"Land At Haydon Farm, North Tamerton, Holsworthy",PA14/10400,Application approved not constructed,1,28.1m,38.625m,Approved,0,0.05,1/6/2015,-4.4248,50.7587
+Point (-4.99628433850237386 50.37811601922307148),"Goonhoskyn Farm, Gummows Shop, Newquay",PA14/10808,Application under consideration,1,37m,50m,Pending,0,0.05,1899-12-30,-4.9963,50.3781
+Point (-4.89207276757246312 50.33518628128640415),"Land SE of Resugga Farm, Resugga, St Stephen",PA14/10878,Application approved not constructed,1,24.8m,36.6m,Approved,0,0,2/25/2015,-4.8921,50.3352
+Point (-4.40917798486724699 50.68310504694137819),"Stenhill Farm, Stenhill Hill, North Petherwin",PA14/11696,Application approved not constructed,1,24.8m,36.6m,Approved,0,0.055,4/28/2015,-4.4092,50.6831
+Point (-4.90793780670513335 50.30360369260576903),"Penbetha Farm, Grampound Road.",PA14/11579,Refused Planning Application,1,---,48.01m,Refused,0,0.225,6/8/2015,-4.9079,50.3036
+Point (-4.90793780670513335 50.30360369260576903),"Penbetha Farm, Grampound Road",PA14/11957,Application in for screening opinion N,1,---,48.01m,screening N,0,0.225,6/26/2015,-4.9079,50.3036
+Point (-4.45297123814633977 50.62314251516865937),"Trenault Farm, Pipers Pool, Launceston",PA14/11895,Application in for screening opinion N,1,18.3m,24.8m,screening N,0,0.011,1/26/2015,-4.453,50.6231
+Point (-4.38444376584095608 50.47248404466424176),"Land east of Ley Farm, West Looe Hill, West Looe",PA14/12148,Application in for screening opinion N,1,36.8m,48.5m,screening N,0,0.1,1/9/2015,-4.3844,50.4725
+Point (-4.80566533566198029 50.37702444989312767),"Gunheath Quarry, St Austell",PA14/12172,Application approved & operational,1,50m,77m,Operational,1,0.5,3/5/2015,-4.8057,50.377
+Point (-4.83691118757101357 50.34777070337018756),Land at Blackpool Quarry South.,PA15/00132,Application in for screening opinion N,1,50m,77m,screening N,0,0.5,1/22/2015,-4.8369,50.3478
+Point (-4.54581569239898542 50.68379936383733053),"Churchtown Farm, Warbxtow, Launceston",PA15/00028,Refused on appeal Planning Application,1,36.6m,48.8m,Appeal refused,0,0.085,12/22/2015,-4.5458,50.6838
+Point (-4.53978864522788772 50.76628061606589881),"Bangors House, Poundstock, Bude",PA15/00226,Refused Planning Application,1,18.3m,24.8m,Refused,0,0.011,3/3/2015,-4.5398,50.7663
+Point (-4.73516055155289539 50.59931528462237083),"Trevilley Farm, Delabole",PA15/00137/PREAPP,Pre application - closed/issued,1,37m,48.5m,Closed pub avail,0,0.1,1/22/2015,-4.7352,50.5993
+Point (-4.54352044907708041 50.47584218447774163),"Land S of Wenmouth Manor, St Neot, Liskeard",PA15/00271,Application in for screening opinion N,1,22m,34.2m,screening N,0,0.1,1/22/2015,-4.5435,50.4758
+Point (-4.60969894787306878 50.63997787451242516),"Higher Tremail Farm, Tremail, Camelford",PA15/00273,Application in for screening opinion N,1,24.8m,36.6m,screening N,0,0.085,1/30/2015,-4.6097,50.64
+Point (-4.91975696628672043 50.3549175856243707),"Scarcewater Tip, Grampound Road, Truro",PA15/00511,Application under consideration,3,---,92.5m,Pending,0,6.9,1899-12-30,-4.9198,50.3549
+Point (-5.64803141799265962 50.12036263664688818),Leswidden Concrete Wks,PA15/00157/PREAPP,Pre application - closed/issued,1,24.8m,36.6m,Closed pub avail,0,0.085,1/30/2015,-5.648,50.1204
+Point (-4.84079319681366194 50.33030514386257437),"Manor Farm, Burngullow Lane, High Street",PA15/00207,Application in for screening opinion P,1,64m,99m,screening P,0,0.5,2/2/2015,-4.8408,50.3303
+Point (-4.50246604551711993 50.62193759222465417),"Land NE of Higher Tregunnon, Altarnun, Launceston",PA14/12064,Application approved not constructed,1,24.8m,36.6m,Approved,0,0,6/23/2015,-4.5025,50.6219
+Point (-4.50246604551711993 50.62193759222465417),"Land NE of Higher Tregunnon, Altarnun, Launceston",PA15/00057,Application in for screening opinion N,1,24.8m,36.6m,screening N,0,0,2/9/2015,-4.5025,50.6219
+Point (-4.92869762155303448 50.37634934521170038),"Land at Pines Tip, Summercourt, Newquay",PA15/00955,Application under consideration,3,---,70m,Pending,0,2.7,1899-12-30,-4.9287,50.3763
+Point (-4.81365596496525505 50.52972096954848524),"Tregorden Farm, Wadebridge",PA15/00831,Refused Planning Application,1,---,36.6m,Refused,0,0,5/12/2015,-4.8137,50.5297
+Point (-4.54581569239898542 50.68379936383733053),"Churchtown Farm, Warbxtow, Launceston",PA15/00399,Application in for screening opinion N,1,36.6m,48.8m,screening N,0,0.085,2/23/2015,-4.5458,50.6838
+Point (-4.81242004816653335 50.42470637484845497),"Land N of Woodlands Barton, Wireless Road",PA15/00778,Application in for screening opinion P,1,---,100m,screening P,0,1.5,2/9/2015,-4.8124,50.4247
+Point (-4.83638648542345972 50.34698975147056643),"Blackpool Quarry, Greensplat, St Austell",PA15/01218,Application approved not constructed,1,50m,77m,Approved,0,0.5,7/7/2015,-4.8364,50.347
+Point (-5.67211253561460538 50.08419044493425787),"Land At Trevorrian Farm, Access to Trevorrian Farm",PA15/01124,Refused Appeal Lodged,1,24.8m,36.6m,Refused app lodg,0,0.085,3/25/2015,-5.6721,50.0842
+Point (-4.68145751218887796 50.48086518867386019),"E of Callybarrett Farm, Callybarrett Rd, Cardinham",PA15/01328,Application in for screening opinion N,1,40m,67m,screening N,0,0.5,2/26/2015,-4.6815,50.4809
+Point (-4.75330954776897485 50.36688465319972607),"Trethurgy Farm, Trethurgy",PA15/01479,Refused Planning Application,1,55.6m,79.6m,Refused,0,0.5,5/7/2015,-4.7533,50.3669
+Point (-4.37849920216446353 50.61584205035381245),"Land E of East Petherwin, South Petherwin",PA15/01625,Application in for screening opinion N,1,50m,77m,screening N,0,0.5,3/2/2015,-4.3785,50.6158
+Point (-4.26919035235560607 50.4888159091971005),"Lanoyce Nurseries, St. Dominick, Saltash",PA15/01520,Application in for screening opinion N,1,23.6m,33.2m,screening N,0,0.05,7/2/2015,-4.2692,50.4888
+Point (-4.35700140761659682 50.45454480977713274),"The Beacon, Dannett Farm, Quethiock",PA15/01043,Application under consideration,1,35m,51m,Pending,0,0.25,1899-12-30,-4.357,50.4545
+Point (-4.86721366307081738 50.44444809474227043),"Land W of Lancorla Farm, Kernick Road, St Wenn",PA15/01769,Application approved not constructed,1,25m,34.5m,Approved,0,0.05,4/28/2015,-4.8672,50.4444
+Point (-4.86721366307081738 50.44444809474227043),"Land W of Lancorla Farm, Kernick Road, St Wenn",PA15/02202,Application in for screening opinion N,1,25m,34.5m,screening N,0,0.05,3/18/2015,-4.8672,50.4444
+Point (-4.48604646933551443 50.81840122049676012),"Land at Scorsham Farm , Stratton, Bude",PA15/01117,Refused Planning Application,1,36.6m,48.4m,Refused,0,0.1,7/6/2015,-4.486,50.8184
+Point (-4.48604646933551443 50.81840122049676012),"Land at Scorsham Farm , Stratton, Bude",PA15/02515,Application in for screening opinion N,1,36.6m,48.4m,screening N,0,0.1,3/25/2015,-4.486,50.8184
+Point (-4.81242004816653335 50.42470637484845497),"Land N of Woodlands Barton, Wireless Road",PA15/02154,Scoping Opinion (issued),1,---,100m,scoping,0,1.5,5/11/2015,-4.8124,50.4247
+Point (-4.84071673905271105 50.32985243499576455),"Land at Manor Farm, Burngullow Lane, High Street",PA15/02150,Scoping Opinion (issued),1,---,99m,scoping,0,0.5,5/29/2015,-4.8407,50.3299
+Point (-4.45236073202490079 50.623103551103803),"Land N Of Trenault Farm, Pipers Pool, Launceston",PA15/02511,Application approved not constructed,1,18.3m,24.8m,Approved,0,0.011,5/20/2015,-4.4524,50.6231
+Point (-4.54681290436704266 50.81680653076801235),"Cerenety Eco Campsite, Upton, Bude",PA15/01337,Application under consideration,1,---,6m,Pending,0,0.005,1899-12-30,-4.5468,50.8168
+Point (-4.2409458034084766 50.34954775519323533),"Land East of Withnoe Lane, St John",PA15/02976,Application in for screening opinion N,1,40m,67m,screening N,0,0.5,4/2/2015,-4.2409,50.3495
+Point (-4.68296006458239678 50.48137365158161316),"Land East Of Callybarrett Farm, Cardinham, Bodmin",PA15/02966,Application approved not constructed,1,40m,67m,Approved,0,0.5,5/14/2015,-4.683,50.4814
+Point (-5.28790578275811018 50.2540241161314114),"Land at Gwel An Mor, Feadon Lane, Portreath",PA15/00874/PREAPP,Pre application - closed/issued,2,25m,34.4m,Closed pub avail,0,0.11,5/14/2015,-5.2879,50.254
+Point (-4.44831046181760925 50.76108362250042205),"West Balsdon Farm, Whitstone, Holsworthy",PA15/03334,Application in for screening opinion N,1,50m,77m,screening N,0,0.5,4/16/2015,-4.4483,50.7611
+Point (-5.05100738613611799 50.3395785284055961),"Land Off Ventonteague, St Allen, Truro",PA15/02972,Application approved not constructed,1,60m,98.5,Approved,0,1.5,10/26/2015,-5.051,50.3396
+Point (-5.64651669171800474 50.11562446524819592),"Cocks Roost, St Just, Penzance",PA15/01206/PREAPP,Pre application - closed/issued,1,15m,18.5m,Closed pub avail,0,0.01,5/28/2015,-5.6465,50.1156
+Point (-4.54236226141494193 50.47607567108790505),"Land S of Wenmouth Manor, St Neot, Liskeard",PA15/03849,Refused Planning Application,1,22m,34.2m,Refused,0,0.1,7/1/2015,-4.5424,50.4761
+Point (-5.27929574461144391 50.2402577296296613),"Merrose Farm, Illogan Downs, Illogan, Redruth",PA15/03580,Application approved not constructed,1,37m,49m,Approved,0,0.1,9/22/2015,-5.2793,50.2403
+Point (-5.11393977209795381 50.15278220784419005),"Field NW of Nangitha Farm, Budock Water",PA14/09087,Application approved not constructed,2,30.52m,45.07m,Approved,0,0.45,8/19/2015,-5.1139,50.1528
+Point (-4.59826845577202636 50.62851782713403281),"Moorhead Farm, St Clether, Launceston",PA15/01398/PREAPP,Pre application - closed/issued,1,12m,15.5m,Closed pub avail,0,0.004,6/3/2015,-4.5983,50.6285
+Point (-4.90164943072451287 50.47418657704109535),"Land At Scotland Corner, Rosenannon",PA15/04837,Application under consideration,5,60m,100m,Pending,0,10,1899-12-30,-4.9016,50.4742
+Point (-5.04025348363343717 50.43544778097463421),"Land west of Trebelsue Farm, Newquay",PA15/05672,Application approved not constructed,1,25m,36.6m,Approved,0,0.085,9/25/2015,-5.0403,50.4354
+Point (-4.42542918595645318 50.72476959206287717),"Villaton Farm, Boyton, Launceston",PA15/05525,Refused Planning Application,1,15m,17.75m,Refused,0,0.005,10/14/2015,-4.4254,50.7248
+Point (-4.74506088410984095 50.45183070580740292),"Land south of Stephen Gelly, Bodmin",PA15/06224,Application in for screening opinion N,1,36.6m,48.35m,screening N,0,0.085,7/15/2015,-4.7451,50.4518
+Point (-4.60971571865672392 50.64003212564019663),"Higher Tremail Farm, Tremail, Camelford",PA15/05326,Refused Planning Application,1,24.8m,36.6m,Refused,0,0.085,9/21/2015,-4.6097,50.64
+Point (-4.64773512063460625 50.65451803760847582),"Land south of Hendraburnick Farmhouse, Davidstow",PA15/07063,Application in for screening opinion P,1,50m,77m,screening P,0,0.5,8/10/2015,-4.6477,50.6545
+Point (-4.50329843555517595 50.81887063605953614),"Land SW of Marsh Farm, Howard Lane, Stratton",PA15/07069,Application in for screening opinion N,1,24m,35.5m,screening N,0,0,8/10/2015,-4.5033,50.8189
+Point (-4.61338898061416014 50.70308762328844665),"Land At Carwitham Barton Farm, Marshgate",PA15/06639,Refused Planning Application,2,24.6m,35m,Refused,0,0.1,12/8/2015,-4.6134,50.7031
+Point (-4.5335614663140138 50.64628857118984939),"Cold Northcott Farm, St Clether, Launceston",PA15/01905/PREAPP,Pre application,0,---,100m,pub avail,0,0,1899-12-30,-4.5336,50.6463
+Point (-4.41367265632325445 50.6122759845772876),"W of Botathan Abattoir, South Petherwin",PA15/08156,Application in for screening opinion N,1,50m,77m,screening N,0,0.5,9/21/2015,-4.4137,50.6123
+Point (-4.646383588611668 50.3585903977699445),"South Torfrey Farm, Golant, Fowey",PA15/02732/PREAPP,Pre application - closed/issued,2,12m,18.55m,Closed pub avail,0,0.04,10/16/2015,-4.6464,50.3586
+Point (-4.6609626513816842 50.64868102419133322),"Trela Farm, Camelford, PL32 9UB",PA14/05655,Application approved on appeal,1,22.6m,35m,Appeal allowed,0,0.1,11/10/2015,-4.661,50.6487
+Point (-4.24082881004149925 50.34970898357869373),"Land North East Of Lower Withnoe Barton, Freathy",PA15/08659,Refused Planning Application,1,40m,67m,Refused,0,0.5,11/24/2015,-4.2408,50.3497
+Point (-4.59931363884009592 50.70975262048191468),"Cansford Farm, Tresparrett Posts, Camelford",PA15/09018,Application in for screening opinion P,1,23.4m,33.471m,screening P,0,0,10/13/2015,-4.5993,50.7098
+Point (-4.82343169672005523 50.42237029543479565),"Land N of Woodlands Barton, Wireless Road",PA15/08886,Scoping Opinion (issued),1,---,100,scoping,0,1.5,10/27/2015,-4.8234,50.4224
+Point (-4.41361453019328032 50.6122517462433521),"Land at Botathan Farm, South Petherwin, Launceston",PA15/09185,Application under consideration,1,50m,77m,Pending,0,0.5,1899-12-30,-4.4136,50.6123
+Point (-5.09756885651172897 50.16745103119085059),"Jubilee Wharf, Commercial Road, Penryn",C1/PA01/1227/03/G,Application approved & operational,4,---,15m,Operational,4,0.024,7/23/2004,-5.0976,50.1675
+Point (-4.38941174021372404 50.77073340087246578),"Land NE of Hollafrench, East Venton",PA13/05242,Application approved & operational,1,26.8m,37m,Operational,1,0.1,11/6/2013,-4.3894,50.7707
+Point (-4.83036398656019728 50.36019309736047944),"Land at Higher Goonamarth Farm, St Austell",PA14/12102,Application approved not constructed,1,50m,77m,Approved,0,0.5,3/9/2015,-4.8304,50.3602
