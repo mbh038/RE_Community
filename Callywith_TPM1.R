@@ -5,7 +5,6 @@ library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(lubridate)
-library(plotrix)
 
 ## read in data
 dat.wide<-read.csv("callywith3year.csv",stringsAsFactors=FALSE)
@@ -35,11 +34,13 @@ tpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 spm<-numeric(maxBin)
 cpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 
+# loop to generate TPM
 for (i in 1:nrow(reference)){
     tpm[reference$bin[i],reference$bin[i+1]] <-tpm[reference$bin[i],reference$bin[i+1]] + 1
+}
 
-    }
 tpm[1,]
+
 print(tpm)
 sum(tpm[1,])
 
@@ -49,18 +50,24 @@ for (i in 1 :nrow(tpm)){
 spm
 sum(spm)
 
+
 for (i in 1 :nrow(tpm)){
     tpm[i,]=tpm[i,]/sum(tpm[i,])
 }
 
+# calculate cumulative probabilities
 for (i in 1 : nrow(tpm)){
     for (j in 1 :ncol(tpm)){
         cpm[i,j]=sum(tpm[i,1:j])
     }
 }
 print (cpm)
+
+#stochastic generation of synthetic data
 v=numeric(nrow(reference))
+#randomly choose first wind speed
 v[1]=round((maxBin)*runif(1),0)+1
+
 for (i in 2:nrow(reference)){
     colIndex=runif(1)
     j=1
@@ -69,6 +76,7 @@ for (i in 2:nrow(reference)){
     }
     v[i]=j
 }
+
 cpm
 summary(v)
 summary(reference$bin)
@@ -88,8 +96,8 @@ d = dweibull(seq(0,20,.2),vFit$estimate[1],vFit$estimate[2])
 points(seq(0,20,.2),d,type='l',col=2)
 
 
-
-
+plot(v[1:1000],type="l")
+lines(reference$V[1:1000],type="l",col="red")
 
 com<-data.frame(c("Time","V","P","D"))
 
