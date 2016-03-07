@@ -20,7 +20,7 @@ deltaOdot<-function(t){
 }
 
 h0<-function(phi,t){
-    acos(−tan(phi)*tan(deltaOdot(t)))
+    acos(tan(phi)*tan(deltaOdot(t)))
     }
     
 cosTheta<-function(phi,delta,h){
