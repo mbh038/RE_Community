@@ -87,7 +87,7 @@ deltaOdot<-function(t){
 # hour angle at sunrise and sunset
 h0<-function(phi,t){
     acos(tan(phi)*tan(deltaOdot(t)))
-    }
+}
 
 # cosine of zenith angle   
 cosTheta<-function(phi,delta,h){
@@ -104,11 +104,11 @@ solarFlux<-function(S0,phi,t){
 }
 ```
 
-#### variation of Declination angle
+#### Variation of Declination angle
 ```{r}
 phi=(pi/180)*50
 t=seq(1,365,length.out=365*288)
-plot(t,180*deltaOdot(t)/pi,typ="l",ylab="delta")
+plot(t,180*deltaOdot(t)/pi,typ="l",ylab="delta",xlab="Day of year")
 ```
 
 #### Length of day
@@ -116,22 +116,37 @@ plot(t,180*deltaOdot(t)/pi,typ="l",ylab="delta")
 t=seq(1,365,length.out=360*288)
 phi=(pi/180)*0.01
 h0s<-h0(phi,t)
-plot(t,24*(pi-h0s)/pi,type="l",ylim=c(0,20))
+plot(t,24*(pi-h0s)/pi,type="l",ylim=c(0,20),xlab=("day of the year"),ylab=("daylight time (hours)"),
+     main=("daylight time for latitudes 0 to 60N"))
 for (lat in seq(10,60,10)){
-phi=(pi/180)*lat 
-h0s<-h0(phi,t)
-lines(t,24*(pi-h0s)/pi,type="l",col=lat/10)
+  phi=(pi/180)*lat 
+  h0s<-h0(phi,t)
+  lines(t,24*(pi-h0s)/pi,type="l",col=lat/10)
 }
+grid(col = "lightgray", lty = "dotted",
+     lwd = par("lwd"), equilogs = TRUE)
 ```
 
+#### insolation during one day
 ```{r}
-day<-180
+#choose the day
+day<-1
+# choose the latitude
 phi=(pi/180)*0
-S0=1368
+S0=1000
+
 t=seq(1,366,length.out=365*288)
 daybegin<-day*288
 dayend<-(day+1)*288
 Q<-solarFlux(S0,phi,t)
-plot(t[daybegin:dayend],Q[daybegin:dayend],type="l")
+plot(t[daybegin:dayend],Q[daybegin:dayend],type="l",ylim=c(0,1000))
+for (lat in seq(10,60,10)){
+  phi=(pi/180)*lat
+  Q<-solarFlux(S0,phi,t)
+  lines(t[daybegin:dayend],Q[daybegin:dayend],type="l",col=lat/10)
+}
+grid(col = "lightgray", lty = "dotted",
+     lwd = par("lwd"), equilogs = TRUE)
 ```
+
 
