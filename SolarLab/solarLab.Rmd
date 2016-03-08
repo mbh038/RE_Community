@@ -5,6 +5,38 @@ date: "March 6, 2016"
 output: html_document
 ---
 
+### Distribution of insolation
+The amount of solar radiation incident on the top of the atmosphere (what we call the "insolation") depends on  
+* latitude  
+* season  
+* time of day  
+This insolation is the primary driver of the climate system. Here we will examine the geometric factors that determine insolation, focussing primarily on the daily average values.
+
+#### Solar Zenith Angle $\theta_\text{S}$
+The solar zenith angle $\theta_\text{S}$ is given by the angle between a normal to the earth's surface and a line drawn form a point on the surface to the sun
+
+```{r fig.width=4, fig.height=3,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("figures/solarZenithAngle.png")
+ grid.raster(img)
+```
+
+#### Instantaneous Solar Flux
+
+The solar flux per unit area is given by
+$$Q=S_0\cdot \left ( \frac{\bar{d}}{d} \right)^2 \cos \theta_\text{S}$$
+where $\bar{d}$ is the distance to the sun for which the solar flux density $S_0$ is measured and $d$ is the actual  distance from the sun.
+
+
+#### Calculating the zenith Angle
+
+The solar zenith angle depends latitude, season, and time of day.
+
+__Declination angle__  
+The seasonal dependence can be expressed in terms of the __declination angle__ of the sun: the latitude of the point on the surface of Earth directly under the sun at noon (denoted by  $\delta$ ).
+$\delta$  currenly varies between $+23.45^\circ$ at northern summer solstice (June 21) to $-23.45^\circ$ at northern winter solstice (Dec. 21).
+
 $$\delta_\odot = \arcsin \left [ \sin \left ( -23.44^\circ \right ) \cdot \cos \left ( \frac{360^\circ}{365.24} \left (N + 10 \right ) + \frac{360^\circ}{\pi} \cdot 0.0167 \sin \left ( \frac{360^\circ}{365.24} \left ( N - 2 \right ) \right ) \right ) \right ]$$
 
 In radians:
@@ -12,17 +44,52 @@ In radians:
 $$\delta_\odot=\arcsin \left [ \sin \left (-0.4091^\circ \right) \cdot \cos \left ( \frac{2\pi}{365.24} \left (N+10 \right ) + 0.0334 \cdot \sin \left ( \frac{2\pi}{365.24} \left (N-2 \right ) \right ) \right ) \right ]$$
 
 
+__Hour angle__   
+The hour angle  $h$  is defined as the longitude of the subsolar point relative to its position at noon. It varies from -90 to 90, or $-\pi$ to $\pi$ in radians.
+
+__Formula for zenith angle__
+
+$$\cos\theta_\text{S} = \sin\phi\sin\delta + cos\phi\cos\delta\cos h$$
+
+where $\phi$ is the latitude.
+
+__Sunrise and Sunset__  
+If $\cos \theta_\text{S}<0$ then the sun is below the horizon, the insolation is zero and it is night time!  
+Sunrise and sunset occur when the solar zenith angle is $90^\circ$ so that $\theta_\text{S}$ is zero. Hence the value $h_0$ of the hour angle $h$ when sunrise and sunset occur is given by
+
+$$\cos h_0 = \tan \phi \tan \delta$$
+
+#### Instantaneous Insolation
+
+From all the above we have
+
+$$\begin{align*}\\
+Q&=S_0\cdot \left ( \frac{\bar{d}}{d} \right)^2 \cos \theta_\text{S}\\
+&=S_0\cdot \left ( \frac{\bar{d}}{d} \right)^2 \sin\phi\sin\delta + cos\phi\cos\delta\cos h\\
+\end{align*}$$
+providing $|h| < h_0$ and zero otherwise.
+
+#### Average daily insolation
+The average daily insolation is found by integrating the above expression over one day between sun rise and sun set and dividing by $2\pi$, since we are expressing time in the form of the hour angle, which varies from $-\pi$ to $\pi$ over the course of 24 hours.
+
+$$\begin{align*}\\
+\bar{Q}&=\frac{1}{2\pi}\int_{-h_0}^{h_0} Q~dh\\
+&=\frac{S_0}{2\pi}\cdot \left ( \frac{\bar{d}}{d} \right)^2 \int_{-h_0}^{h_0} \sin\phi\sin\delta + cos\phi\cos\delta\cos h\\
+&=\frac{S_0}{\pi}\left ( \frac{\bar{d}}{d} \right)^2\Big( h_0 \sin\phi \sin\delta + \cos\phi \cos\delta \sin h_0 \Big)
+\end{align*}\\$$
 ```{r}
+# declination angle
 deltaOdot<-function(t){
     # t is the time in day number 1-365
-    #t<-t*365
     asin(sin(-0.4091)*cos((2*pi/365.24)*(t+10)+0.0334*sin((2*pi/365.24)*(t-2))))
 }
 
+# hour angle at sunrise and sunset
 h0<-function(phi,t){
     acos(tan(phi)*tan(deltaOdot(t)))
     }
-    
+
+# cosine of zenith angle   
 cosTheta<-function(phi,delta,h){
     # theta is the zenith angle
     sin(phi)*sin(delta)+cos(phi)*cos(delta)*cos(h)
@@ -37,18 +104,29 @@ solarFlux<-function(S0,phi,t){
 }
 ```
 
-
+#### variation of Declination angle
 ```{r}
 phi=(pi/180)*50
 t=seq(1,365,length.out=365*288)
 plot(t,180*deltaOdot(t)/pi,typ="l",ylab="delta")
+```
+
+#### Length of day
+```{r}
+t=seq(1,365,length.out=360*288)
+phi=(pi/180)*0.01
 h0s<-h0(phi,t)
-plot(t,24*h0s/pi,type="l")
+plot(t,24*(pi-h0s)/pi,type="l",ylim=c(0,20))
+for (lat in seq(10,60,10)){
+phi=(pi/180)*lat 
+h0s<-h0(phi,t)
+lines(t,24*(pi-h0s)/pi,type="l",col=lat/10)
+}
 ```
 
 ```{r}
 day<-180
-phi=(pi/180)*50
+phi=(pi/180)*0
 S0=1368
 t=seq(1,366,length.out=365*288)
 daybegin<-day*288
