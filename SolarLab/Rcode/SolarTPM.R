@@ -1,3 +1,5 @@
+#generates a tpm and cpm matric from actual solar data.
+
 # Solar Functions
 ################################################################################
 # declination angle
@@ -9,6 +11,7 @@ deltaOdot<-function(t){
 
 #sunrise and sunset hour angle
 h0<-function(phi,t){
+  #t is day number
   acos(tan(phi)*tan(deltaOdot(t)))
 }
 
@@ -35,54 +38,10 @@ solarFlux<-function(S0,phi,t){
 }
 
 # Load data
-#####################################################################
+########################################################################
+Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
 
-library(lubridate)
-Cam2001<- read.table("./data/project_label_BSRN_event_label_CAM_2001.tab",sep="\t", header=TRUE,stringsAsFactors=FALSE)
-str(Cam2001)
-names(Cam2001)<-c("datetime","DIF","LWD","SWD","DIR","ORG")
-
-# convert time to POSIXct
-Cam2001$datetime<-ymd_hms(Cam2001$datetime)
-# remove last column
-Cam2001$ORG<-NULL
-
-# Inspect data
-######################################################################
-str(Cam2001)
-summary(Cam2001)
-
-day<-355
-dayspan<-7
-phi=(pi/180)*50
-S0=1368
-t=seq(1,366,length.out=365*1440)
-daybegin<-day*1440
-dayend<-(day+dayspan)*1440
-Q<-solarFlux(S0,phi,t)
-
-plot(Cam2001$SWD[daybegin:dayend],type="l",ylim=c(0,1500))
-lines(Q[daybegin:dayend],type="l",col="blue")
-
-plot(Cam2001$datetime[daybegin:dayend])
-Cam2001$datetime[(daybegin+270):(daybegin+280)]
-
-# rows missing, times from "2001-11-05 04:36:00 UTC" "2001-11-05 12:03:00 UTC"
-# Include missing rows
-begin<-as.POSIXct("2001-11-05 04:37:00 UTC")
-end<-as.POSIXct("2001-11-05 12:02:00 UTC")
-missing<-cbind(seq(begin,end,by="1 min"),as.data.frame(matrix(rep(0,446*4),446,4)))
-names(missing)<-names(Cam2001)
-first<-Cam2001[1:443797,]
-last<-Cam2001[443798:nrow(Cam2001),]
-Cam2001n<-rbind(first,missing,last)
-
-plot(Cam2001n$datetime[daybegin:dayend])
-Cam2001n$datetime[(daybegin+270):(daybegin+280)]
-
-str(Cam2001n)
-summary(Cam2001n)
-# Markov Chian
+# Markov Chain
 ########################################################################
 
 reference<-data.frame(Cam2001n$datetime,Cam2001n$SWD)
@@ -91,11 +50,13 @@ names(reference)<-c("datetime","SWD")
 # log transform the data
 reference$SWD<-log(reference$SWD)
 reference$SWD[reference$SWD=="-Inf"]=0
+SWDrange<-range(reference$SWD)
 
 # bin into 100 levels
 reference$bin<-floor((reference$SWD/max(reference$SWD))*99.9)+1
 table(reference$bin)
 sum(table(reference$bin))
+hist(reference$bin)
 
 maxBin=max(reference$bin)
 
@@ -127,34 +88,43 @@ for (i in 1 :nrow(tpm)){
 spm
 sum(spm)
 
-# TPM as probabilities
+tpmr<-tpm
+count=0
+bins<-seq(1,maxBin)
 for (i in 1 :nrow(tpm)){
-    tpmp[i,]=tpm[i,]/sum(tpm[i,])
+  if (sum(tpm[i,])==0) {
+      bins<-bins[-(i-count)]
+      tpmr<-tpmr[-(i-count),]
+      tpmr<-tpmr[,-(i-count)]
+      count=count+1
+  }
+}
+str(tpmr)
+bins
+
+spm<-numeric(nrow(tpmr))
+# sums of each row of TPMr
+for (i in 1 :nrow(tpmr)){
+  spm[i]=sum(tpmr[i,])
+}
+spm
+sum(spm)
+
+tpmp<-tpmr
+# TPM as probabilities
+for (i in 1 :nrow(tpmr)){
+    tpmp[i,]=tpmr[i,]/spm[i]
 }
 sum(tpmp)
 
+cpm<-tpmp
 # TPM-> CPM: cumulative probabilities
 for (i in 1 : nrow(tpmp)){
     for (j in 1 :ncol(tpmp)){
         cpm[i,j]=sum(tpmp[i,1:j])
     }
 }
-cpm
+cpm<-cbind(bins,cpm)
 
-#Stochastic generation of synthetic data
-v=numeric(nrow(reference))
-#randomly choose first wind speed
-v[1]=1
+write.table(cpm,"../tpm/Cam2001cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
 
-for (i in 2:nrow(reference)){
-    colIndex=runif(1)
-    j=1
-    while (cpm[round(v[i-1],0),j] < colIndex){
-        j=j+1
-    }
-    v[i]=j
-}
-
-cpm
-summary(v)
-summary(reference$bin)
