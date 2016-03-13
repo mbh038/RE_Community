@@ -1,43 +1,7 @@
-#generates a tpm and cpm matric from actual solar data.
+#Generates a tpm and cpm matric from actual solar data.
 
-# Solar Functions
-################################################################################
-# declination angle
-deltaOdot<-function(t){
-  # t is the time in day number 1-365
-  #t<-t*365
-  asin(sin(-0.4091)*cos((2*pi/365.24)*(t+10)+0.0334*sin((2*pi/365.24)*(t-2))))
-}
 
-#sunrise and sunset hour angle
-h0<-function(phi,t){
-  #t is day number
-  acos(tan(phi)*tan(deltaOdot(t)))
-}
-
-#cosine of zenith angle
-cosTheta<-function(phi,delta,h){
-  # theta is the zenith angle
-  sin(phi)*sin(delta)+cos(phi)*cos(delta)*cos(h)
-}
-
-# solar flux
-solarFlux<-function(S0,phi,t){
-  # S0 is solar constant
-  # phi is latitude in radians
-  # t is day of year
-  
-  # hour angle -pi to pi
-  h<-pi*(2*(t-floor(t))-1)
-  # declination angle
-  delta<-deltaOdot(t)
-  flux<-S0*cosTheta(phi,delta,h)
-  # make it zero at nighttime (when cos theta is negative)
-  flux<-pmax(flux,rep(0,length(t)))
-  flux
-}
-
-# Load data
+# Load cleaned data
 ########################################################################
 Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
 
@@ -45,10 +9,12 @@ Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
 ########################################################################
 
 reference<-data.frame(Cam2001n$datetime,Cam2001n$SWD)
+
 names(reference)<-c("datetime","SWD")
+reference<-reference[reference$SWD>0,]
 
 # log transform the data
-reference$SWD<-log(reference$SWD)
+reference$SWD<-(reference$SWD)
 reference$SWD[reference$SWD=="-Inf"]=0
 SWDrange<-range(reference$SWD)
 
@@ -67,12 +33,6 @@ cpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 # loop to generate TPM counts
 for (i in 1:(nrow(reference)-1)){
     tpm[reference$bin[i],reference$bin[i+1]] <-tpm[reference$bin[i],reference$bin[i+1]] + 1
-#     if (is.na(tpm[reference$bin[i],reference$bin[i+1]])==TRUE){
-#         print (i)
-#         print (reference$bin[i])
-#         print (reference$bin[i+1])
-#         
-#     }
 }
 
 tpm[1,]

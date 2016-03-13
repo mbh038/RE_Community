@@ -20,8 +20,8 @@ names(df)<-c("day","sunrise","sunset")
 for (i in 1:365){
   df$sunrise[i]<-h0(phi,i)
   temp<-24*(df$sunrise[i]+pi)/(2*pi)-12
-  df$sunrise[i]<-1440*i+60*temp
-  df$sunset[i]<-1440*i+60*(24- temp)
+  df$sunrise[i]<-1440*(i-1)+60*temp
+  df$sunset[i]<-1440*(i-1)+60*(24- temp)
 }
 
 summary(df$sunrise)
