@@ -42,6 +42,11 @@ solarFlux<-function(S0,phi,t){
 
 # cleaned data
 Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
+Cam2002n<-readRDS("../data/cleaned/Cam2002n.csv")
+
+data<-rbind(Cam2001n,Cam2002n)
+
+rm(Cam2001n,Cam2002n)
 
 # sunrise and sunset times
 srss<-read.csv("../data/h0times.csv",sep=",")
@@ -50,7 +55,7 @@ srss$sunrise<-as.integer(srss$sunrise)
 srss$sunset<-as.integer(srss$sunset)
 
 # cpm matrix for given location
-cpm<-read.table("../tpm/Cam2001cpm.csv",sep=",")
+cpm<-read.table("../tpm/Cam_cpm.csv",sep=",")
 # first column is the bins,so separate that off
 #cpm[1,]<-NULL
 bins<-cpm[,1]
@@ -63,14 +68,17 @@ S0=1200
 
 #Stochastic generation of synthetic data
 perday<-1440
+mdays<-c(31,28,31,30,31,30,31,31,30,31,30,31)
+cmdays<-c(0,cumsum(mdays)[1:11])
+
 permonth<-30*perday
 maxlim<-10
 day1<-1
-dayspan<-180
+dayspan<-185
 daybegin<-1+(day1-1)*perday
 dayend<-(day1+dayspan-1)*perday
 
-datrange<-range(Cam2001n$SWD[daybegin:dayend])[2]
+datrange<-range(data$SWD[daybegin:dayend])[2]
 
 t=seq(daybegin,dayend)
 Q<-solarFlux(S0,phi,t/perday)
@@ -78,6 +86,10 @@ v<-rep(0,(length(t)))
 swd<-rep(0,(length(t)))
 
 for (k in day1:(day1+dayspan-1)){
+    
+    rmean<-ifelse(k < 90 | k > 270,0.39,0.55)
+    rsd<-ifelse(k < 90 | k > 270,0.4,0.2)
+    
     #cat(k," ")
     dbegin<-1+(k-1)*perday
     dend<-k*perday
@@ -92,8 +104,7 @@ for (k in day1:(day1+dayspan-1)){
     maxcount=0
     for (i in (srss$sunrise[k]+2):srss$sunset[k]){
 
-        rmean<-ifelse(k < 90 | k > 270,0.39,0.55)
-        rsd<-ifelse(k < 90 | k > 270,0.4,0.2)
+
         colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
         
         j=1
@@ -120,28 +131,28 @@ for (k in day1:(day1+dayspan-1)){
 
 
 sum(swd)/sum(Q)
-sum(swd)/sum(Cam2001n$SWD[daybegin:dayend])
-sum(Cam2001n$SWD[daybegin:dayend])/sum(Q)
+sum(swd)/sum(data$SWD[daybegin:dayend])
+sum(data$SWD[daybegin:dayend])/sum(Q)
 
 months<-dayend/permonth
 simtotal=0
 meastotal=0
 for (i in 1:months) {
-    monthbegin<-(i-1)*permonth+1
-    monthend<-i*permonth
+    monthbegin<-cmdays[i]*perday+1
+    monthend<-(cmdays[i]+mdays[i])*perday
     simtotal<-simtotal+sum(swd[monthbegin:monthend])
-    meastotal<-meastotal+sum(Cam2001n$SWD[monthbegin:monthend])
-    monthratio<-sum(swd[monthbegin:monthend])/sum(Cam2001n$SWD[monthbegin:monthend])
+    meastotal<-meastotal+sum(data$SWD[monthbegin:monthend])
+    monthratio<-sum(swd[monthbegin:monthend])/sum(data$SWD[monthbegin:monthend])
     print(paste(i,": ",monthbegin,monthend,round(monthratio,2),round(simtotal/meastotal,2)))
 }
 
-sum(Cam2001n$SWD[daybegin:dayend])/(60*1000)
+sum(data$SWD[daybegin:dayend])/(60*1000)
 sum(swd)/(60*1000)
 
 summary(swd[swd>0])
 hist(swd[swd>0],breaks=50)
-summary(Cam2001n$SWD[Cam2001n$SWD>0])
-hist(Cam2001n$SWD[Cam2001n$SWD>0],breaks=50)
+summary(data$SWD[data$SWD>0])
+hist(data$SWD[data$SWD>0],breaks=50)
 
 # plot(t/1440,Cam2001n$SWD[daybegin:dayend],type="l",ylim=c(0,1500))
 # lines(t/1440,swd,type="l",col="blue")
@@ -153,9 +164,9 @@ for (day in seq(day1,(day1+dayspan-1),by=3)){
     start<-srss[day,2]
     end<-srss[day,3]
     
-    ymax<-max(max(Q[start:end]),max(Cam2001n$SWD[start:end]))
+    ymax<-max(max(Q[start:end]),max(data$SWD[start:end]))
     
-    plot(t[start:end]/perday,Cam2001n$SWD[start:end],type="l",ylim=c(0,ymax))
+    plot(t[start:end]/perday,data$SWD[start:end],type="l",ylim=c(0,ymax))
     lines(t[start:end]/perday,swd[start:end],type="l",col="blue")
     lines(t[start:end]/perday,Q[start:end],type="l",col="red")
 }

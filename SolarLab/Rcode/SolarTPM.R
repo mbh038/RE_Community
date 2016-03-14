@@ -4,18 +4,21 @@
 # Load cleaned data
 ########################################################################
 Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
+Cam2002n<-readRDS("../data/cleaned/Cam2002n.csv")
 
+data<-rbind(Cam2001n,Cam2002n)
+rm(Cam2001n,Cam2002n)
 # Markov Chain
 ########################################################################
 
-reference<-data.frame(Cam2001n$datetime,Cam2001n$SWD)
+reference<-data.frame(data$datetime,data$SWD)
 
 names(reference)<-c("datetime","SWD")
 reference<-reference[reference$SWD>0,]
 
 # log transform the data
-reference$SWD<-(reference$SWD)
-reference$SWD[reference$SWD=="-Inf"]=0
+# reference$SWD<-(reference$SWD)
+# reference$SWD[reference$SWD=="-Inf"]=0
 SWDrange<-range(reference$SWD)
 
 # bin into 100 levels
@@ -86,5 +89,7 @@ for (i in 1 : nrow(tpmp)){
 }
 cpm<-cbind(bins,cpm)
 
-write.table(cpm,"../tpm/Cam2001cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+write.table(cpm,"../tpm/Cam_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+
+rm(data)
 
