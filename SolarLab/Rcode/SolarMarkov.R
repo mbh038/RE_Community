@@ -41,12 +41,8 @@ solarFlux<-function(S0,phi,t){
 #####################################################################
 
 # cleaned data
-Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
-Cam2002n<-readRDS("../data/cleaned/Cam2002n.csv")
-
-data<-rbind(Cam2001n,Cam2002n)
-
-rm(Cam2001n,Cam2002n)
+#data<-readRDS("../data/cleaned/Cam2001n.csv")
+data<-readRDS("../data/cleaned/Cam2002n.csv")
 
 # sunrise and sunset times
 srss<-read.csv("../data/h0times.csv",sep=",")
@@ -63,7 +59,7 @@ cpm[,1]<-NULL
 
 
 phi=(pi/180)*50
-S0=1200
+S0=1100
 
 
 #Stochastic generation of synthetic data
@@ -71,7 +67,7 @@ perday<-1440
 mdays<-c(31,28,31,30,31,30,31,31,30,31,30,31)
 cmdays<-c(0,cumsum(mdays)[1:11])
 
-permonth<-30*perday
+permonth<-mdays*perday
 maxlim<-10
 day1<-1
 dayspan<-185
@@ -104,7 +100,6 @@ for (k in day1:(day1+dayspan-1)){
     maxcount=0
     for (i in (srss$sunrise[k]+2):srss$sunset[k]){
 
-
         colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
         
         j=1
@@ -134,7 +129,7 @@ sum(swd)/sum(Q)
 sum(swd)/sum(data$SWD[daybegin:dayend])
 sum(data$SWD[daybegin:dayend])/sum(Q)
 
-months<-dayend/permonth
+months<-dayend/(30*perday)
 simtotal=0
 meastotal=0
 for (i in 1:months) {
@@ -170,4 +165,12 @@ for (day in seq(day1,(day1+dayspan-1),by=3)){
     lines(t[start:end]/perday,swd[start:end],type="l",col="blue")
     lines(t[start:end]/perday,Q[start:end],type="l",col="red")
 }
-
+library(dplyr)
+newdata<-as.data.frame(cbind(t,swd))
+names(newdata)<-c("minutes","swd")
+write.csv(newdata,"../data/synthetic/Cam001_1min.csv")
+t10<-10*(t %/% 10)
+newdata<-as.data.frame(cbind(t10,swd))
+names(newdata)<-c("minutes","swd")
+new10<-newdata %>% group_by(minutes) %>% summarise_each(funs(mean))
+write.csv(new10,"../data/synthetic/Cam001_10min.csv")

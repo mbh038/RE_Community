@@ -42,7 +42,7 @@ solarFlux<-function(S0,phi,t){
 #####################################################################
 
 library(lubridate)
-Cam2002<- read.table("../data/project_label_BSRN_event_label_CAM_2002.tab",sep="\t", header=TRUE,stringsAsFactors=FALSE)
+Cam2002<- read.table("../data/raw/project_label_BSRN_event_label_CAM_2002.tab",sep="\t", header=TRUE,stringsAsFactors=FALSE)
 str(Cam2002)
 summary(Cam2002)
 names(Cam2002)<-c("datetime","DIF","LWD","SWD","DIR","ORG")

@@ -1,49 +1,65 @@
 #Generates a tpm and cpm matric from actual solar data.
 
+maxSWD<-0
+maxBin<-0
+nbin<-100
+
+file_handles<-c("Cam2001n.csv","Cam2002n.csv")
+path<-"../data/cleaned/"
+
+# find max bin number and  range of data
+for (file in 1:length(file_handles)){
+  fullname<-paste0(path,file_handles[file])
+  #print (fullname)
+  data<-readRDS(fullname)
+  maxSWD<-max(maxSWD,max(data$SWD))
+  maxBin<-max(maxBin,max(floor((data$SWD/maxSWD)*0.999*nbin)+1))
+  print (maxBin)
+}
+
+# set up TPM
+tpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 
 # Load cleaned data
 ########################################################################
-Cam2001n<-readRDS("../data/cleaned/Cam2001n.csv")
-Cam2002n<-readRDS("../data/cleaned/Cam2002n.csv")
+# loop through data file and add bin counts to TPM
 
-data<-rbind(Cam2001n,Cam2002n)
-rm(Cam2001n,Cam2002n)
-# Markov Chain
-########################################################################
-
-reference<-data.frame(data$datetime,data$SWD)
-
-names(reference)<-c("datetime","SWD")
-reference<-reference[reference$SWD>0,]
-
-# log transform the data
-# reference$SWD<-(reference$SWD)
-# reference$SWD[reference$SWD=="-Inf"]=0
-SWDrange<-range(reference$SWD)
-
-# bin into 100 levels
-reference$bin<-floor((reference$SWD/max(reference$SWD))*99.9)+1
-table(reference$bin)
-sum(table(reference$bin))
-hist(reference$bin)
-
-maxBin=max(reference$bin)
-
-tpm<-matrix(0, nrow = maxBin, ncol =maxBin)
-spm<-numeric(maxBin)
-cpm<-matrix(0, nrow = maxBin, ncol =maxBin)
-
-# loop to generate TPM counts
-for (i in 1:(nrow(reference)-1)){
-    tpm[reference$bin[i],reference$bin[i+1]] <-tpm[reference$bin[i],reference$bin[i+1]] + 1
+for (file in 1:length(file_handles)){
+  fullname<-paste0(path,file_handles[file])
+  print (paste("Adding ",fullname," to TPM"))
+  data<-readRDS(fullname)
+  
+  
+  # Markov Chain
+  ########################################################################
+  
+  data<-data[data$SWD>0,]
+  
+  # log transform the data
+  # reference$SWD<-(reference$SWD)
+  # reference$SWD[reference$SWD=="-Inf"]=0
+  
+  # bin into 100 levels
+  data$bin<-floor((data$SWD/maxSWD)*0.999*nbin)+1
+  table(data$bin)
+  sum(table(data$bin))
+  hist(data$bin,main=file_handles[file],xlab="Bin")
+ 
+  # loop to generate TPM counts
+  for (i in 1:(nrow(data)-1)){
+    tpm[data$bin[i],data$bin[i+1]] <-tpm[data$bin[i],data$bin[i+1]] + 1
+  }
+  
 }
+rm(data)
 
 tpm[1,]
-summary(tpm)
+#summary(tpm)
 
 #print(tpm)
 sum(tpm[1,])
 
+spm<-numeric(maxBin)
 # sums of each row of TPM
 for (i in 1 :nrow(tpm)){
     spm[i]=sum(tpm[i,])
@@ -51,6 +67,7 @@ for (i in 1 :nrow(tpm)){
 spm
 sum(spm)
 
+# remove any rows or columns that contain only zeros.
 tpmr<-tpm
 count=0
 bins<-seq(1,maxBin)
@@ -62,24 +79,28 @@ for (i in 1 :nrow(tpm)){
       count=count+1
   }
 }
-str(tpmr)
+print (paste(count," bins were empty and have been removed"))
+#str(tpmr)
 bins
+maxBin<-max(bins)
 
-spm<-numeric(nrow(tpmr))
+spmr<-numeric(nrow(tpmr))
 # sums of each row of TPMr
 for (i in 1 :nrow(tpmr)){
-  spm[i]=sum(tpmr[i,])
+  spmr[i]=sum(tpmr[i,])
 }
-spm
-sum(spm)
+spmr
+sum(spmr)
 
 tpmp<-tpmr
 # TPM as probabilities
 for (i in 1 :nrow(tpmr)){
-    tpmp[i,]=tpmr[i,]/spm[i]
+    tpmp[i,]=tpmr[i,]/spmr[i]
 }
 sum(tpmp)
 
+# cumulative probability matrix
+cpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 cpm<-tpmp
 # TPM-> CPM: cumulative probabilities
 for (i in 1 : nrow(tpmp)){
@@ -91,5 +112,4 @@ cpm<-cbind(bins,cpm)
 
 write.table(cpm,"../tpm/Cam_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
 
-rm(data)
 
