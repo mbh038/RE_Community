@@ -1,40 +1,5 @@
-# Solar Functions
-################################################################################
-# declination angle
-deltaOdot<-function(t){
-  # t is the time in day number 1-365
-  #t<-t*365
-  asin(sin(-0.4091)*cos((2*pi/365.24)*(t+10)+0.0334*sin((2*pi/365.24)*(t-2))))
-}
 
-#sunrise and sunset hour angle
-h0<-function(phi,t){
-  #t is day number
-  acos(tan(phi)*tan(deltaOdot(t)))
-}
-
-#cosine of zenith angle
-cosTheta<-function(phi,delta,h){
-  # theta is the zenith angle
-  sin(phi)*sin(delta)+cos(phi)*cos(delta)*cos(h)
-}
-
-# solar flux
-solarFlux<-function(S0,phi,t){
-  # S0 is solar constant
-  # phi is latitude in radians
-  # t is day of year
-  
-  # hour angle -pi to pi
-  h<-pi*(2*(t-floor(t))-1)
-  # declination angle
-  delta<-deltaOdot(t)
-  flux<-S0*cosTheta(phi,delta,h)
-  # make it zero at nighttime (when cos theta is negative)
-  flux<-pmax(flux,rep(0,length(t)))
-  flux
-}
-
+source("SolarFunctions.R")
 #####################################################################
 
 # Load data
@@ -70,7 +35,7 @@ cmdays<-c(0,cumsum(mdays)[1:11])
 permonth<-mdays*perday
 maxlim<-10
 day1<-1
-dayspan<-365
+dayspan<-31
 daybegin<-1+(day1-1)*perday
 dayend<-(day1+dayspan-1)*perday
 
@@ -124,7 +89,7 @@ for (k in day1:(day1+dayspan-1)){
     cat (k,",",bins[v[i]],": ",sep="")
 }
 
-
+# Summary of outputs compared to real data
 sum(swd)/sum(Q)
 sum(swd)/sum(data$SWD[daybegin:dayend])
 sum(data$SWD[daybegin:dayend])/sum(Q)
@@ -165,6 +130,8 @@ for (day in seq(day1,(day1+dayspan-1),by=3)){
     lines(t[start:end]/perday,swd[start:end],type="l",col="blue")
     lines(t[start:end]/perday,Q[start:end],type="l",col="red")
 }
+
+## Write data to 1min and 10min files
 library(dplyr)
 newdata<-as.data.frame(cbind(t,swd))
 names(newdata)<-c("minutes","swd")

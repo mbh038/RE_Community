@@ -32,7 +32,7 @@ for (file in 1:length(file_handles)){
   
   # Markov Chain
   ########################################################################
-  
+  # remove zeros
   data<-data[data$SWD>0,]
   
   # log transform the data
@@ -47,6 +47,7 @@ for (file in 1:length(file_handles)){
  
   # loop to generate TPM counts
   for (i in 1:(nrow(data)-1)){
+    # as.POSIXlt(data$datetime[1000])$hour  # am or pm
     tpm[data$bin[i],data$bin[i+1]] <-tpm[data$bin[i],data$bin[i+1]] + 1
   }
   
