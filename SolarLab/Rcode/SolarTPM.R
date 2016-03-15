@@ -4,7 +4,7 @@ maxSWD<-0
 maxBin<-0
 nbin<-100
 
-file_handles<-c("Cam2001n.csv","Cam2002n.csv")
+file_handles<-c("Cam2001n.csv","Cam2002n.csv","Cam2003n.csv","Cam2004n.csv","Cam2005n.csv","Cam2006n.csv","Cam2007n.csv","Cam2008n.csv")
 path<-"../data/cleaned/"
 
 # find max bin number and  range of data

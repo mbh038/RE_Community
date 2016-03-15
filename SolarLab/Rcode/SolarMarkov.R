@@ -42,7 +42,7 @@ solarFlux<-function(S0,phi,t){
 
 # cleaned data
 #data<-readRDS("../data/cleaned/Cam2001n.csv")
-data<-readRDS("../data/cleaned/Cam2002n.csv")
+data<-readRDS("../data/cleaned/Cam2003n.csv")
 
 # sunrise and sunset times
 srss<-read.csv("../data/h0times.csv",sep=",")
@@ -70,7 +70,7 @@ cmdays<-c(0,cumsum(mdays)[1:11])
 permonth<-mdays*perday
 maxlim<-10
 day1<-1
-dayspan<-185
+dayspan<-365
 daybegin<-1+(day1-1)*perday
 dayend<-(day1+dayspan-1)*perday
 
@@ -168,9 +168,12 @@ for (day in seq(day1,(day1+dayspan-1),by=3)){
 library(dplyr)
 newdata<-as.data.frame(cbind(t,swd))
 names(newdata)<-c("minutes","swd")
-write.csv(newdata,"../data/synthetic/Cam001_1min.csv")
+write.csv(newdata,"../data/synthetic/Cam002_1min.csv")
 t10<-10*(t %/% 10)
 newdata<-as.data.frame(cbind(t10,swd))
 names(newdata)<-c("minutes","swd")
 new10<-newdata %>% group_by(minutes) %>% summarise_each(funs(mean))
-write.csv(new10,"../data/synthetic/Cam001_10min.csv")
+write.csv(new10,"../data/synthetic/Cam002_10min.csv")
+
+# clean up
+rm(swd,t,t10,v,newdata,new10)
