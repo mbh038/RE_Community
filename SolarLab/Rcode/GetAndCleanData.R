@@ -83,8 +83,8 @@ nmissing
 
 # Inspect portions of the data
 
-day<-245
-dayspan<-1
+day<-355
+dayspan<-10
 daybegin<-day*1440
 dayend<-(day+dayspan)*1440
 

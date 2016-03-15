@@ -35,7 +35,7 @@ cmdays<-c(0,cumsum(mdays)[1:11])
 permonth<-mdays*perday
 maxlim<-10
 day1<-1
-dayspan<-31
+dayspan<-365
 daybegin<-1+(day1-1)*perday
 dayend<-(day1+dayspan-1)*perday
 
