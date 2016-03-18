@@ -7,7 +7,7 @@ source("SolarFunctions.R")
 
 # cleaned data
 #data<-readRDS("../data/cleaned/Cam2001n.csv")
-data<-readRDS("../data/cleaned/Cam2003n.csv")
+data<-readRDS("../data/cleaned/solar/CamBSRN_Solar1min/Cam2014n.rds")
 
 # sunrise and sunset times
 srss<-read.csv("../data/h0times.csv",sep=",")
@@ -16,15 +16,21 @@ srss$sunrise<-as.integer(srss$sunrise)
 srss$sunset<-as.integer(srss$sunset)
 
 # cpm matrix for given location
-cpm<-read.table("../tpm/Cam_cpm.csv",sep=",")
+cpm<-read.table("../tpm/solar/Cam_cpm.csv",sep=",")
+cpm_am<-read.table("../tpm/solar/Cam_cpm_am.csv",sep=",")
+cpm_pm<-read.table("../tpm/solar/Cam_cpm_pm.csv",sep=",")
 # first column is the bins,so separate that off
 #cpm[1,]<-NULL
 bins<-cpm[,1]
 cpm[,1]<-NULL
+bins_am<-cpm_am[,1]
+cpm_am[,1]<-NULL
+bins_pm<-cpm_pm[,1]
+cpm_pm[,1]<-NULL
 
 
 phi=(pi/180)*50
-S0=1100
+S0=1150
 
 
 #Stochastic generation of synthetic data
@@ -64,13 +70,30 @@ for (k in day1:(day1+dayspan-1)){
     mincount=0
     maxcount=0
     for (i in (srss$sunrise[k]+2):srss$sunset[k]){
+        
+        mincol=1
+        
 
         colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
         
-        j=1
-        while (cpm[v[i-1],j] < colIndex){
-            j=j+1
+        j=floor(ncol(cpm_am))/2
+        
+        if(as.POSIXlt(data$datetime[i])$hour <12){
+            maxcol=ncol(cpm_am)
+            
+            while (cpm_am[v[i-1],j] < colIndex){
+                mincol=j
+                j=mincol+(maxcol-min)/2
+            }
+            
+        } else {
+            maxcol=ncol(cpm_pm)
+            j=floor(ncol(cpm_pm))/2
+            while (cpm_pm[v[i-1],j] < colIndex){
+                j=j+1
+            }           
         }
+
         v[i]=j
 #         if (j==1 && v[i-1]==1) mincount=mincount+1
 #         if (j==max(bins) && v[i-1]==max(bins) ) maxcount =maxcount+1
@@ -135,12 +158,12 @@ for (day in seq(day1,(day1+dayspan-1),by=3)){
 library(dplyr)
 newdata<-as.data.frame(cbind(t,swd))
 names(newdata)<-c("minutes","swd")
-write.csv(newdata,"../data/synthetic/Cam002_1min.csv")
+write.csv(newdata,"../data/synthetic/CamBSRN_Solar1minSyn/Cam002_1min.csv")
 t10<-10*(t %/% 10)
 newdata<-as.data.frame(cbind(t10,swd))
 names(newdata)<-c("minutes","swd")
 new10<-newdata %>% group_by(minutes) %>% summarise_each(funs(mean))
-write.csv(new10,"../data/synthetic/Cam002_10min.csv")
+write.csv(new10,"../data/synthetic/CamBSRN_Solar10minSyn/Cam002_10min.csv")
 
 # clean up
 rm(swd,t,t10,v,newdata,new10)

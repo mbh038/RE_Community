@@ -4,7 +4,7 @@ source ("SolarFunctions.R")
 # Load data
 #####################################################################
 
-year<-"2014"
+year<-"2015"
 days<-ifelse(as.numeric(year) %% 4 == 0,366,365)
 file_stem<-"../data/raw/project_label_BSRN_event_label_CAM_"
 file_end<-".tsv"
@@ -106,8 +106,8 @@ summary(data)
 str(data)
 
 # save cleaned data to csv
-opfile_stem<-"../data/cleaned/Cam"
-opfile_end<-"n.csv"
+opfile_stem<-"../data/cleaned/solar/CamBSRN_Solar1min/Cam"
+opfile_end<-"n.rds"
 opfullfilename<-paste0(opfile_stem,year,opfile_end)
 saveRDS(data, opfullfilename)
 
