@@ -53,6 +53,7 @@ v<-rep(0,(length(t)))
 swd<-rep(0,(length(t)))
 
 for (k in day1:(day1+dayspan-1)){
+  a<-Sys.time()
     
     rmean<-ifelse(k < 90 | k > 270,0.39,0.55)
     rsd<-ifelse(k < 90 | k > 270,0.4,0.2)
@@ -60,41 +61,45 @@ for (k in day1:(day1+dayspan-1)){
     #cat(k," ")
     dbegin<-1+(k-1)*perday
     dend<-k*perday
-    for(minute in dbegin:srss$sunrise[k]){
-        swd[minute-daybegin]=0
-    }
-    for(minute in srss$sunset[k]:dend){
-        swd[minute-daybegin]=0
-    }
+    # for(minute in dbegin:srss$sunrise[k]){
+    #     swd[minute-daybegin]=0
+    # }
+    # for(minute in srss$sunset[k]:dend){
+    #     swd[minute-daybegin]=0
+    # }
     v[srss$sunrise[k]+1]<-90#round((nrow(cpm)-1)*runif(1),0)+1#ifelse(k==1,round((nrow(cpm)-1)*runif(1),0)+1,v[srss$sunset[k-1]-1])
     mincount=0
     maxcount=0
-    for (i in (srss$sunrise[k]+2):srss$sunset[k]){
+
+ # markov<-function (a,b){
+ #   colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
+ #   if(as.POSIXlt(data$datetime[i])$hour <12){
+ #     v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
+ #     
+ #   } else {
+ #     v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))          
+ #   }
+ #   Qnow<-solarFlux(S0,phi,i/perday)
+ #   swd[i-daybegin]<-(v[i]/max(bins))*Qnow #*datrange)
+ # }   
+    
+        for (i in (srss$sunrise[k]+2):srss$sunset[k]){
         
         mincol=1
         
 
         colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
         
-        j=floor(ncol(cpm_am))/2
+        #j=floor(ncol(cpm_am))/2
         
         if(as.POSIXlt(data$datetime[i])$hour <12){
-            maxcol=ncol(cpm_am)
-            
-            while (cpm_am[v[i-1],j] < colIndex){
-                mincol=j
-                j=mincol+(maxcol-min)/2
-            }
-            
+          v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
+
         } else {
-            maxcol=ncol(cpm_pm)
-            j=floor(ncol(cpm_pm))/2
-            while (cpm_pm[v[i-1],j] < colIndex){
-                j=j+1
-            }           
+          v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))
         }
 
-        v[i]=j
+        #v[i]=j
 #         if (j==1 && v[i-1]==1) mincount=mincount+1
 #         if (j==max(bins) && v[i-1]==max(bins) ) maxcount =maxcount+1
 #         if (mincount == maxlim | maxcount == maxlim){
@@ -105,11 +110,13 @@ for (k in day1:(day1+dayspan-1)){
 #         }
         #v[i]=min(j,nrow(cpm))
         #v[i]=max(1,j)
-        Qnow<-solarFlux(S0,phi,i/perday)
-        swd[i-daybegin]<-(v[i]/max(bins))*Qnow #*datrange)
-    }
+        #Qnow<-solarFlux(S0,phi,i/perday)
+        swd[i-daybegin]<-(v[i]/max(bins))*Q[i] #*datrange)
+        }
+    b<-Sys.time()
+    print(b-a)
     #cat(k,":",round(v[i-1],0),j," ")
-    cat (k,",",bins[v[i]],": ",sep="")
+    #cat (k,",",bins[v[i]],": ",sep="")
 }
 
 # Summary of outputs compared to real data
