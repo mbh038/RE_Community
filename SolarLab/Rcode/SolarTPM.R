@@ -7,9 +7,19 @@ maxSWD<-0
 maxBin<-0
 nbin<-100
 
-# for all cleaned data sets
-file_handles<-c("Cam2001n.rds","Cam2002n.rds","Cam2003n.rds","Cam2004n.rds","Cam2005n.rds","Cam2006n.rds","Cam2007n.rds","Cam2008n.rds","Cam2014n.rds","Cam2015n.rds")
-path<-"../data/cleaned/solar/CamBSRN_Solar1min/"
+min10<-TRUE
+
+file_handles<-c("Cam2001n","Cam2002n","Cam2003n","Cam2004n","Cam2005n","Cam2006n","Cam2007n","Cam2008n","Cam2014n","Cam2015n")
+
+if (!min10) {
+  path<-"../data/cleaned/solar/CamBSRN_Solar1min/" 
+} else {
+  # for all cleaned data sets
+  file_handles<-paste0(file_handles,"10min",sep="")
+  path<-"../data/cleaned/solar/CamBSRN_Solar10min/"
+  
+}
+file_handles<-paste0(file_handles,".rds",sep="")
 
 # find max bin number and  range of data
 for (file in 1:length(file_handles)){
@@ -224,9 +234,14 @@ for (i in 1 : nrow(tpmp_pm)){
 }
 cpm_pm<-cbind(bins_pm,cpm_pm)
 
-# write out to file
-write.table(cpm,"../tpm/solar/Cam_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
-write.table(cpm_am,"../tpm/solar/Cam_cpm_am.csv",sep=",",row.names=FALSE,col.names=FALSE)
-write.table(cpm_pm,"../tpm/solar/Cam_cpm_pm.csv",sep=",",row.names=FALSE,col.names=FALSE)
-
+if(!min10){
+  # write out to file
+  write.table(cpm,"../tpm/solar/Cam_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(cpm_am,"../tpm/solar/Cam_cpm_am.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(cpm_pm,"../tpm/solar/Cam_cpm_pm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+} else {
+  write.table(cpm,"../tpm/solar/Cam_cpm10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(cpm_am,"../tpm/solar/Cam_cpm_am10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(cpm_pm,"../tpm/solar/Cam_cpm_pm10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+}
 
