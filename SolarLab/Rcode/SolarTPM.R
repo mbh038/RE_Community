@@ -202,6 +202,8 @@ for (i in 1 :nrow(tpmr_pm)){
 }
 sum(tpmp_pm)
 
+
+
 ## TPM-> CPM: cumulative probabilities
 cpm<-matrix(0, nrow = maxBin, ncol =maxBin)
 cpm<-tpmp
@@ -233,6 +235,18 @@ for (i in 1 : nrow(tpmp_pm)){
     }
 }
 cpm_pm<-cbind(bins_pm,cpm_pm)
+
+if(!min10){
+  # write out to file
+  write.table(tpmp,"../tpm/solar/Cam_tpmp.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(tpmp_am,"../tpm/solar/Cam_tpmp_am.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(tpmp_pm,"../tpm/solar/Cam_tpmp_pm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+} else {
+  write.table(tpmp,"../tpm/solar/Cam_tpmp10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(tpmp_am,"../tpm/solar/Cam_tpmp_am10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+  write.table(tpmp_pm,"../tpm/solar/Cam_tpmp_pm10min.csv",sep=",",row.names=FALSE,col.names=FALSE)
+}
+
 
 if(!min10){
   # write out to file

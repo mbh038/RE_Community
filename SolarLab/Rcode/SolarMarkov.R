@@ -7,6 +7,16 @@ source("SolarFunctions.R")
 
 min10=TRUE
 
+if (min10){
+  opfilepathstem<-"../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min"
+  opfilepathtail<-".csv"
+} else {
+  opfilepathstem<-"../data/synthetic/CamBSRN_Solar1minSyn/CamSolarSyn1min"
+  opfilepathtail<-".csv" 
+}
+colnames<-c("tmin","SWD")
+ndata<-6*24*365
+
 # cleaned data
 #data<-readRDS("../data/cleaned/Cam2001n.csv")
 if(min10){
@@ -59,7 +69,7 @@ cmdays<-c(0,cumsum(mdays)[1:11])
 permonth<-mdays*perday
 maxlim<-10
 day1<-1
-dayspan<-2
+dayspan<-365
 daybegin<-1+(day1-1)*perday
 dayend<-(day1+dayspan-1)*perday
 
@@ -70,163 +80,194 @@ Q<-solarFlux(S0,phi,t/perday)
 v<-rep(0,(length(t)))
 swd<-rep(0,(length(t)))
 
+# bisection search along a row of the cpm matrix
 find<-function(cpmat,x,target,maxBin){
   max=maxBin
   min=1
   guess=round((max-min)/2,0)
-  while (cpmat[x,guess]<target && cpmat[x,guess+1]>=target ){
+  count = 0
+  while (max-min>1 ){
+    count =count +1
+    if (count > 10) break
     diff=cpmat[x,guess]-target
+    #print (paste("Count: ",count,min,max,target,diff,x,cpmat[x,guess],sep=", "))
     if (diff>0){
       max=guess
-      guess<-min+(max-min)/2
+      guess<-round(min+(max-min)/2,0)
     }
     if(diff<0){
       min=guess
-      guess<-min+(max-min)/2
+      guess<-round(min+(max-min)/2,0)
     }
   }
-  print (paste(target,guess))
+  #print (paste(target,guess))
   guess
 }
 
-for (k in day1:(day1+dayspan-1)){
-  a<-Sys.time()
-    
-    rmean<-ifelse(k < 90 | k > 270,0.39,0.55)
-    rsd<-ifelse(k < 90 | k > 270,0.4,0.2)
-    
-    #cat(k," ")
-    dbegin<-1+(k-1)*perday
-    dend<-k*perday
-    # for(minute in dbegin:srss$sunrise[k]){
-    #     swd[minute-daybegin]=0
-    # }
-    # for(minute in srss$sunset[k]:dend){
-    #     swd[minute-daybegin]=0
-    # }
-    v[srss$sunrise[k]/ifelse(min10,10,1)+1]<-90#round((nrow(cpm)-1)*runif(1),0)+1#ifelse(k==1,round((nrow(cpm)-1)*runif(1),0)+1,v[srss$sunset[k-1]-1])
-    mincount=0
-    maxcount=0
-
- # markov<-function (a,b){
- #   colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
- #   if(as.POSIXlt(data$datetime[i])$hour <12){
- #     v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
- #     
- #   } else
- #     v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))          
- #   }
- #   Qnow<-solarFlux(S0,phi,i/perday)
- #   swd[i-daybegin]<-(v[i]/max(bins))*Qnow #*datrange)
- # }   
-        steps=seq(srss$sunrise[k]+2*ifelse(min10,10,1),srss$sunset[k])
-        for (i in steps/ifelse(min10,10,1)){
-        #print ("Hello world1")
-        mincol=1
-        
-
-        colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
-        #print ("Hello world2")
-        #j=floor(ncol(cpm_am))/2
-
-        
-
-        
-        if(as.POSIXlt(data$datetime[i])$hour <12){
-          v[i]<-find(cpm_am,v[i-1],colIndex,ncol(cpm_am))
+# generate 100 files of synthetic data
+ratio<-rep(1,100)
+for (file in 1:100){
+  # modify S0 to keep synthetic data energy equal
+  # to real solar energy over one year
+  S0<-S0/ifelse(file>1,ratio[file-1],1)
+  Q<-solarFlux(S0,phi,t/perday)
+  
+  # set up output file numbers
+  opfilehandle<-as.character(file)
+  if (file < 10){
+    opfilehandle<-paste0("00",opfilehandle)
+  }
+  if (file >= 10 && file < 100){
+    opfilehandle<-paste0("0",opfilehandle)
+  }
+  opfilename<-paste0(opfilepathstem,opfilehandle,opfilepathtail)
+  
+  # loop over days of the year
+  for (k in day1:(day1+dayspan-1)){
+    a<-Sys.time()
+      
+      rmean<-ifelse(k < 90 | k > 270,0.39,0.55)
+      rsd<-ifelse(k < 90 | k > 270,0.4,0.2)
+      
+      #cat(k," ")
+      dbegin<-1+(k-1)*perday
+      dend<-k*perday
+      # for(minute in dbegin:srss$sunrise[k]){
+      #     swd[minute-daybegin]=0
+      # }
+      # for(minute in srss$sunset[k]:dend){
+      #     swd[minute-daybegin]=0
+      # }
+      v[srss$sunrise[k]/ifelse(min10,10,1)+1]<-90#round((nrow(cpm)-1)*runif(1),0)+1#ifelse(k==1,round((nrow(cpm)-1)*runif(1),0)+1,v[srss$sunset[k-1]-1])
+      mincount=0
+      maxcount=0
+  
+   # markov<-function (a,b){
+   #   colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
+   #   if(as.POSIXlt(data$datetime[i])$hour <12){
+   #     v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
+   #     
+   #   } else
+   #     v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))          
+   #   }
+   #   Qnow<-solarFlux(S0,phi,i/perday)
+   #   swd[i-daybegin]<-(v[i]/max(bins))*Qnow #*datrange)
+   # }   
+          steps=seq(srss$sunrise[k]+2*ifelse(min10,10,1),srss$sunset[k])
+          for (i in steps/ifelse(min10,10,1)){
+          #print ("Hello world1")
+          mincol=1
           
-        } else {
-          v[i]<-find(cpm_pm,v[i-1],colIndex,ncol(cpm_pm))
-        }
-        #print (v[i])
-        
-        
-        # if(as.POSIXlt(data$datetime[i])$hour <12){
-        #   v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
-        # 
-        # } else {
-        #   v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))
-        # }
-        
-        #print ("Hello world3")
-        #v[i]=j
-#         if (j==1 && v[i-1]==1) mincount=mincount+1
-#         if (j==max(bins) && v[i-1]==max(bins) ) maxcount =maxcount+1
-#         if (mincount == maxlim | maxcount == maxlim){
-#             print(paste("maxlim reached: min= ",mincount," max= ",maxcount))
-#             v[i]=max(bins)/2
-#             mincount=0
-#             maxcount=0
-#         }
-        #v[i]=min(j,nrow(cpm))
-        #v[i]=max(1,j)
-        #Qnow<-solarFlux(S0,phi,i/perday)
-        swd[i-daybegin]<-(v[i]/max(bins))*Q[i] #*datrange)
-        }
-    b<-Sys.time()
-    #print(b-a)
-    #cat(k,":",round(v[i-1],0),j," ")
-    #cat (k,",",bins[v[i]],": ",sep="")
+  
+          colIndex=min(1,max(0.1,rnorm(1,0,rsd)+rmean))
+          #print ("Hello world2")
+          #j=floor(ncol(cpm_am))/2
+  
+          
+  
+          
+          if(as.POSIXlt(data$datetime[i])$hour <12){
+            v[i]<-find(cpm_am,v[i-1],colIndex,ncol(cpm_am))
+            
+          } else {
+            v[i]<-find(cpm_pm,v[i-1],colIndex,ncol(cpm_pm))
+          }
+          #print (v[i])
+          
+          
+          # if(as.POSIXlt(data$datetime[i])$hour <12){
+          #   v[i]=max(which(cbind(0,cpm_am[v[i-1],])<colIndex))
+          # 
+          # } else {
+          #   v[i]=max(which(cbind(0,cpm_pm[v[i-1],])<colIndex))
+          # }
+          
+          #print ("Hello world3")
+          #v[i]=j
+  #         if (j==1 && v[i-1]==1) mincount=mincount+1
+  #         if (j==max(bins) && v[i-1]==max(bins) ) maxcount =maxcount+1
+  #         if (mincount == maxlim | maxcount == maxlim){
+  #             print(paste("maxlim reached: min= ",mincount," max= ",maxcount))
+  #             v[i]=max(bins)/2
+  #             mincount=0
+  #             maxcount=0
+  #         }
+          #v[i]=min(j,nrow(cpm))
+          #v[i]=max(1,j)
+          #Qnow<-solarFlux(S0,phi,i/perday)
+          swd[i-daybegin]<-(v[i]/max(bins))*Q[i] #*datrange)
+          }
+      b<-Sys.time()
+      #print(b-a)
+      #cat(k,":",round(v[i-1],0),j," ")
+      #cat (k,",",bins[v[i]],": ",sep="")
+  }
+  
+  # Summary of outputs compared to real data
+  #sum(swd)/sum(Q)
+  ratio[file]<-sum(swd)/sum(data$SWD[daybegin:dayend])
+  #sum(data$SWD[daybegin:dayend])/sum(Q)
+  
+  # months<-dayend/(30*perday)
+  # simtotal=0
+  # meastotal=0
+  # for (i in 1:months) {
+  #     monthbegin<-cmdays[i]*perday+1
+  #     monthend<-(cmdays[i]+mdays[i])*perday
+  #     simtotal<-simtotal+sum(swd[monthbegin:monthend])
+  #     meastotal<-meastotal+sum(data$SWD[monthbegin:monthend])
+  #     monthratio<-sum(swd[monthbegin:monthend])/sum(data$SWD[monthbegin:monthend])
+  #     print(paste(i,": ",monthbegin,monthend,round(monthratio,2),round(simtotal/meastotal,2)))
+  # }
+  # 
+  # sum(data$SWD[daybegin:dayend])/(60*1000)
+  # sum(swd)/(60*1000)
+  # 
+  # summary(swd[swd>0])
+  # hist(swd[swd>0],breaks=50)
+  # summary(data$SWD[data$SWD>0])
+  # hist(data$SWD[data$SWD>0],breaks=50)
+  
+  # plot(t/1440,Cam2001n$SWD[daybegin:dayend],type="l",ylim=c(0,1500))
+  # lines(t/1440,swd,type="l",col="blue")
+  # lines(t/1440,Q,type="l",col="red")
+  
+  #day<-183
+  
+  # for (day in seq(day1,(day1+dayspan-1),by=1)){
+  #     start<-srss[day,2]
+  #     end<-srss[day,3]
+  #     
+  #     if(min10){
+  #       start<-start/10
+  #       end<-end/10
+  #     }
+  #     ymax<-max(max(Q[start:end]),max(data$SWD[start:end]))
+  #     
+  #     plot(t[start:end]/perday,data$SWD[start:end],type="l",ylim=c(0,ymax))
+  #     lines(t[start:end]/perday,swd[start:end],type="l",col="blue")
+  #     lines(t[start:end]/perday,Q[start:end],type="l",col="red")
+  # }
+  
+  newdata<-data.frame(1:ndata,swd)
+  names(newdata)<-colnames
+  write.csv(newdata,opfilename,row.names=FALSE)
+  print(paste("File",opfilehandle,"done, ratio =: ",ratio[file]," S0 =: ",S0,sep=" "))
+
 }
 
-# Summary of outputs compared to real data
-sum(swd)/sum(Q)
-sum(swd)/sum(data$SWD[daybegin:dayend])
-sum(data$SWD[daybegin:dayend])/sum(Q)
-
-months<-dayend/(30*perday)
-simtotal=0
-meastotal=0
-for (i in 1:months) {
-    monthbegin<-cmdays[i]*perday+1
-    monthend<-(cmdays[i]+mdays[i])*perday
-    simtotal<-simtotal+sum(swd[monthbegin:monthend])
-    meastotal<-meastotal+sum(data$SWD[monthbegin:monthend])
-    monthratio<-sum(swd[monthbegin:monthend])/sum(data$SWD[monthbegin:monthend])
-    print(paste(i,": ",monthbegin,monthend,round(monthratio,2),round(simtotal/meastotal,2)))
-}
-
-sum(data$SWD[daybegin:dayend])/(60*1000)
-sum(swd)/(60*1000)
-
-summary(swd[swd>0])
-hist(swd[swd>0],breaks=50)
-summary(data$SWD[data$SWD>0])
-hist(data$SWD[data$SWD>0],breaks=50)
-
-# plot(t/1440,Cam2001n$SWD[daybegin:dayend],type="l",ylim=c(0,1500))
-# lines(t/1440,swd,type="l",col="blue")
-# lines(t/1440,Q,type="l",col="red")
-
-#day<-183
-
-for (day in seq(day1,(day1+dayspan-1),by=1)){
-    start<-srss[day,2]
-    end<-srss[day,3]
-    
-    if(min10){
-      start<-start/10
-      end<-end/10
-    }
-    ymax<-max(max(Q[start:end]),max(data$SWD[start:end]))
-    
-    plot(t[start:end]/perday,data$SWD[start:end],type="l",ylim=c(0,ymax))
-    lines(t[start:end]/perday,swd[start:end],type="l",col="blue")
-    lines(t[start:end]/perday,Q[start:end],type="l",col="red")
-}
-
-## Write data to 1min and 10min files
-library(dplyr)
-newdata<-as.data.frame(cbind(t,swd))
-names(newdata)<-c("minutes","swd")
-write.csv(newdata,"../data/synthetic/CamBSRN_Solar1minSyn/Cam002_1min.csv")
-
-# create 10 min files
-t10<-10*(t %/% 10)
-newdata<-as.data.frame(cbind(t10,swd))
-names(newdata)<-c("minutes","swd")
-new10<-newdata %>% group_by(minutes) %>% summarise_each(funs(mean))
-write.csv(new10,"../data/synthetic/CamBSRN_Solar10minSyn/Cam002_10min.csv")
+# ## Write data to 1min and 10min files
+# library(dplyr)
+# newdata<-as.data.frame(cbind(t,swd))
+# names(newdata)<-c("minutes","swd")
+# write.csv(newdata,"../data/synthetic/CamBSRN_Solar1minSyn/Cam002_1min.csv")
+# 
+# # create 10 min files
+# t10<-10*(t %/% 10)
+# newdata<-as.data.frame(cbind(t10,swd))
+# names(newdata)<-c("minutes","swd")
+# new10<-newdata %>% group_by(minutes) %>% summarise_each(funs(mean))
+# write.csv(new10,"../data/synthetic/CamBSRN_Solar10minSyn/Cam002_10min.csv")
 
 # clean up
 rm(swd,t,t10,v,newdata,new10)
