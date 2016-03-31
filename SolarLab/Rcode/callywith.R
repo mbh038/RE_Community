@@ -8,7 +8,7 @@ library(lubridate)
 library(plotrix)
 
 ## read in data
-dat.wide<-read.csv("callywith3year.csv",stringsAsFactors=FALSE)
+dat.wide<-read.csv("../data/raw/wind/callywith3year.csv",stringsAsFactors=FALSE)
 
 # convert time to POSIXct
 dat.wide$Timestamp<-dmy_hm(dat.wide$Timestamp)
