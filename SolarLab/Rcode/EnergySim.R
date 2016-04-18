@@ -1,9 +1,21 @@
 # EnergySim
 
 
+
 windMW<-30
 windPower<-read.csv("../data/specs/windPowerCurve.csv")
 solarMW<-30
+
+# read in demand files
+demfilepathstem<-"../data/profiles/EESP/"
+demfilepathtail<-"DomesticDemand.csv"
+demMonths<-c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
+
+for (month in demMonths){
+  demfilename<-paste0(demfilepathstem,month,demfilepathtail)
+  print(demfilename)
+}
+
 
 sipfilepathstem<-"../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min"
 wipfilepathstem<-"../data/synthetic/CallywithWind10minSyn/Cally"

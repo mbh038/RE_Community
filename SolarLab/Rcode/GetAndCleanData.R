@@ -1,4 +1,4 @@
-## Read BSRN 2001 data, write out cleaned csv file
+## Read BSRN data, write out cleaned csv file
 
 source ("SolarFunctions.R")
 # Load data
@@ -21,6 +21,8 @@ names(data)<-names
 data$datetime<-ymd_hms(data$datetime)
 # remove last column
 data$ORG<-NULL
+
+# add first and last minute rows, if missing
 
 firstmin<-ymd_hms(paste0(year,"/01/01 00:00:00"))
 if (data$datetime[1]!=firstmin){
