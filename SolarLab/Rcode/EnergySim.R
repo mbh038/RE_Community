@@ -2,19 +2,14 @@
 
 
 
-windMW<-30
+windMW<-160
 windPower<-read.csv("../data/specs/windPowerCurve.csv")
-solarMW<-30
+solarMW<-160
 
 # read in demand files
-demfilepathstem<-"../data/profiles/EESP/"
-demfilepathtail<-"DomesticDemand.csv"
-demMonths<-c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
-
-for (month in demMonths){
-  demfilename<-paste0(demfilepathstem,month,demfilepathtail)
-  print(demfilename)
-}
+houses=18000
+ddata<-read.csv("../data/profiles/EESP/domDem10.csv")
+ddata$W<-houses*ddata$W
 
 
 sipfilepathstem<-"../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min"
@@ -58,9 +53,14 @@ for (i in 1:nrow(data)){
   solarop[i]<-solarMW*(data$s[i]/1000)
 }
 totalop<-windop+solarop
-energyop<-data.frame(windop,solarop,totalop)
+balance<-totalop-ddata$W
+energyop<-data.frame(windop,solarop,totalop,balance)
+
+
 
 plot(energyop$totalop[1:1000],type="l")
 plot(energyop$totalop[25000:26000],type="l")
 hist(energyop$totalop)
 summary(energyop)
+hist(ddata$W)
+hist(balance)
