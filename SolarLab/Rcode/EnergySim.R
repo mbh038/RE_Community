@@ -2,14 +2,16 @@
 
 
 
-windMW<-160
+windMW<-20
 windPower<-read.csv("../data/specs/windPowerCurve.csv")
-solarMW<-160
+solarMW<-10
 
 # read in demand files
 houses=18000
 ddata<-read.csv("../data/profiles/EESP/domDem10.csv")
-ddata$W<-houses*ddata$W
+demand<-numeric()
+demand<-houses*ddata$W/1e6
+rm(ddata)
 
 
 sipfilepathstem<-"../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min"
@@ -43,24 +45,42 @@ sdata<-read.csv(sfilename)
 data<-data.frame(wdata[,1],wdata[,2],sdata[,2])
 data$day<-min(365,data$t %/% 144 +1)
 names(data)<-c("t","w","s")
-hist(data$w)
+#hist(data$w)
 
 solarop<-numeric(length=length(data))
 windop<-numeric(length=length(data))
+
 
 for (i in 1:nrow(data)){
   windop[i]<-ifelse(data$w[i]>3,windMW*windPower[which(windPower$v==data$w[i]),2],0)
   solarop[i]<-solarMW*(data$s[i]/1000)
 }
 totalop<-windop+solarop
-balance<-totalop-ddata$W
-energyop<-data.frame(windop,solarop,totalop,balance)
+balance<-totalop-demand
+powerop<-data.frame(windop,solarop,totalop,demand,balance)
+summary(powerop)
+
+library(rafalib)
+mypar(2,1)
+days<-seq(1,1000)/144
+plot(days,powerop$demand[1:1000],type="l",
+     ylim=c(-12,12),
+     xlab="Winter days",
+     ylab="Power (MW)"
+     )
+lines(days,powerop$solarop[1:1000],col="red")
+lines(days,powerop$windop[1:1000],col="blue")
+lines(days,powerop$balance[1:1000],col="green")
+
+plot(days,powerop$demand[25001:26000],type="l",
+     ylim=c(-12,12),
+     xlab="Summer days",
+     ylab="Power (MW)"
+     )
+lines(days,powerop$solarop[25001:26000],col="red")
+lines(days,powerop$windop[25001:26000],col="blue")
+lines(days,powerop$balance[25001:26000],col="green")
 
 
-
-plot(energyop$totalop[1:1000],type="l")
-plot(energyop$totalop[25000:26000],type="l")
-hist(energyop$totalop)
-summary(energyop)
-hist(ddata$W)
-hist(balance)
+hist(powerop$demand)
+hist(powerop$balance)
