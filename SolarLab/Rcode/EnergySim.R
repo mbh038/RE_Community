@@ -2,9 +2,9 @@
 
 
 
-windMW<-20
-windPower<-read.csv("../data/specs/windPowerCurve.csv")
-solarMW<-10
+windMW<-25
+windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
+solarMWp<-10
 
 # read in demand files
 houses=18000
@@ -31,56 +31,84 @@ ipfilename<-function(file,ipfilepathstem,ipfilepathtail){
   ipfilename<-paste0(ipfilepathstem,ipfilehandle,ipfilepathtail)
 }
 
-wfile<-floor(100*runif(1)+1)
-sfile<-floor(100*runif(1)+1)
 
-print(paste("Solar file:",sfile,", Wind file: ",wfile,sep=" "))
-
-wfilename<-ipfilename(wfile,wipfilepathstem,wipfilepathtail)
-sfilename<-ipfilename(sfile,sipfilepathstem,sipfilepathtail)
-
-wdata<-read.csv(wfilename)
-sdata<-read.csv(sfilename)
-
-data<-data.frame(wdata[,1],wdata[,2],sdata[,2])
-data$day<-min(365,data$t %/% 144 +1)
-names(data)<-c("t","w","s")
-#hist(data$w)
-
-solarop<-numeric(length=length(data))
-windop<-numeric(length=length(data))
-
-
-for (i in 1:nrow(data)){
-  windop[i]<-ifelse(data$w[i]>3,windMW*windPower[which(windPower$v==data$w[i]),2],0)
-  solarop[i]<-solarMW*(data$s[i]/1000)
+wp<-function(x){
+  windMW*windPower[which(windPower[,1]==x),2]
 }
-totalop<-windop+solarop
-balance<-totalop-demand
-powerop<-data.frame(windop,solarop,totalop,demand,balance)
-summary(powerop)
+
+## loop through solar and wind files
+
+numTrials<-100
+trial=0
+stored=0
+res<-replicate(numTrials,{
+  trial<<-trial+1
+  wfile<-floor(100*runif(1)+1)
+  sfile<-floor(100*runif(1)+1)
+  
+  print(paste("Trial: ",trial," Solar file:",sfile,", Wind file: ",wfile,sep=" "))
+  
+  wfilename<-ipfilename(wfile,wipfilepathstem,wipfilepathtail)
+  sfilename<-ipfilename(sfile,sipfilepathstem,sipfilepathtail)
+  
+  wdata<-read.csv(wfilename)[,2]
+  sdata<-read.csv(sfilename)[,2]
+  
+  # data$day<-min(365,data$t %/% 144 +1)
+  
+  solarop<-numeric(length=length(sdata))
+  windop<-numeric(length=length(wdata))
+  
+  # windop<-unlist(sapply(wdata,function(x){
+  #   windMW*windPower[which(windPower[,1]==x),2]
+  # }))
+  
+  windop<-unlist(sapply(wdata,wp))
+  solarop=solarMWp*sdata/1000
+  totalop<-windop+solarop
+  balance<-totalop-demand
+  ebalance=cumsum(balance)/6000 # in GWh
+  #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
+  # summary(powerop)
+  c(max(balance),min(balance),max(ebalance),min(ebalance))
+})
+res<-t(res)
+res
 
 library(rafalib)
-mypar(2,1)
+mypar(4,1)
+hist(res[,1],breaks=10)
+hist(res[,2],breaks=10)
+hist(res[,3],breaks=10)
+hist(res[,4],breaks=10)
+
+
+mypar(3,1)
 days<-seq(1,1000)/144
-plot(days,powerop$demand[1:1000],type="l",
+plot(days,demand[1:1000],type="l",
      ylim=c(-12,12),
      xlab="Winter days",
      ylab="Power (MW)"
      )
-lines(days,powerop$solarop[1:1000],col="red")
-lines(days,powerop$windop[1:1000],col="blue")
-lines(days,powerop$balance[1:1000],col="green")
+lines(days,solarop[1:1000],col="red")
+lines(days,windop[1:1000],col="blue")
+lines(days,balance[1:1000],col="green")
 
-plot(days,powerop$demand[25001:26000],type="l",
+plot(days,demand[25001:26000],type="l",
      ylim=c(-12,12),
      xlab="Summer days",
      ylab="Power (MW)"
      )
-lines(days,powerop$solarop[25001:26000],col="red")
-lines(days,powerop$windop[25001:26000],col="blue")
-lines(days,powerop$balance[25001:26000],col="green")
+lines(days,solarop[25001:26000],col="red")
+lines(days,windop[25001:26000],col="blue")
+lines(days,balance[25001:26000],col="green")
+
+ydays<-seq(1,length(ebalance))/144
+plot(ydays,ebalance,type="l")
+
+mypar(3,1)
+hist(demand)
+hist(totalop)
+hist(balance)
 
 
-hist(powerop$demand)
-hist(powerop$balance)
