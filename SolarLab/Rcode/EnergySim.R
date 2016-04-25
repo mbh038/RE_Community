@@ -33,16 +33,17 @@ ipfilename<-function(file,ipfilepathstem,ipfilepathtail){
 
 
 wp<-function(x){
-  windMW*windPower[which(windPower[,1]==x),2]
+  windPower[which(windPower[,1]==x),2]
 }
 
 ## loop through solar and wind files
 
-numTrials<-500
+numTrials<-1
 trial=0
 stored=0
+res<-data.frame()
 #start<-proc.time()
-res<-replicate(numTrials,{
+for (trials in 1:numTrials){
   trial<<-trial+1
   wfile<-floor(100*runif(1)+1)
   sfile<-floor(100*runif(1)+1)
@@ -64,28 +65,31 @@ res<-replicate(numTrials,{
   #   windMW*windPower[which(windPower[,1]==x),2]
   # }))
   
-  
-  windop<-unlist(sapply(wdata,wp))
-
-  solarop<-solarMWp*sdata/1000
-  totalop<-windop+solarop
-  balance<-totalop-demand
-  ebalance<-cumsum(balance)/6000 # in GWh
-  #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
-  # summary(powerop)
-  #diff<-proc.time()-start
-  #print(diff)
-  c(max(balance),min(balance),max(ebalance),min(ebalance))
-})
+  for (WindMW in seq(0,50,5)){
+      for (SolarMWp in seq(0,50,5)){
+          print(paste("Solar: ",SolarMWp,", Wind: ",WindMW))
+          windop<-WindMW*unlist(sapply(wdata,wp))
+          solarop<-solarMWp*sdata/1000
+          totalop<-windop+solarop
+          balance<-totalop-demand
+          ebalance<-cumsum(balance)/6000 # in GWh
+          #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
+          # summary(powerop)
+          #diff<-proc.time()-start
+          #print(diff)
+          res<-rbind(res,t(c(WindMW,SolarMWp,max(balance),min(balance),max(ebalance),min(ebalance))))
+      }
+  }
+}
 res<-t(res)
 res
 
 library(rafalib)
 mypar(4,1)
-hist(res[,1],breaks=50,main="max pbalance")
-hist(res[,2],breaks=50,main="min pbalance")
-hist(res[,3],breaks=50,main="max ebalance")
-hist(res[,4],breaks=50,main="min ebalance")
+hist(res[,3],breaks=50,main="max pbalance")
+hist(res[,4],breaks=50,main="min pbalance")
+hist(res[,5],breaks=50,main="max ebalance")
+hist(res[,6],breaks=50,main="min ebalance")
 
 summary(res)
 
