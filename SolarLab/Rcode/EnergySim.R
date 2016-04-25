@@ -2,7 +2,7 @@
 
 
 
-windMW<-25
+windMW<-15
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 solarMWp<-10
 
@@ -38,9 +38,10 @@ wp<-function(x){
 
 ## loop through solar and wind files
 
-numTrials<-100
+numTrials<-500
 trial=0
 stored=0
+#start<-proc.time()
 res<-replicate(numTrials,{
   trial<<-trial+1
   wfile<-floor(100*runif(1)+1)
@@ -63,13 +64,17 @@ res<-replicate(numTrials,{
   #   windMW*windPower[which(windPower[,1]==x),2]
   # }))
   
+  
   windop<-unlist(sapply(wdata,wp))
-  solarop=solarMWp*sdata/1000
+
+  solarop<-solarMWp*sdata/1000
   totalop<-windop+solarop
   balance<-totalop-demand
-  ebalance=cumsum(balance)/6000 # in GWh
+  ebalance<-cumsum(balance)/6000 # in GWh
   #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
   # summary(powerop)
+  #diff<-proc.time()-start
+  #print(diff)
   c(max(balance),min(balance),max(ebalance),min(ebalance))
 })
 res<-t(res)
@@ -77,11 +82,12 @@ res
 
 library(rafalib)
 mypar(4,1)
-hist(res[,1],breaks=10)
-hist(res[,2],breaks=10)
-hist(res[,3],breaks=10)
-hist(res[,4],breaks=10)
+hist(res[,1],breaks=50,main="max pbalance")
+hist(res[,2],breaks=50,main="min pbalance")
+hist(res[,3],breaks=50,main="max ebalance")
+hist(res[,4],breaks=50,main="min ebalance")
 
+summary(res)
 
 mypar(3,1)
 days<-seq(1,1000)/144
