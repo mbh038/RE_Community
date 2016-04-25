@@ -2,9 +2,10 @@
 
 
 
-windMW<-15
+windMW<-seq(0,50,5)
+solarMWp<-seq(0,50,5)
+
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
-solarMWp<-10
 
 # read in demand files
 houses=18000
@@ -43,7 +44,7 @@ trial=0
 stored=0
 res<-data.frame()
 #start<-proc.time()
-for (trials in 1:numTrials){
+res<-replicate(numTrials,{
   trial<<-trial+1
   wfile<-floor(100*runif(1)+1)
   sfile<-floor(100*runif(1)+1)
@@ -58,29 +59,32 @@ for (trials in 1:numTrials){
   
   # data$day<-min(365,data$t %/% 144 +1)
   
-  solarop<-numeric(length=length(sdata))
-  windop<-numeric(length=length(wdata))
+  solarop<-matrix(length(solarMWp)*length(sdata),length(sdata),length(solarMWp))
+  windop<-matrix(length(windMW)*length(wdata),length(wdata),length(windMW))
   
   # windop<-unlist(sapply(wdata,function(x){
   #   windMW*windPower[which(windPower[,1]==x),2]
   # }))
   
-  for (WindMW in seq(0,50,5)){
-      for (SolarMWp in seq(0,50,5)){
-          print(paste("Solar: ",SolarMWp,", Wind: ",WindMW))
-          windop<-WindMW*unlist(sapply(wdata,wp))
-          solarop<-solarMWp*sdata/1000
-          totalop<-windop+solarop
-          balance<-totalop-demand
-          ebalance<-cumsum(balance)/6000 # in GWh
-          #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
-          # summary(powerop)
-          #diff<-proc.time()-start
-          #print(diff)
-          res<-rbind(res,t(c(WindMW,SolarMWp,max(balance),min(balance),max(ebalance),min(ebalance))))
-      }
-  }
-}
+  #print(paste("Solar: ",SolarMWp,", Wind: ",WindMW))
+  #windop<-windMW*unlist(sapply(wdata,wp))
+  windop<-sapply(windMW,function(x){
+    x*unlist(sapply(wdata,wp))
+  })
+  #solarop<-solarMWp*sdata/1000
+  solarop<-sapply(solarMWp,function (x){
+    x*sdata/1000
+  })
+  totalop<-windop+solarop
+  balance<-sweep(totalop,1,demand,FUN="-") #totalop-demand
+  ebalance<-cumsum(balance)/6000 # in GWh
+  #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
+  # summary(powerop)
+  #diff<-proc.time()-start
+  #print(diff)
+  c(min(balance),max(balance),min(ebalance),max(ebalance))
+
+})
 res<-t(res)
 res
 
