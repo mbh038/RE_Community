@@ -2,10 +2,10 @@
 
 
 
-windMW<-0#seq(0,50,5)
+windMW<-20#seq(0,50,5)
 solarMWp<-0#seq(0,50,5)
-
-windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
+  
+  windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
 # read in demand files
 houses=18000
@@ -44,7 +44,7 @@ trial=0
 stored=0
 res<-data.frame()
 #start<-proc.time()
-res<-replicate(numTrials,{
+for (i in 1:numTrials){
   trial<<-trial+1
   wfile<-floor(100*runif(1)+1)
   sfile<-floor(100*runif(1)+1)
@@ -85,11 +85,9 @@ res<-replicate(numTrials,{
   # summary(powerop)
   #diff<-proc.time()-start
   #print(diff)
-  c(min(balance),max(balance),min(ebalance),max(ebalance))
+  res[i]<-c(min(balance),max(balance),min(ebalance),max(ebalance))
 
-})
-res<-t(res)
-res
+}
 
 library(rafalib)
 mypar(4,1)
@@ -106,7 +104,7 @@ plot(days,demand[1:1000],type="l",
      ylim=c(-12,12),
      xlab="Winter days",
      ylab="Power (MW)"
-     )
+)
 lines(days,solarop[1:1000],col="red")
 lines(days,windop[1:1000],col="blue")
 lines(days,balance[1:1000],col="green")
@@ -115,7 +113,7 @@ plot(days,demand[25001:26000],type="l",
      ylim=c(-12,12),
      xlab="Summer days",
      ylab="Power (MW)"
-     )
+)
 lines(days,solarop[25001:26000],col="red")
 lines(days,windop[25001:26000],col="blue")
 lines(days,balance[25001:26000],col="green")
@@ -127,5 +125,3 @@ mypar(3,1)
 hist(demand)
 hist(totalop)
 hist(balance)
-
-
