@@ -2,7 +2,7 @@
 
 
 
-windMW<-0#seq(0,50,5)
+windMW<-20#seq(0,50,5)
 solarMWp<-0#seq(0,50,5)
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
@@ -39,7 +39,7 @@ wp<-function(x){
 
 ## loop through solar and wind files
 
-numTrials<-10
+numTrials<-1000
 trial=0
 stored=0
 res<-data.frame()

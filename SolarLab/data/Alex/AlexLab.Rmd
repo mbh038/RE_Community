@@ -18,8 +18,8 @@ The solar zenith angle $\theta_\text{S}$ is given by the angle between a normal 
 ```{r fig.width=4, fig.height=3,echo=FALSE}
 library(png)
 library(grid)
-img <- readPNG("figures/solarZenithAngle.png")
- grid.raster(img)
+#img <- readPNG("figures/solarZenithAngle.png")
+# grid.raster(img)
 ```
 
 #### Instantaneous Solar Flux
@@ -136,21 +136,46 @@ phi=(pi/180)*50
 S0=1000
 
 t=seq(1,366,length.out=365*144)
-daybegin<-day*144+1
-dayend<-(day+1)*144+1
+t10min<-seq(1,52560)
+daybegin<-1
+dayend<-365*144
 Q<-solarFlux(S0,phi,t)
-plot(t[daybegin:dayend],Q[daybegin:dayend],type="l",ylim=c(0,1000),xlab="Day in year",ylab="Insolation (W/m^2)",main="Cloudy day in winter")
 
-daybegin<-daybegin+180*144
-dayend<-dayend+180*144
-plot(t[daybegin:dayend],Q[daybegin:dayend],type="l",ylim=c(0,1000),xlab="Day in year",ylab="Insolation (W/m^2)",main="Sunny day in summer")
-for (lat in seq(10,60,10)){
-  phi=(pi/180)*lat
-  Q<-solarFlux(S0,phi,t)
-  lines(t[daybegin:dayend],Q[daybegin:dayend],type="l",col=lat/10)
-}
-grid(col = "lightgray", lty = "dotted",
-     lwd = par("lwd"), equilogs = TRUE)
+clearSkyYear<-data.frame(t10min,Q)
+write.table(clearSkyYear,file="clearSkyYear.csv",row.names=FALSE,col.names=FALSE,sep=",")
 ```
 
 
+#### Comparison with Duchy data
+
+```{r}
+csk<-read.csv("clearSkyYear.csv",stringsAsFactors=FALSE,header=FALSE)
+duchy<-read.csv("duchy.csv",stringsAsFactors=FALSE,header=FALSE)
+names(csk)=c("t10min","Sol")
+names(duchy)=c("t10min","Sol")
+```
+
+```{r}
+csk$day=csk$t10min %/% 144 +1
+csk$day[52560]=365
+duchy$day=duchy$t10min %/% 144 +1
+```
+
+```{r}
+day=2
+hours=seq(0,143)/6
+
+for (day in 288:364){
+  
+thisday=cbind(hours,csk[csk$day==day,2],duchy[duchy$day==day,2])
+print (paste(day,length(thisday[,2]),length(thisday[,3])),sep=",")
+plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l")
+lines(hours,thisday[,3],col="red")
+}
+
+for (day in 2:105){
+thisday=cbind(hours,csk[csk$day==day,2],duchy[duchy$day==day,2])
+plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l")
+lines(hours,thisday[,3],col="red")
+}
+```
