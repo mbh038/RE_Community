@@ -2,18 +2,59 @@
 
 
 
-windMW<-20#seq(0,50,5)
+windMW<-30#seq(0,50,5)
 solarMWp<-0#seq(0,50,5)
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
 # read in demand files
+
+# domestic demand
 houses=18000
 ddata<-read.csv("../data/profiles/EESP/domDem10.csv")
-demand<-numeric()
-demand<-houses*ddata$W/1e6
+domDemand<-numeric()
+domDemand<-houses*ddata$W/1e6
 rm(ddata)
 
+sum(demand/6)
+
+#non-domestic demand
+ndDemand<-rep(0,144*365)
+nProfiles=5
+pc10path<-"../data/profiles/UKERC/pc10minThin/"
+for (i in 3:8){
+  pc10file<-paste0(pc10path,"pc10.",i,".csv")
+  pc10<-read.csv(pc10file,stringsAsFactors=FALSE)$W
+  #plot(pc10)
+  ndDemand<-ndDemand+pc10
+}
+plot(nddemand,type="l")
+sum(nddemand/6000)
+
+nbusiness=1850 # total business in St Austell
+
+microDemand<-0.83*nbusiness*(10000/sum(ndDemand/6000))*ndDemand/1e6
+smallDemand<-0.162*nbusiness*(20000/sum(ndDemand/6000))*ndDemand/1e6
+largeDemand<-0.008*nbusiness*(40000/sum(ndDemand/6000))*ndDemand/1e6
+
+totalNdDemand<-microDemand+smallDemand+largeDemand
+
+rm(ndDemand,microDemand,smallDemand,largeDemand)
+
+plot(totalNdDemand,type="l")
+
+sum(totalNdDemand/6) # annual Non Dom demand in MWh
+
+# combine to give total demand
+demand=domDemand+totalNdDemand
+
+library(rafalib)
+mypar(1,1)
+plot(demand,type="l")
+lines(domDemand,col="red")
+lines(totalNdDemand,col="blue")
+
+# input file paths
 
 sipfilepathstem<-"../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min"
 wipfilepathstem<-"../data/synthetic/CallywithWind10minSyn/Cally"
