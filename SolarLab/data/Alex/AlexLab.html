@@ -235,6 +235,9 @@ Q&lt;-solarFlux(S0,phi,t)
 
 clearSkyYear&lt;-data.frame(t10min,Q)
 write.table(clearSkyYear,file=&quot;clearSkyYear.csv&quot;,row.names=FALSE,col.names=FALSE,sep=&quot;,&quot;)</code></pre>
+</div>
+<div id="comparison-with-duchy-data" class="section level4">
+<h4>Comparison with Duchy data</h4>
 <pre class="r"><code>csk&lt;-read.csv(&quot;clearSkyYear.csv&quot;,stringsAsFactors=FALSE,header=FALSE)
 duchy&lt;-read.csv(&quot;duchy.csv&quot;,stringsAsFactors=FALSE,header=FALSE)
 names(csk)=c(&quot;t10min&quot;,&quot;Sol&quot;)

@@ -161,21 +161,48 @@ csk$day[52560]=365
 duchy$day=duchy$t10min %/% 144 +1
 ```
 
-```{r}
+```{r }
+
+library(rafalib)
+mypar(6,2)
 day=2
 hours=seq(0,143)/6
 
+
 for (day in 288:364){
-  
+imgname<-paste0("day",day,".png")
+png(imgname,,width = 280, height = 280)  
 thisday=cbind(hours,csk[csk$day==day,2],duchy[duchy$day==day,2])
 print (paste(day,length(thisday[,2]),length(thisday[,3])),sep=",")
-plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l")
+ylim=c(0,900)#c(0,max(max(thisday[,2]),max(thisday[,3])))
+plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l",ylim=ylim)
 lines(hours,thisday[,3],col="red")
+text(1.5,70,paste0("Day: ",day))
+dev.off() 
 }
 
 for (day in 2:105){
 thisday=cbind(hours,csk[csk$day==day,2],duchy[duchy$day==day,2])
-plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l")
+ylim=c(0,900)#c(0,max(max(thisday[,2]),max(thisday[,3])))
+plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l",ylim=ylim)
 lines(hours,thisday[,3],col="red")
+text(1.5,70,paste0("Day: ",day))
 }
+
+
+png("somedays.png",width=595,height=842)
+chosen<-c(299,298,312,317,348,358,18,22,37,46,79,77,101,91)
+months<-c("October 2015","November 2015","December 2015","January 2016","February 2016","March 2016","April 2016")
+
+mypar(7,2)
+count=0
+for (day in chosen[1:14]){
+count=count+1
+thisday=cbind(hours,csk[csk$day==day,2],duchy[duchy$day==day,2])
+ylim=c(0,800)#c(0,max(max(thisday[,2]),max(thisday[,3])))
+plot(hours,thisday[,2],xlim=c(0,24),xlab="Time (h)",ylab="Insolation (W/m^2)",col="blue",type="l",ylim=ylim)
+lines(hours,thisday[,3],col="red")
+text(0.,0.9*ylim[2],paste0("Day: ",day,", ",months[(count +1)%/% 2]),pos=4)
+}
+dev.off()
 ```

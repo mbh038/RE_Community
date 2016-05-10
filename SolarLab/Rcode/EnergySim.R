@@ -2,8 +2,8 @@
 
 
 
-windMW<-20#seq(0,50,5)
-solarMWp<-20#seq(0,50,5)
+windMW<-25#seq(0,50,5)
+solarMWp<-25#seq(0,50,5)
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
@@ -126,18 +126,26 @@ res<-replicate(numTrials,{
   # summary(powerop)
   #diff<-proc.time()-start
   #print(diff)
-  c(min(balance),max(balance),min(ebalance),max(ebalance))
+  c(min(balance),max(balance),mean(balance),median(balance),min(ebalance),max(ebalance),mean(ebalance),median(ebalance))
 
 })
 res<-t(res)
 res
 
+opfilename=paste0("wind",windMW,"solar",solarMWp,".csv")
+opfilepath="../results/"
+write.table(res,paste0(opfilepath,opfilename),col.names=FALSE,row.names=FALSE,sep=",")
+
 library(rafalib)
-mypar(4,1)
+mypar(4,2)
 hist(res[,1],breaks=50,main="min pbalance")
 hist(res[,2],breaks=50,main="max pbalance")
-hist(res[,3],breaks=50,main="min ebalance")
-hist(res[,4],breaks=50,main="max ebalance")
+hist(res[,3],breaks=50,main="mean pbalance")
+hist(res[,4],breaks=50,main="median pbalance")
+hist(res[,5],breaks=50,main="min ebalance")
+hist(res[,6],breaks=50,main="max ebalance")
+hist(res[,7],breaks=50,main="mean ebalance")
+hist(res[,8],breaks=50,main="median ebalance")
 
 summary(res)
 
