@@ -2,8 +2,8 @@
 
 
 
-windMW<-30#seq(0,50,5)
-solarMWp<-0#seq(0,50,5)
+windMW<-20#seq(0,50,5)
+solarMWp<-20#seq(0,50,5)
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
@@ -16,7 +16,7 @@ domDemand<-numeric()
 domDemand<-houses*ddata$W/1e6
 rm(ddata)
 
-sum(demand/6)
+sum(domDemand/6)
 
 #non-domestic demand
 ndDemand<-rep(0,144*365)
@@ -28,8 +28,8 @@ for (i in 3:8){
   #plot(pc10)
   ndDemand<-ndDemand+pc10
 }
-plot(nddemand,type="l")
-sum(nddemand/6000)
+plot(ndDemand,type="l")
+sum(ndDemand/6000)
 
 nbusiness=1850 # total business in St Austell
 
