@@ -2,14 +2,15 @@
 
 
 
-windMW<-25#seq(0,50,5)
-solarMWp<-25#seq(0,50,5)
+windMW<-20#seq(0,50,5)
+solarMWp<-20#seq(0,50,5)
+geoMWe<-3
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
 # read in demand files
 
-# domestic demand
+# domestic demand MW
 houses=18000
 ddata<-read.csv("../data/profiles/EESP/domDem10.csv")
 domDemand<-numeric()
@@ -29,17 +30,21 @@ for (i in 3:8){
   ndDemand<-ndDemand+pc10
 }
 plot(ndDemand,type="l")
-sum(ndDemand/6000)
+sum(ndDemand/6000) # MWh per representative UKERC business
 
 nbusiness=1850 # total business in St Austell
+medianNonDomUsage<-7.422 # MWh, DECC 2015
 
-microDemand<-0.83*nbusiness*(10000/sum(ndDemand/6000))*ndDemand/1e6
-smallDemand<-0.162*nbusiness*(20000/sum(ndDemand/6000))*ndDemand/1e6
-largeDemand<-0.008*nbusiness*(40000/sum(ndDemand/6000))*ndDemand/1e6
+totalNdDemand<-ndDemand*(1850*7.422)/sum(ndDemand/6)
 
-totalNdDemand<-microDemand+smallDemand+largeDemand
+# microDemand<-0.83*nbusiness*(10000/sum(ndDemand/6000))*ndDemand/1e6
+# smallDemand<-0.162*nbusiness*(20000/sum(ndDemand/6000))*ndDemand/1e6
+# largeDemand<-0.008*nbusiness*(40000/sum(ndDemand/6000))*ndDemand/1e6
+# 
+# totalNdDemand<-microDemand+smallDemand+largeDemand
 
-rm(ndDemand,microDemand,smallDemand,largeDemand)
+
+#rm(ndDemand,microDemand,smallDemand,largeDemand)
 
 plot(totalNdDemand,type="l")
 
@@ -50,7 +55,7 @@ demand=domDemand+totalNdDemand
 
 library(rafalib)
 mypar(1,1)
-plot(demand,type="l")
+plot(demand,type="l",ylim=c(0,16))
 lines(domDemand,col="red")
 lines(totalNdDemand,col="blue")
 
@@ -102,6 +107,7 @@ res<-replicate(numTrials,{
   
   solarop<-numeric()
   windop<-numeric()
+  geoop<-rep(geoMWe,length(wdata))
   totalop<-numeric()
   #solarop<-matrix(length(solarMWp)*length(sdata),length(sdata),length(solarMWp))
   #windop<-matrix(length(windMW)*length(wdata),length(wdata),length(windMW))
@@ -119,7 +125,8 @@ res<-replicate(numTrials,{
   # solarop<-sapply(solarMWp,function (x){
   #   x*sdata/1000
   # })
-  totalop<-windop+solarop
+
+  totalop<-windop+solarop+geoop
   balance<-totalop-demand# sweep(totalop,1,demand,FUN="-") #totalop-demand
   ebalance<-cumsum(balance)/6000 # in GWh
   #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
@@ -127,12 +134,12 @@ res<-replicate(numTrials,{
   #diff<-proc.time()-start
   #print(diff)
   c(min(balance),max(balance),mean(balance),median(balance),min(ebalance),max(ebalance),mean(ebalance),median(ebalance))
-
+  cbind(balance,ebalance)
 })
 res<-t(res)
 res
 
-opfilename=paste0("wind",windMW,"solar",solarMWp,".csv")
+opfilename=paste0("wind",windMW,"solar",solarMWp,"geo",geoMWe,".csv")
 opfilepath="../results/"
 write.table(res,paste0(opfilepath,opfilename),col.names=FALSE,row.names=FALSE,sep=",")
 

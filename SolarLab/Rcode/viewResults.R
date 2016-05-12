@@ -1,7 +1,9 @@
 # viewResults
 
-res<-read.table("../results/wind0solar40.csv",header=FALSE,sep=",")
+res<-read.table("../results/wind20solar20geo3.csv",header=FALSE,sep=",")
 names(res)=c("minpb","maxpb","meanpb","medianpb","mineb","maxeb","meaneb","medianeb")
+
+
 
 library(rafalib)
 mypar(4,2)
