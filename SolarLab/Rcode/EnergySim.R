@@ -5,6 +5,8 @@
 windMW<-20#seq(0,50,5)
 solarMWp<-20#seq(0,50,5)
 geoMWe<-3
+mwsref<-6.3
+mws<-9*(70/45)^(1/7)
 
 windPower<-read.table("../data/specs/windPowerCurve.csv",header=FALSE,sep=",")
 
@@ -101,6 +103,8 @@ res<-replicate(numTrials,{
   sfilename<-ipfilename(sfile,sipfilepathstem,sipfilepathtail)
   
   wdata<-read.csv(wfilename)[,2]
+  wdata<-wdata*mws/mwsref
+  
   sdata<-read.csv(sfilename)[,2]
   
   # data$day<-min(365,data$t %/% 144 +1)
