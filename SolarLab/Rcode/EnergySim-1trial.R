@@ -134,7 +134,7 @@ res<-replicate(numTrials,{
   print (paste0("windop: ",length(windop)," solarop: ",length(solarop)))
   totalop<-windop+solarop+geoop
   balance<-totalop-demand# sweep(totalop,1,demand,FUN="-") #totalop-demand
-  ebalance<-cumsum(balance)/6000 # in GWh
+  ebalance<-cumsum(balance)/6000 # in GWhy
   #powerop<-data.frame(windop,solarop,totalop,demand,balance,ebalance)
   # summary(powerop)
   #diff<-proc.time()-start
