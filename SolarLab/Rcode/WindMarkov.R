@@ -1,4 +1,7 @@
 ## Wind Markov
+
+# generates synthetic wind data, given a CPM
+
 library(dplyr)
 
 # get cpm matrix
