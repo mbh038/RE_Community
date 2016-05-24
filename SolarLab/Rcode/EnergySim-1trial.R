@@ -93,7 +93,7 @@ stored=0
 res<-data.frame()
 #start<-proc.time()
 begin=Sys.time()
-res<-replicate(numTrials,{
+
   trial<<-trial+1
   wfile<-floor(100*runif(1)+1)
   sfile<-floor(100*runif(1)+1)
@@ -141,17 +141,15 @@ res<-replicate(numTrials,{
   #print(diff)
   c(min(balance),max(balance),mean(balance),median(balance),min(ebalance),max(ebalance),mean(ebalance),median(ebalance))
   #cbind(balance,ebalance)
-})
-res<-t(res)
-res
+
 
 end=Sys.time()
 
 print(paste0("Time taken= ",end-begin))
 
-opfilename=paste0("wind",windMW,"solar",solarMWp,"geo",geoMWe,".csv")
-opfilepath="../results/"
-write.table(res,paste0(opfilepath,opfilename),col.names=FALSE,row.names=FALSE,sep=",")
+# opfilename=paste0("wind",windMW,"solar",solarMWp,"geo",geoMWe,".csv")
+# opfilepath="../results/"
+# write.table(res,paste0(opfilepath,opfilename),col.names=FALSE,row.names=FALSE,sep=",")
 
 # library(rafalib)
 # mypar(4,2)
@@ -166,32 +164,73 @@ write.table(res,paste0(opfilepath,opfilename),col.names=FALSE,row.names=FALSE,se
 # 
 # summary(res)
 # 
-# mypar(3,1)
-# days<-seq(1,1000)/144
-# plot(days,demand[1:1000],type="l",
-#      ylim=c(-12,12),
-#      xlab="Winter days",
-#      ylab="Power (MW)"
-#      )
-# lines(days,solarop[1:1000],col="red")
-# lines(days,windop[1:1000],col="blue")
-# lines(days,balance[1:1000],col="green")
-# 
-# plot(days,demand[25001:26000],type="l",
-#      ylim=c(-12,12),
-#      xlab="Summer days",
-#      ylab="Power (MW)"
-#      )
-# lines(days,solarop[25001:26000],col="red")
-# lines(days,windop[25001:26000],col="blue")
-# lines(days,balance[25001:26000],col="green")
-# 
-# ydays<-seq(1,length(ebalance))/144
-# plot(ydays,ebalance,type="l")
-# 
-# mypar(3,1)
-# hist(demand)
-# hist(totalop)
-# hist(balance)
+
+library(rafalib)
+library(openintro)
+data(COL)
+png("../results/OneTrialTimeSeries.png",width=595,height=842)
+
+mypar(3,1)
+days<-seq(1,1000)/144
+
+# one week of power in winter
+plot(days,demand[1:1000],type="l",
+     ylim=c(-14,14),
+     xlab="One week of Winter days",
+     ylab="Power (MW)",
+     col=COL[1]
+     )
+lines(days,solarop[1:1000],col=COL[2])
+lines(days,windop[1:1000],col=COL[3])
+
+lgnd=legend(-.2,-9,
+       c("Demand","Solar generation","Wind generation","Balance"),
+       lty=c(1,1,1,1),
+       lwd=c(2.5,2.5,2.5,2.5),
+       col=COL[1:4],
+       box.lty=0,
+       cex=0.9
+)
+
+lines(days,balance[1:1000],col=COL[4])     
+
+# repeat for summer
+plot(days,demand[25001:26000],type="l",
+     ylim=c(-14,14),
+     xlab="One week of Summer days",
+     ylab="Power (MW)",
+     col=COL[1]
+     )
+lines(days,solarop[25001:26000],col=COL[2])
+lines(days,windop[25001:26000],col=COL[3])
+
+lgnd=legend(-.2,-9,
+            c("Demand","Solar generation","Wind generation","Balance"),
+            lty=c(1,1,1,1),
+            lwd=c(2.5,2.5,2.5,2.5),
+            col=COL[1:4],
+            box.lty=0,
+            cex=0.9
+)
+
+
+lines(days,balance[25001:26000],col=COL[4])
+
+# energy balance
+ydays<-seq(1,length(ebalance))/144
+plot(ydays,ebalance,type="l",xlab="One year of days",ylab="Energy balance (GWh)")
+abline(h=mean(ebalance),col=COL[1])
+text(30,mean(ebalance),"mean energy balance",pos=3)
+
+dev.off()
+
+# plot histograms of power demand, generation and balance
+
+png("../results/OneTrialHistograms.png",width=595,height=842)
+mypar(3,1)
+hist(demand,main="Demand (MW)",xlab="Demand (MW)",probability="TRUE")
+hist(totalop,main="Generation (MW)",xlab="Generation (MW)",probability="TRUE")
+hist(balance,main="Power Balance (MW)",xlab="Power Balance (MW)",probability="TRUE")
+dev.off()
 # 
 # 
