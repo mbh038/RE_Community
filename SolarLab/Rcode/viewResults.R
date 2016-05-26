@@ -1,5 +1,7 @@
 # viewResults
 
+# shows statistics of the 1000 run trials
+
 res<-read.table("../results/wind13solar13geo3.csv",header=FALSE,sep=",")
 names(res)=c("minpb","maxpb","meanpb","medianpb","mineb","maxeb","meaneb","medianeb")
 

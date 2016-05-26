@@ -6,10 +6,9 @@ source("SolarFunctions.R")
 
 camdata<-readRDS("../data/cleaned/solar/CamBSRN_Solar10min/Cam2014n10min.rds")
 
-# load one year of simulated data
-
 #### generate one year of clear insolation
 
+# load one year of simulated data
 syndata<-read.csv("../data/synthetic/CamBSRN_Solar10minSyn/CamSolarSyn10min001.csv")
 # choose the latitude
 phi=(pi/180)*50
