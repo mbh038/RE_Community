@@ -62,6 +62,6 @@ for (i in 1 : nrow(tpm)){
 }
 print (cpm)
 
-write.table(cpm,"../tpm/wind/callywith_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
+#write.table(cpm,"../tpm/wind/callywith_cpm.csv",sep=",",row.names=FALSE,col.names=FALSE)
 
 
